@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block body_class %}home{% endblock %}
+
+{% block header %}
+  <header id="home-head">
+    <div class="vertical">
+      <div class="inner">
+        <h1 class="blog-title">
+          {{ SITENAME }}
+        </h1>
+        <h2 class="blog-description">
+          {{ SITESUBTITLE }}
+        </h2>
+      </div>
+    </div>
+  </header>
+  <div class="header-spacer"></div>
+{% endblock %}
+
+{% block content %}
+{% if articles %}
+  {% for article in (articles_page.object_list if articles_page else articles) %}
+    <article class="post">
+      <header class="post-header">
+        <h2 class="post-title">
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </h2>
+        <div class="post-meta">{% include "article_infos.html" %}</div>
+      </header>
+      <section class="post-excerpt">
+        <p>{{ article.summary }}</p>
+        <a class="btn" href="{{ SITEURL }}/{{ article.url }}">more...</a>
+      </section>
+    </article>
+  {% endfor %}
+{% endif %}
+
+{% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header id="article-head">
+  <div class="vertical">
+    <div class="inner">
+      <h2 class="blog-title">
+        {{ SITENAME }}
+      </h2>
+      <h3 class="blog-description">
+        {{ SITESUBTITLE }}
+      </h3>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<section id="content" class="post">
+  <h4 class="post-title"><i class="icon-tags icon-2x"></i>Tags</h4>
+
+  <ul class="taglist">
+    {% for tag in tag_cloud|sort %}
+    <li>
+      <a href="{{ SITEURL }}/{{ tag.0.url }}">
+        <i class="icon-tag icon-2x"></i> {{ tag.0 }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

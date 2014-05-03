@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block title %}#{{ tag }}{% endblock %}
+
+{% block extra_head %}
+  <link href="{{ SITEURL }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed for #{{ tag }}">
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+{% endblock %}
+
+{% block feed_link %}
+  <a class="feed-link" href="{{ SITEURL }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" title="ATOM Feed for #{{ tag }}"><i class="icon-rss-sign icon-2x"></i></a>
+{% endblock %}
