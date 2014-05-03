@@ -10,6 +10,7 @@ AVATAR_IMG = ''
 TIMEZONE = 'US/Central'
 
 DEFAULT_LANG = u'en'
+DISQUS_SITENAME = 'gsocmlpack'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
