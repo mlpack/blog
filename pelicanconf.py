@@ -29,7 +29,7 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 
 DEFAULT_PAGINATION = 10
 
-PLUGIN_PATH = '/Users/marcus/Downloads/pelican-plugins'
+PLUGIN_PATH = 'pelican-plugins'
 PLUGINS = ['assets']
 
 THEME = "theme"
