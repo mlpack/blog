@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'gsoc'
 SITENAME = u''
-SITEURL = ''
+SITEURL = '.'
 AVATAR_IMG = ''
 TIMEZONE = 'US/Central'
 DEFAULT_LANG = u'en'
@@ -23,5 +23,5 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 
 DEFAULT_PAGINATION = 10
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['assets']
+PLUGINS = ['assets', 'latex']
 THEME = "theme"
