@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = u'gsoc'
 SITENAME = u''
 SITEURL = '.'
+ARCHIVES_URL = 'archives.html'
+TAGS_URL = 'tags.html'
 AVATAR_IMG = ''
 TIMEZONE = 'US/Central'
 DEFAULT_LANG = u'en'
