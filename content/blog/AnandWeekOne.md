@@ -5,13 +5,16 @@ Author: Anand Soni
 
 It has been a week since the GSoC coding period officially started and the fun has already begun! 
 Here are some highlights of the work that I did on my project this week:
+
 * Started implementing the proposed metrics.
 * The following metrics have already been implemented:
+
 	* Accuracy
 	* Precision
 	* Recall
 	* F Measure
 	* Lift
+
 * I also added an implementation of the Confusion Matrix and its graphical visualization to make other implementations easier.
 
 The next week will see further implementations of more metrics. 
