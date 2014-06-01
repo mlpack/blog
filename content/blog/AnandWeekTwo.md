@@ -7,9 +7,9 @@ And the end of week two! More coding and more fun this week. The following addit
 
 1. The following metrics implementations:
     
-    a) Matthews correlation coefficient
-    b) Mean squared error
-    c) Mean predictive information
+    * Matthews correlation coefficient
+    * Mean squared error
+    * Mean predictive information
 
 2. I also added unit tests for the implemented metrics.
 
