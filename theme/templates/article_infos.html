@@ -1,4 +1,10 @@
 <footer class="post-info">
+
+  {% if article.author %}
+  <span class="label">By:</span>
+  <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+  {% endif %}
+
   <span class="label">Date:</span>
   <abbr class="published" title="{{ article.date.isoformat() }}">
         <i class="icon-calendar"></i>{{ article.date.strftime("%d %b %Y") }}
