@@ -1,4 +1,7 @@
-Title: QUIC-SVD Date: 2014-06-03 15:52:00 Tags: gsoc, cosine tree, svd, cf Author: Siddharth Agrawal
+Title: QUIC-SVD
+Date: 2014-06-03 15:52:00 
+Tags: gsoc, cosine tree, svd, cf 
+Author: Siddharth Agrawal
 
 My project is titled 'Collaborative Filtering Package Improvements', where I have proposed to add three new matrix factorization techniques, namely QUIC-SVD, Regularized SVD and Probabilistic Matrix Factorization. This blog post is about QUIC-SVD, and the challenges I faced while implementing it.
 
@@ -7,6 +10,7 @@ QUIC-SVD is a matrix factorization technique, which operates in a subspace such 
 The following things have been implemented:
 
 -> CosineNode class which manages the operations of all the nodes in the tree, namely length-squared sampling, split point sampling and node splitting.
+
 -> CosineTree class which has functions for constructing the tree, for orthonormalizing using the Gram Schmidt algorithm and for estimating the subspace reconstruction error using Monte Carlo simulation.
 
 The ExtractSVD() function mentioned in the paper and tests for the algorithm are yet to be implemented.
