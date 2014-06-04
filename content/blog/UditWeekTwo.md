@@ -6,11 +6,10 @@ Author: Udit Saxena
 Two weeks into GSoC, I feel I am almost done getting the hang of things - though I'm pretty sure I'll never get around to completely knowing Armadillo, with its vast API. 
 Unit testing through Boost has also been a new experience, something which changes the way you think about good programming, completely.
 
-For implementing Multi-Class Adaboost, I have defined a few stages, the first of which includes :
-+ Implementing Weak Learners 
-  - OneR/Decision Stump
-  - C4.5
-  - Simple Perceptron
+For implementing Multi-Class Adaboost, I have defined a few stages, the first of which includes implementing Weak Learners: 
+1. OneR/Decision Stump
+2. C4.5
+3. Simple Perceptron
 
 My first two weeks have been about implementing a decision stump (oneR), and the end of the second week saw me having a very important discussion with Ryan as to deciding how to handle continuous attributes. 
 I plan to commit by the end of the third week, with help from Ryan and Marcus.
