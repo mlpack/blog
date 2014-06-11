@@ -1,5 +1,5 @@
 Title: Is this thing on?
-Date: 2014-06-01 13:58:00
+Date: 2014-06-02 16:17:00
 Tags: gsoc
 Author: Andrew Wells
 
@@ -21,24 +21,27 @@ functionality of any one of them once I get the first one implemented.
 Here, since I can tell you are just dying to hear more, is
 the general structure of the code:
 
-*rectangle_tree:  This is a generic type of tree that will be reused for all of the above named type.
-*tree_split:  This code controls how the tree is split.  This is where most of 
+*rectangle_tree*:  This is a generic type of tree that will be reused for all of the above named type.
+
+*tree_split*:  This code controls how the tree is split.  This is where most of 
 the differences in the different trees comes in.
-*tree_traversal:  This code controls the traversal of the trees.  Existing
+
+*tree_traversal*:  This code controls the traversal of the trees.  Existing
 algorithms are quite simple and quite good, but are there better ways to 
 traverse trees?
-*descent_hueristic:  The tree's are not (necessarily) binary, so we have a 
+
+*descent_hueristic*:  The tree's are not (necessarily) binary, so we have a 
 hueristic to try to choose the best node for inserting a point when this is
 non-obvious (ie. the point is not inside the hyperrectangle)
 
 As per usual, it seems that the hardest part of programming is learning
 the new libraries and the existing code (ignoring algorithm
 design or, alternatively, claiming that it isn't PROGRAMMING, per se).
-This brings us to the interesting source of flame wars and all things good,
+This brings us to the interesting source of flame wars and closed threads,
 text editors. It seems that people design editors for, well, editting text of
 all things.  Saddly, I think this is a mistaken effort.  In reality, I want an
 editor designed for reading text.  I would hazard a guess that I spend maybe 25%
-of my time writting code.  Most of the time is spent reading and thinking.  
+of my time writting code.  Most of the time is spent reading and thinking.
 Taking notes on other peoples' code, and wondering why they did that and why
 this C++ feature wasn't covered in class.  I've been tinkering with the ACME
 editor, and it has some cool features, like right clicking on an included file
