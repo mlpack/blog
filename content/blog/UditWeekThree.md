@@ -1,4 +1,4 @@
-Title: Implementation of Multi-Class Adaboost Algorithm: Week 1 and 2 
+Title: Implementation of Multi-Class Adaboost Algorithm: Week 3 
 Date: 2014-06-12 00:30:00
 Tags: gsoc, adaboost, decisionstump, binning
 Author: Udit Saxena
