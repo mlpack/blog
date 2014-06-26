@@ -1,5 +1,5 @@
 Title: "like a tomato struggling for self-expression."
-Date: 2014-26-09 10:00:00
+Date: 2014-06-26 10:00:00
 Tags: gsoc
 Author: Andrew Wells
 
