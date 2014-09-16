@@ -1,470 +1,208 @@
-/* ==========================================================================
-   General - Setting up some base styles
-   ========================================================================== */
-
 @font-face {
-  font-family: "Droid Serif";
+  font-family: 'Maven Pro';
   font-style: normal;
-  font-weight: 400;
-  src: local("Droid Serif"), local("DroidSerif"), url("http://themes.googleusercontent.com/static/fonts/droidserif/v3/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff") format("woff");
+  font-weight: 500;
+  src: local('Maven Pro Medium'), local('MavenProMedium'), url(css/maven-pro.woff) format('woff');
 }
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff") format("woff");
+body
+{
+   background: #000000;
+   color: #aaaaaa;
+/*   font-family: Andale Mono, Lucidatypewriter, monospace;*/
+   font-family: 'Maven Pro', sans-serif;
+   font-size: 1.5em;
+   text-align: center;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
+a,
+a:visited
+{
+   color: #bb2222;
+   text-decoration: none;
+   font-weight: bold;
 }
 
-html {
-  height: 100%;
-  max-height: 100%;
-  font-size: 62.5%;
+a:hover,
+a:visited:hover
+{
+   color: #eab72c;
+   text-decoration: none
+   font-weight: bold;
 }
 
-body {
-  height: 100%;
-  max-height: 100%;
-  font-family: 'Droid Serif', serif;
-  font-size: 2.0rem;
-  line-height: 1.6em;
-  color: #3A4145;
+li a.listlink
+{
+   color: #ffffff !important;
 }
 
-::-moz-selection {
-  color: #222;
-  background: #D6EDFF;
-  text-shadow: none;
+.left-image
+{
+   float: left;
 }
 
-::selection {
-  color: #222;
-  background: #D6EDFF;
-  text-shadow: none;
+.title
+{
+   text-align: center;
+   padding-left: 100px;
+   padding-right: 100px;
+   height: 100px;
+   vertical-align: center;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  font-family: 'Open Sans', sans-serif;
+.right-image
+{
+   float: right;
 }
 
-h1 {
-  font-size: 5rem;
-  line-height: 1.2em;
-  letter-spacing: -2px;
-  text-indent: -3px;
+.titlebar
+{
+   width: 700px;
+   margin: auto;
 }
 
-h2 {
-  font-size: 4rem;
-  line-height: 1.2em;
-  letter-spacing: -1px;
-  text-indent: -2px;
+.titlefont
+{
+/*   padding-top: 0.6em;*/
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 2em;
 }
 
-h3 {
-  font-size: 3rem;
+.subtitle
+{
+   color: #aaaaaa;
+   font-size: 1em;
 }
 
-h4 {
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1.5rem;
-}
-
-a {
-  color: #4a4a4a;
-  transition: color ease 0.3s;
-}
-
-a:hover {
-  color: #57A3E8;
-}
-
-h1 a, h2 a, h3 a,
-h4 a, h5 a, h6 a {
-  color: #50585D;
+.vertical
+{
+   clear: both;
+   min-height: 1em;
 }
 
 
-p, ul, ol {
-  margin: 1.6em 0;
-}
-
-ol ol, ul ul,
-ul ol, ol ul {
-  margin: 0.4em 0;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #efefef;
-  margin: 3.2em 0;
-  padding: 0;
-}
-
-blockquote {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 1.6em 0;
-  padding: 0 0 0 1.6em;
-  border-left: #edece4 0.4em solid;
-}
-
-blockquote p {
-  margin: 0.8em 0;
+.and
+{
+  padding-top: 0.4em;
+  font-size: 75%;
+  padding-bottom: 0.4em;
   font-style: italic;
 }
 
-blockquote small {
-  display: inline-block;
-  margin: 0.8em 0 0.8em 1.5em;;
-  font-size:0.9em;
-  color: #ccc;
-}
-
-blockquote small:before { content: '\2014 \00A0'; }
-
-blockquote cite {
-  font-weight:bold;
-}
-
-blockquote cite a { font-weight: normal; }
-
-
-dl {
-  margin: 1.6em 0;
-}
-
-dl dt {
-  float: left;
-  width: 240px;
-  overflow: hidden;
-  clear: left;
-  text-align: right;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: bold;
-  margin-bottom: 1em
-}
-
-dl dd {
-  margin-left: 260px;
-  margin-bottom: 1em
-}
-
-mark {
-  background-color: #ffc336;
-}
-
-code, tt {
-  padding: 1px 3px;
-  font-family: Inconsolata, monospace, sans-serif;
-  font-size: 0.85em;
-  white-space: pre;
-  border: 1px solid #E3EDF3;
-  background: #F7FAFB;
-  border-radius: 2px;
-}
-
-pre {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.articles
+{
+  height: 560px;
+  background-color: #101010;
+  border: 15px solid #101010;
   margin: 0;
-  width: 100%;
-  padding: 10px;
-  font-family: Inconsolata, monospace, sans-serif;
-  font-size: 0.9em;
-  white-space: pre;
-  overflow: auto;
-  background: #f6f6f6;
-  border-radius: 3px;
-  line-height: 1.2em;
-}
-
-.linenodiv pre {
-  border-right: 1px solid rgb(221, 221, 221);
-  color: #888;
-}
-
-pre code, tt {
-  font-size: inherit;
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
-  background: transparent;
-  border: none;
   padding: 0;
+  display: table;
+  text-align: center;
+  font-size: 75%;
+  margin-left: auto;
+  margin-right: auto
 }
 
-kbd {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  padding: 1px 8px;
-  border: #ccc 1px solid;
-  color: #666;
-  text-shadow: #fff 0 1px 0;
-  font-size: 0.9em;
-  font-weight: bold;
-  background: #f4f4f4;
-  border-radius: 4px;
-  box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 0 0 #fff inset;
-}
-
-table {
-  width:100%;
-  max-width: 100%;
-}
-
-table th,
-table td {
+.post
+{
+  font-size: 75%;
+  background-color: #202020;
+  border: 30px solid #101010;
+  width: 640px;
+  padding: 15px;
   text-align: left;
-  vertical-align: top;
 }
 
-.codehilitetable td {
-  padding: 0;
-  margin: 0;
-}
-
-.codehilitetable .code {
-  width: 100%;
-}
-
-i {
-  padding-right: 3px;
-}
-
-/* ==========================================================================
-   Utilities - These things get used a lot
-   ========================================================================== */
-
-/* Hides shit */
-
-.hidden {
-  text-indent: -9999px;
-  visibility: hidden;
+.site-footer
+{
   display: none;
 }
 
-/* Creates a responsive wrapper that makes our content scale nicely */
-
-.inner {
-  position: relative;
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Centres vertically yo. (IE8+) */
-
-.vertical {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.btn {
-  background-color: #50585D;
-  border-radius: 3px;
-  text-decoration: none;
-  padding: 3px 10px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  vertical-align: baseline;
-  font-size: 1.6rem;
-}
-
-a.btn {
+font.whitebold
+{
+  font-weight: bold;
   color: #ffffff;
 }
 
-.divider-vertical {
-  margin: 0 5px;
-  border-left: 1px solid;
+li 
+{
+  margin-left: 2em;
+  font-size: 75%;
+  color: #eab72c;
 }
 
-.center-text {
+li a
+{
+  color: #eab72c !important;
+  font-weight: normal;
+}
+
+li a:hover
+{
+  color: #bb2222 !important;
+}
+
+font.released
+{
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.mlnavbar
+{
+  background-color: #202020;
+  border: 30px solid #101010;
+  width: 620px;
+  padding: 15px;
+  padding-left: 35px;
+  height: 1em;
+}
+
+.mlnavbar .mlnavitem
+{
+  float: left;
   text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-
-/* ==========================================================================
-   General - The main styles for the the theme
-   ========================================================================== */
-
-/* Big cover image on the home page */
-
-#home-head {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  margin-top: 44px;
-  left: 0;
-  display: table;
-  width: 100%;
-  height: 400px;
+.mlnavbar .mlnavsel
+{
+  float: left;
   text-align: center;
-  color: #fff;
-  background: #303538 no-repeat center center;
-  background-size: cover;
-  background-image: url(/theme/img/cover.png);
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-#article-head {
-  margin-top: 55px;
-  display: table;
-  width: 100%;
-  height: 250px;
-  text-align: center;
+.smallertext
+{
+  font-size: 75%;
 }
 
-.header-spacer {
-  visibility: hidden;
-  margin-top: 400px;
-}
-
-.main-content {
-  background-color: #fff;
-}
-
-.content {
-  position: relative;
-  z-index: 5;
-}
-
-/* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
-
-#blog-logo img {
-  display: block;
-  max-height: 100px;
-  width: auto;
-  margin: 0 auto;
-  line-height: 0;
-
-  border-radius: 50%;
-}
-
-/* The details of your blog. Defined in ghost/settings/ */
-
-.blog-title {
-  margin: 10px 0 10px 0;
-  letter-spacing: -1px;
-}
-
-.blog-description {
-  margin: 0;
-  font-size: 1.8rem;
+h2
+{
+  font-size: 200%;
+  border-bottom: 15px solid #101010;
+  font-family: 'Maven Pro', sans-serif;
   line-height: 1.5em;
-  font-weight: 300;
-  font-family: 'Droid Serif', serif;
-  letter-spacing: 0;
 }
 
-/* Every post, on every page, gets this style on its <article> tag */
-
-.post {
-  position: relative;
-  width:80%;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  padding-top: 4rem;
-  border-bottom: #EBF2F6 1px solid;
-  word-break: break-word;
-  hyphens: auto;
+.code
+{
+  font-family: monospace, fixed;
+  font-size: 75%;
 }
 
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-
-.post:after {
-  display: block;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: #81888c 1px solid;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  margin-left: -5px;
-  background: #fff;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  box-shadow: #fff 0 0 0 5px;
-}
-
-.post-title {
-  margin:0;
-}
-
-.post-title a {
-  text-decoration: none;
-}
-
-.post-excerpt {
-  padding-bottom: 8px;
-}
-
-.post-excerpt p {
-  margin: 1.6rem 0 0 0;
-  font-size: 0.9em;
-  line-height: 1.6em;
-}
-
-.post-meta {
-  display: inline-block;
-  margin: 0 0 5px 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  color: #9EABB3;
-}
-
-.post-meta a {
-  color: #9EABB3;
-  text-decoration: none;
-}
-
-.post-meta a:hover {
-  text-decoration: underline;
-}
-
-.label {
-  font-size: 13px;
-  padding: 1px 3px;
-}
-
-.short-date {
-  display: none;
-}
-
-
-/* ==========================================================================
-   Single Post - When you click on an individual post
-   ========================================================================== */
 
 .navbar {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #202020;;
   padding: 5px 0;
   font-size: 1.6rem;
   box-shadow: 0 2px 5px #333;
@@ -494,8 +232,7 @@ a.btn {
   display: none;
   position: absolute;
   top: 2em;
-  background-color: #f5f5f5;
-  background-color: rgba(245, 245, 245, .9);
+  background-color: #202020;
   transform: translateX(-15px);
 }
 
@@ -514,297 +251,9 @@ a.btn {
   text-decoration: none;
 }
 
-
-/* ==========================================================================
-   Single Post - When you click on an individual post
-   ========================================================================== */
-
-/* Tweak the .post wrapper style */
-
-.post-template .post {
-  margin-top: 0;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-/* Kill that stylish little circle that was on the border, too */
-
-.post-template .post:after {
+.short-date{
   display: none;
 }
 
-/* Insert some mad padding up in the header for better spacing */
-
-.post-template .post-header {
-  padding: 40px 0;
-}
-
-/* Keep large images within the bounds of the post-width */
-
-.post-content img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* The author credit area after the post */
-
-.post-footer {
-  position: relative;
-  padding: 1em 0;
-  border-top: #EBF2F6 1px solid;
-}
-
-.post-footer h4 {
-  display: inline;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.post-footer p {
-  margin: 1rem 0;
-  font-size: 1.4rem;
-  line-height: 1.6em;
-}
-
-.post-footer a {
-  margin: 0 .5em;
-}
-
-/* Drop the share links in the space to the right.
-   Doing it like this means it's easier for the author bio
-   to be flexible at smaller screen sizes while the share
-   links remain at a fixed width the whole time */
-
-.post-footer .share {
-  position: absolute;
-  top: 4rem;
-  right: 0;
-  width: 140px;
-}
-
-.post-footer .share a {
-  font-size: 1.8rem;
-  display: inline-block;
-  margin: 1.4rem 1.6rem 1.6rem 0;
-  color: #BBC7CC;
-}
-
-.post-footer .share a:hover {
-  color: #50585D;
-}
-
-
-/* ==========================================================================
-   Footer - The bottom of every page
-   ========================================================================== */
-
-
-.site-footer {
-  position: relative;
-  margin: 0;
-  padding: 4em 0;
-  border-top: #EBF2F6 1px solid;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.7em;
-  color: #BBC7CC;
-  text-align: center;
-  background: #F7FAFB;
-}
-
-.site-footer a {
-  color: #BBC7CC;
-  text-decoration: underline;
-}
-
-.site-footer a:hover {
-  color: #50585D;
-}
-
-.social-icons a {
-  padding: 5px;
-  text-decoration: none;
-}
-
-.social-icons {
-  padding-bottom: 1em;
-}
-
-/* ==========================================================================
-   Media Queries - Smaller than 900px
-   ========================================================================== */
-
-@media only screen and (max-width: 900px) {
-
-  blockquote {
-    margin-left: 0;
-  }
-
-  #home-head {
-    position: static;
-    height: 240px;
-    min-height: 240px;
-  }
-
-  .header-spacer {
-    display: none;
-  }
-
-  .blog-title {
-    font-size: 4rem;
-    letter-spacing: -1px;
-  }
-
-  .blog-description {
-    font-size: 1.7rem;
-    line-height: 1.5em;
-  }
-
-  h1 {
-    font-size: 4.8rem;
-    text-indent: -2px;
-  }
-
-  h2 {
-    font-size: 3.8rem;
-  }
-
-  h3 {
-    font-size: 3.3rem;
-  }
-
-  h4 {
-    font-size: 2.8rem;
-  }
-
-  .post {
-    font-size: 0.9em;
-    line-height: 1.6em;
-  }
-
-  .post-template .post {
-    padding-bottom: 1rem;
-  }
-
-  .post-template .post-header {
-    padding: 40px 0;
-  }
-
-  .brand {
-    display: none;
-  }
-
-  dl dt {
-    width: 110px;
-  }
-
-  dl dd {
-    margin-left: 125px;
-  }
-
-  .short-date {
-    display: block;
-  }
-
-  .long-date {
-    display: none;
-  }
-}
-
-/* ==========================================================================
-   Media Queries - Smaller than 500px
-   ========================================================================== */
-
-@media only screen and (max-width: 500px) {
-
-  #blog-logo img {
-    max-height: 80px;
-  }
-
-  .inner {
-    width: auto;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  .blog-title {
-    font-size: 3rem;
-  }
-
-  .blog-description {
-    font-size: 1.5rem;
-  }
-
-
-  h1, h2 {
-    font-size: 3rem;
-    line-height: 1.1em;
-    letter-spacing: -1px;
-  }
-
-  h3 {
-    font-size: 2.8rem;
-  }
-
-  h4 {
-    font-size: 2.3rem;
-  }
-
-  .post {
-    width:auto;
-    margin-left: 16px;
-    margin-right: 16px;
-    font-size: 0.8em;
-    line-height: 1.6em;
-  }
-
-  .post-template .post {
-    padding-bottom: 0;
-  }
-
-  .post-template .post-header {
-    padding: 30px 0;
-  }
-
-  .post-meta {
-    font-size: 1.3rem;
-  }
-
-  .post-footer {
-    padding: 4rem 0;
-    text-align: center;
-  }
-
-  .post-footer .author {
-    margin: 0 0 2rem 0;
-    padding: 0 0 1.6rem 0;
-    border-bottom: #EBF2F6 1px dashed;
-  }
-
-  .post-footer .share {
-    position: static;
-    width: auto;
-  }
-
-  .post-footer .share a {
-    margin: 1.4rem 0.8rem 0 0.8rem;
-  }
-
-  .site-footer {
-    margin-top: 6rem;
-    font-size: 1.1rem;
-  }
-
-  .navbar {
-    position: absolute;
-    font-size: 0.7em;
-    box-shadow: none;
-    border-bottom: 1px solid #333;
-  }
-}
-
-/* ==========================================================================
-   End of file. Media queries should be the last thing here. Do not add stuff
-   below this point, or it will probably fuck everything up.
-   ========================================================================== */
+div.lines { float: right; }
+div.irclogchatlines { padding-left: 100px; padding-right: 100px }
