@@ -257,5 +257,11 @@ h2
   display: none;
 }
 
+.label{
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
 div.lines { float: right; }
 div.irclogchatlines { padding-left: 100px; padding-right: 100px }
