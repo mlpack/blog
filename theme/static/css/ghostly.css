@@ -1,3 +1,4 @@
+/* Re-adapted to match mlpack.org website by Ryan Birmingham. */
 @font-face {
   font-family: 'Maven Pro';
   font-style: normal;
@@ -93,8 +94,6 @@ li a.listlink
 .articles
 {
   height: 560px;
-  background-color: #101010;
-  border: 15px solid #101010;
   margin: 0;
   padding: 0;
   display: table;
@@ -112,6 +111,7 @@ li a.listlink
   width: 640px;
   padding: 15px;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .site-footer
