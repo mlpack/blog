@@ -188,6 +188,8 @@ h2
   border-bottom: 15px solid #101010;
   font-family: 'Maven Pro', sans-serif;
   line-height: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 0px;
 }
 
 .code
