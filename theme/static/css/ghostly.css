@@ -248,6 +248,7 @@ h2
 .taglist li {
   display: block;
   padding-right: 15px;
+  font-size: 100%;
 }
 
 .taglist a {
