@@ -27,3 +27,4 @@ DEFAULT_PAGINATION = 10
 PLUGIN_PATH = 'pelican-plugins'
 PLUGINS = ['assets', 'latex']
 THEME = "theme"
+SUMMARY_MAX_LENGTH = None
