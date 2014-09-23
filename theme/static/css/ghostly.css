@@ -267,3 +267,5 @@ h2
 
 div.lines { float: right; }
 div.irclogchatlines { padding-left: 100px; padding-right: 100px }
+
+a.btn {display: none;}
