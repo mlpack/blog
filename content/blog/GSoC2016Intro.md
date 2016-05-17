@@ -18,8 +18,8 @@ will be done to verify that mlpack's implementations are competitive with---or
 faster than---other implementations of these neuroevolution algorithms.
 
 Bang is a Ph.D. student at the University of Alberta; he likes swimming, playing
-table tennis, and badminton.  His website can be found at
-http://www.ualberta.ca/~bang3/.
+table tennis, and badminton.  His [website](http://www.ualberta.ca/~bang3/)
+contains more information.
 
 ### Dataset and Experimentation Tools
 **by Keon Kim, mentored by Tham Ngap Wei**
@@ -92,10 +92,9 @@ also doesn't remember what his hobbies are anymore since he has been in school
 too long.  Hopefully this summer will leave a little free time so he can
 rediscover some fun activities.
 
-You can find more information on each of the projects on the Summer of
-Code website:
-
-http://summerofcode.withgoogle.com/organizations/5376684740050944/
+You can find more information on each of the projects on the
+[Summer of Code
+website](http://summerofcode.withgoogle.com/organizations/5376684740050944/).
 
 Anyway, congratulations to Bang, Keon, Marcos, Mikhail, Nilay, and
 Yannis!  The coding period will start next Monday (May 23rd).
