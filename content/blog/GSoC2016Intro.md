@@ -64,7 +64,7 @@ Mikhail is a graduate student at Moscow State University, interested in
 computational mathematics and programming.  When he has free time, he plays
 classical guitar and piano.
 
-### We need to go deeper - GoogLeNeT
+### We need to go deeper - GoogLeNet
 **by Nilay Jain, mentored by Tham Ngap Wei and Marcus Edel**
 
 Nilay will implement the components of the GoogLeNet architecture (the
