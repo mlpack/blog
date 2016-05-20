@@ -33,7 +33,7 @@ operators (rounding, timezone handling, etc.).  These will supplement
 the existing mlpack machine learning algorithms and can be used for
 preprocessing (or postprocessing).
 
-Keon is an undergraduate student at New York University an currently works as an
+Keon is an undergraduate student at New York University and currently works as an
 intern for a startup in the financial sector that uses machine learning.
 
 ### Approximate Nearest Neighbor Search
