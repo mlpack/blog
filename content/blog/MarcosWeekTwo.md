@@ -9,6 +9,6 @@ Then, I continued working in existing neighbor search code, updating the dual tr
 
 As we are doing approximate search, we can prune more than when an exact solution is required. For example, for knn, we consider the prune rule:
 
-"Prune if $d_min(N_q, N_r) > ( 1 / (1 + \epsilon ) ) * B_1(N_q)$."
+Prune if $d_{min}(N_q, N_r) > ( 1 / (1 + \epsilon ) ) * B_1(N_q)$.
 
 Next week, I plan to continue working in the implementation of aprox knn, adding many test cases. Once everything is ready, I will merge it into the main repository.
