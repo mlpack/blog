@@ -11,7 +11,8 @@ To do that, I needed to improve access to LSHSearch object's projection tables, 
 
 In the process of modifying the LSHSearch code to do that, Ryan and I also decided to make a few other modifications, namely
 
- * Change the data structure that stores the projection tables from an std::vector to an arma::cube. Each slice of the cube is a projection table. This conserves memory and simplifies the code.
- * Change the implementation of the second level hashing. In the current version, an arma::Mat<size_t> table is created where each row corresponds to a hash bucket and stores indices to points hashed to that bucket. This is inefficient, both because the default secondHashSize is pretty large and because the number of points in each bucket might be uneven - so the resulting table is quite sparse. After some demo codes and discussion, we decided on a solution to these two problems.
+1) Change the data structure that stores the projection tables from an std::vector to an arma::cube. Each slice of the cube is a projection table. This conserves memory and simplifies the code.
+
+2) Change the implementation of the second level hashing. In the current version, an arma::Mat<size_t> table is created where each row corresponds to a hash bucket and stores indices to points hashed to that bucket. This is inefficient, both because the default secondHashSize is pretty large and because the number of points in each bucket might be uneven - so the resulting table is quite sparse. After some demo codes and discussion, we decided on a solution to these two problems.
 
 So, with LSHSearch transparent, more easily testable and more efficient, we are now ready to perform benchmarks of single- and multiprobe LSH, see what we can optimize in the multiprobe code, and then move on to parallelization. All this will start today, so stay tuned :D
