@@ -1,5 +1,5 @@
 Title: Approximate Nearest Neighbor Search - Week 2
-Date: 2016-05-05 21:00:00
+Date: 2016-06-05 21:00:00
 Tags: gsoc, knn, kfn
 Author: Marcos Pividori
 
@@ -9,8 +9,6 @@ Then, I continued working in existing neighbor search code, updating the dual tr
 
 As we are doing approximate search, we can prune more than when an exact solution is required. For example, for knn, we consider the prune rule:
 
-```latex
-prune if $d_min(N_q, N_r) > ( 1 / (1 + \epsilon ) ) * B_1(N_q)$.
-```
+"Prune if $d_min(N_q, N_r) > ( 1 / (1 + \epsilon ) ) * B_1(N_q)$."
 
 Next week, I plan to continue working in the implementation of aprox knn, adding many test cases. Once everything is ready, I will merge it into the main repository.
