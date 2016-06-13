@@ -20,7 +20,7 @@ Then, I added many test cases with different values of epsilon and different
 kind of trees (KDTree/BallTree/CoverTree), checking the relative error between
 the approximated results and the true best candidates.
 
-The command line tools: mlpack_knn and lmpack_kfn, were updated to include an
+The command line tools: mlpack_knn and mlpack_kfn, were updated to include an
 extra option "-e", to specify the relative error (default value: 0).
 We have been discussing about which approximation parameters use for KFN in
 [[3]](http://github.com/mlpack/mlpack/pull/684/files/07879a2cc79b35b10d7fae687d6e27ad90a9f2d7#r66611928).
