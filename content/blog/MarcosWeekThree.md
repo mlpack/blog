@@ -1,4 +1,4 @@
-tle: Approximate Nearest Neighbor Search - Week 3
+Title: Approximate Nearest Neighbor Search - Week 3
 Date: 2016-06-13 21:00:00
 Tags: gsoc, knn, kfn
 Author: Marcos Pividori
