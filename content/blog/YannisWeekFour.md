@@ -8,7 +8,9 @@ I have done a few things this week on the LSH code, but I want to talk mainly ab
 First off, a few things to consider:
 
 a) Parallelization should be as transparent as possible. Not everyone is familiar and/or comfortable with parallel frameworks and concepts, and we shouldn't make life hard for future code maintainers/developers.
+
 b) Parallelization, if done the wrong way, can lead to all sorts of pain: very slow code (mainly because of [thread contention](http://stackoverflow.com/questions/1970345/what-is-thread-contention)), deadlocks, correctness errors, to name a few.
+
 c) At the same time, parallelization is very important for a scalable library that deals with large datasets, such as mlpack. If done correctly, it can give an important bump in performance, especially since virtually every machine is multicore now.
 
 So we need to keep (a) and (c) in mind while being careful to not fall in any of the traps mentioned in (b). (a) is easy to do with OpenMP, and we should also try to use only the very basic constructs - parallel for, let's say.
