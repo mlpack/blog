@@ -23,6 +23,7 @@ The way mlpack does this is there is a for loop, inside which, codes are compute
 2. We can instead try to reduce the cost of each individual query, by parallelizing the `ReturnIndicesFromTable` and `BaseCase` functions.
 
 **Option (1)** has several benefits: 
+
  - When ran with a large query set, the processing cores will be utilized very well - there's plenty of work to go around, so we simply spawn threads and divide work among them.
  - It is trivial to implement and embarrassingly parallel, meaning the more threads we spawn (up to the number of queries) the faster we will be.
  - It should cause an immediate and noticeable bump in performance.
