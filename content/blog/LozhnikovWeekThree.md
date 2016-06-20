@@ -8,3 +8,5 @@ As I had planned in the previous post I modified base cases and pruning rules fo
 In order to do that I had to modify the RectangleTree traversal algorithms. Since the methods described above represent results as a vector of the indices of points in the dataset I had to implement an approach for calculating the index for any particular point in the tree.
 
 Also I started working on the implementation of the R+ tree.
+
+P.S. Unfortunately, we decided that these modifications make base cases and pruning rules too complicated. So, these changes have to be removed. But as for me it was interesting to explore this as a possibility.
