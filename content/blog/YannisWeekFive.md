@@ -1,4 +1,4 @@
-Title: LSH Parallelization
+Title: LSH Parallelization - Week 2
 Date: 2016-06-27 20:20:20
 Tags: gsoc, lsh, multiprobe, openMP, parallel
 Author: Yannis Mentekidis
