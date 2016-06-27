@@ -5,6 +5,7 @@ Author: Yannis Mentekidis
 
 This week I focused on implementing the parallelization changes I discussed in my previous blog post. I also spent some time on bug fixes and style changes of Multiprobe LSH, but I will not bore you with that.
 
+# Processing Queries in Parallel
 
 First, I parallelized the query processing code. This was pretty straightforward since OpenMP lets us define private and shared variables and takes care of memory access by itself. 
 
@@ -39,6 +40,7 @@ Does this mean we don't get to use parallelism in fear of ruining our results? O
 OpenMP can force single-core execution of parts of the code with `#pragma omp atomic` (for one critical expression) or `#pragma omp critical` (for longer pieces of code).
 
 
+# Thread book-keeping
 
 Once I was done with that and had it tested, I started implementing code to keep track of how many threads we use. That code started becoming very complicated, so I considered implementing a thread-control class and managing threads through it, but that has the potential of complicating the code too much. Many of the parts we're intervening with already have an increased level of code complexity (long functions with a lot of branching) and so adding more complexity might make the next person to look at the code want to learn where I leave and come murder me - something I would very much like to avoid.
 
@@ -46,5 +48,6 @@ So, I ended up going with a simpler solution. OpenMP by default does not allow f
 
 Since the code I want to parallelize further is nested inside parallel regions, it will, by default, be executed by only one thread. If, however, a user wants to enable that parallelism as well (for example in the live-query processing scheme I described in the previous post), then they can enable OpenMP's nested parallelism by setting the environment variable `OMP_NESTED` to `TRUE`.
 
+# Further parallelism
 
 For now, I have only parallelized the for loops inside `ReturnIndicesFromTables()`, but they are not the bottleneck - `find()` and `unique()` are. So this week I plan to implement parallel versions of these functions and add tests for the second level of parallelism. Once that is done, the chapter of LSH parallelization will be over :)
