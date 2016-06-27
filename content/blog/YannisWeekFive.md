@@ -42,7 +42,7 @@ OpenMP can force single-core execution of parts of the code with `#pragma omp at
 
 # Thread book-keeping
 
-Once I was done with that and had it tested, I started implementing code to keep track of how many threads we use. That code started becoming very complicated, so I considered implementing a thread-control class and managing threads through it, but that has the potential of complicating the code too much. Many of the parts we're intervening with already have an increased level of code complexity (long functions with a lot of branching) and so adding more complexity might make the next person to look at the code want to learn where I leave and come murder me - something I would very much like to avoid.
+Once I was done with that and had it tested, I started implementing code to keep track of how many threads we use. That code started becoming very complicated, so I considered implementing a thread-control class and managing threads through it, but that has the potential of complicating the code too much. Many of the parts we're intervening with already have an increased level of code complexity (long functions with a lot of branching) and so adding more complexity might make the next person to look at the code want to learn where I live and come murder me - something I would very much like to avoid.
 
 So, I ended up going with a simpler solution. OpenMP by default does not allow for nested parallelism - that is, it doesn't allow a spawned thread to spawn threads of its own. This is very good: it's easy to accidentally get yourself in recursive situations where spawning more threads that spawn more threads (and so on) leads to either the program to crash or it being very slow.
 
