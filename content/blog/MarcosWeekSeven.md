@@ -18,9 +18,5 @@ As mentioned in last blog post, Hybrid Spill trees have both overlapping and non
 
 We can control the hybrid by varying $\tau$. If $\tau$ is zero, we have a pure spill tree with defeatist search, very efficient but not accurate enough. If $\tau$ is a very large number, then every node is a non-overlapping node and we get back to the traditional metric tree, with prunning rules, perfectly accurate but not very efficient. By setting different values for $\tau$, we have a trade-off between efficiency and accuracy.
 
-Then, which is the smallest value of $\tau$ that provide exact results?
-If we are sure that $\tau$ is a valid upper bound of the kth nearest neighbor of the query point $p_q$, this means: $dist(p_q, kth-n(p_q)) < \tau$, then we can be sure that we will get an exact solution.
-Of course, we can use smaller values of tau if we want an approximation.
-
 Next week, I will continue improving the implementation of Spill Trees and the Defeatist Seach and write some tests. Also, I have to continue thinking about possible alternatives to implement Hybrid SP-Tree Search as a dual tree algorithm. Follow the progress in: [[2]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
 
