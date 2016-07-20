@@ -1,6 +1,6 @@
 Title: Approximate Nearest Neighbor Search - Week 6
 Date: 2016-07-04 21:00:00
-Tags: gsoc, knn, kfn
+Tags: gsoc, knn, kfn, spill-tree
 Author: Marcos Pividori
 
 Last week, I have been working on the implementation of Spill Trees, as defined in: "An Investigation of Practial Approximate Nearest Neighbor Algorithms" [[1]](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_187.pdf).
