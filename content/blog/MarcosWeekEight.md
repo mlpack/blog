@@ -31,4 +31,4 @@ However, we have not decided yet if we will include this modification.
 
 Also, I added many test cases for the structure of spill trees and knn search with them.
 
-Next week, I will continue considering different options to improve the implementation of Spill Trees. Follow the progress in: [[2]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
+Next week, I will continue considering different options to improve the implementation of Spill Trees. Follow the progress in: [[3]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
