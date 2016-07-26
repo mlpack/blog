@@ -9,7 +9,7 @@ DatasetMapper & Imputer
 
 1) Optimized Imputer a little bit. The details are discussed in the pull request [#694](https://github.com/mlpack/mlpack/pull/694).
 
-3) Debugged and polished some comments.
+2) Debugged and polished some comments.
 
 Descriptive Statistics
 
