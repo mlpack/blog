@@ -9,7 +9,7 @@ Week ten of GSoC was quite productive for me - I finally understood the proposed
 
 Here, we undersample the dataset and produce useful metrics based on the sample. The most important metrics here are the pairwise distances and the distances from points to their k-nearest neighbor, for k in [1, K], K specified by the user.
 
-It is important to undersample here - otherwise we are running an all-vs-all distance calculation that the user wanted to avoid and might not even be practical.
+It is important to undersample here - otherwise we are running an all-vs-all distance calculation that the user wanted to avoid and might not even be feasible if the set is too big.
 
 To compute the distances from points to their k-nearest neighbor, we use the first few points of the sample as query points and the rest of the sample as a reference set.
 
@@ -19,7 +19,7 @@ This is the part where we use the data produced by Step 1 to fit distributions t
 
 The authors propose fitting the Gamma distribution to both the pairwise distances and the kNN distances. In my opinion the user should be able to decide which distribution should be used, so at this part we will probably use a template for the distribution.
 
-As an example, here's the distributions of distances for a sample of [Corel Color Histogram][1]. It definately looks like a Gamma distribution.
+As an example, here's the distributions of distances for a sample of [Corel Color Histogram][1]. It definitely looks like a Gamma distribution.
 
 ![Corel Color Histogram Distance Distribution](http://i.imgur.com/boj6HHd.png)
 
@@ -39,5 +39,5 @@ At this stage, there's a lot of options about what to do: We could simply print 
 
 For now there's no point in dwelling on this - I'll start considering the options once everything else is prepared.
 
-[1][http://archive.ics.uci.edu/ml/datasets/Corel+Image+Features]
-[2][http://corpus-texmex.irisa.fr/]
+[1]: [http://archive.ics.uci.edu/ml/datasets/Corel+Image+Features]
+[2]: [http://corpus-texmex.irisa.fr/]
