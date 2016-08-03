@@ -21,7 +21,7 @@ When calculating the score of a query point and a reference node I consider 2 ca
 
 +) If the reference node is non-overlapping, I calculate the score the same than before.
 
-+) If the reference node is overlapping, I analyze the reference node's half space. If it contains the given query point, I return `0` (best score). Else, I return `DBL_MAX` (prune). As we consider axis-orthogonal splitting hyperplanes, we can decide which child node to traverse in O(1), analising the appropiate dimension.
++) If the reference node is overlapping, I analyze the reference node's half space. If it contains the given query point, I return `0` (best score). Else, I return `DBL_MAX` (prune). As we consider axis-orthogonal splitting hyperplanes, we can decide which child node to traverse in O(1), analising the appropriate dimension.
 
 ## Dual Tree Search:
 
