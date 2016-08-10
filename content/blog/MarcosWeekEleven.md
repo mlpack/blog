@@ -1,5 +1,5 @@
 Title: Approximate Nearest Neighbor Search - Week 11
-Date: 2016-08-10 09:00:00
+Date: 2016-08-10 15:00:00
 Tags: gsoc, knn, spill-tree
 Author: Marcos Pividori
 
