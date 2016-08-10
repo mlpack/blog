@@ -23,8 +23,8 @@ I plan to work next days in these topics:
 
 +) Add many test cases for all the code developed: `SpillTree` class, `SpillSearch` class, `Hyperplane` class, etc.
 
-+) AppVeyor has shown some problems with the MSVC compiler, in the resolution of template parameters of alias templates, similar to an old issue: [2]. I have to fix it, probably including some extra definitions.
++) AppVeyor has shown some problems with the MSVC compiler, in the resolution of template parameters of alias templates, similar to an old issue: [[2]](https://github.com/mlpack/mlpack/issues/476). I have to fix it, probably including some extra definitions.
 
 +) Check details in the Spill Tree's implementation.
 
-Follow the progress in: [[2]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
+Follow the progress in: [[3]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
