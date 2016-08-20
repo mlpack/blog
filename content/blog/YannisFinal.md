@@ -85,6 +85,10 @@ I am almost done implementing the core algorithm, but for it to be usable I need
 
 It has been an amazing summer, and although I didn't have the time to complete any of my blue-sky ideas that I discussed in my proposal, I think the experience has made me significantly more aware of the mlpack codebase. I am now much more capable to continue contributing to it, so hopefully I will be implementing many more interesting features soon!
 
+If you made it this far, congratulations! Have an ice cream on me.
+
+![icecream](http://www.clipartkid.com/images/69/download-vector-about-ice-cream-cone-clip-art-item-5-vector-magz-com-7R37DW-clipart.png)
+
 
 [commits]: https://github.com/mlpack/mlpack/commits?author=mentekid
 [261]: https://github.com/mlpack/mlpack/issues/261
