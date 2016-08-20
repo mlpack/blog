@@ -5,10 +5,11 @@ Author: Yannis Mentekidis
 
 As we are approaching the pencils down date, I think it is a good time to create a short summary of my contributions to mlpack this summer. Seeing all the students being very active, and so much code being committed, I believe summing up what I've done in the last months is going to help anyone wanting to come up-to-speed with the part of the changes I'm responsible for.
 
-TL;DR: A summary of my commits can be found [here][commits].
 
 
 # Executive Summary
+
+TL;DR: A summary of my commits can be found [here][commits].
 
 Here's a list of my Pull Requests, each with a short description.
 
@@ -18,10 +19,10 @@ Here's a list of my Pull Requests, each with a short description.
  * LSH Optimization - find() vs unique(): [623][623]
  * LSH Optimization - secondHashTable: [675][675]
  * Multiprobe LSH: [691][691]
- * OpenMP Parallelization: [700][700]
+ * LSH Parallelization with OpenMP: [700][700]
  * Gamma Distribution, boost backporting: [729][729]
  * Gamma Distribution, more functionality: [751][751]
- * LSH Tuning: [749][749]
+ * LSH Tuning (under construction): [749][749]
 
 # LSH Testing
 
@@ -75,7 +76,10 @@ Among other things, LSH Tuning models pairwise distances by fitting a Gamma Dist
 
 The Gamma Distribution implementation was incomplete, as I mention in [Issue 733][733]. I worked towards closing that issue later, and implemented most of the missing functionality in [Pull Request 751][751]. Some work remains to be done, and I will come back to it once everything else is ready.
 
-The rest of the code for the LSHTuning module, a new class and executable that will be added to mlpack, is still in progress. It can be seen in [Pull Request 749][749]. The paper describing the algorithm has been convoluted in a few parts, but I think most of my confusion has been solved (with immeasurable help from Ryan), so I'm confident the code will be ready to ship relatively soon. 
+The rest of the code for the LSHTuning module, a new class and executable that will be added to mlpack, is still in progress. The paper describing the algorithm has been convoluted in a few parts, but I think most of my confusion has been solved (with immeasurable help from Ryan), so I'm confident the code will be ready to ship relatively soon.
+
+I am almost done implementing the core algorithm, but for it to be usable I need to write the code for the corresponding mlpack executable and write useful tests. My progress can be seen in [Pull Request 749][749]. 
+
 
 # Conclusions
 
@@ -83,7 +87,7 @@ It has been an amazing summer, and although I didn't have the time to complete a
 
 If you made it this far, congratulations! Have an ice cream on me.
 
-![icecream](http://clipartsign.com/upload/2016/02/01/clipart-of-ice-cream-cone-clipart-2-2.png)
+![icecream](http://www.clipartkid.com/images/69/download-vector-about-ice-cream-cone-clip-art-item-5-vector-magz-com-7R37DW-clipart.png)
 
 
 [commits]: https://github.com/mlpack/mlpack/commits?author=mentekid
