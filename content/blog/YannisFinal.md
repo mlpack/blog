@@ -40,9 +40,9 @@ These three Pull Requests increased LSH testing coverage significantly.
 
 Before moving to the main course (I'm looking at you, Multiprobe LSH), I want to focus on two Pull Requests that I think are important optimizations to the LSH module.
 
-The first one, [Pull Request 623][623], tries to reduce the memory footprint of `LSHSearch::ReturnIndicesFromTable()`. The original implementation would allocate N spaces for the N points, set them all to 0, then mark the points that were in the same hash bucket as a query and only keep those indices to create the candidate set. The complexity of that was $\mathcal{O}(N)$. Instead, we could simply take note of the indices of all the points we find, and only keep the unique ones. Unique runs in $\mathcal{O}(M log M)$, but if M is significantly smaller than N, we reduce both the memory used and the time needed.
+The first one, [Pull Request 623][623], tries to reduce the memory footprint of `LSHSearch::ReturnIndicesFromTable()`. The original implementation would allocate N spaces for the N points, set them all to 0, then mark the points that were in the same hash bucket as a query and only keep those indices to create the candidate set. The complexity of that was O(N). Instead, we could simply take note of the indices of all the points we find, and only keep the unique ones. Unique runs in O(MlogM), but if M is significantly smaller than N, we reduce both the memory used and the time needed.
 
-To find the sweet spot between M and N, we did extensive tuning with a number of datasets, and allowed our implementation to pick either the $\mathcal{O}(N)$ or $\mathcal{O}(MlogM)$ method for each point individually.
+To find the sweet spot between M and N, we did extensive tuning with a number of datasets, and allowed our implementation to pick either the O(N) or O(MlogM) method for each point individually.
 
 The second optimization, summarized in [Pull Request 675][675] was made mainly by Ryan, based on our observation that the second-level hash table implementation was too heavy. What the previous implementation did was allocate a `secondHashSize x bucketSize` armadillo matrix, with each row corresponding to the key for hash value i. The first `bucketSize` points hashed to each value were kept, and the rest were discarded. Then, the hash table was condensed.
 
