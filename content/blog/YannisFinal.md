@@ -1,5 +1,5 @@
 Title: Summary of LSH changes for GSoC 2016
-Date: 2016-08-19 20:20:20
+Date: 2016-08-20 20:20:20
 Tags: gsoc, lsh, multiprobe, tuning, parallel
 Author: Yannis Mentekidis
 
@@ -58,7 +58,7 @@ The implementation was mostly straight-forward, since the paper is quite clear a
 
 Of course, many mistakes that were made were much easier to test for, now that we could write (semi-)deterministic tests for LSH.
 
-The `LSHSearch` class of release 2.0.3 does not yet include Multiprobe LSH, so if you want to try it before release 2.0.4 which will (presumably) include all GSoC changes, you should download and install mlpack from the [source](github.com/mlpack/mlpack).
+The `LSHSearch` class of release 2.0.3 does not yet include Multiprobe LSH, so if you want to try it before release 2.0.4 which will (presumably) include all GSoC changes, you should download and install mlpack from the [source](https://github.com/mlpack/mlpack/).
 
 # Parallelization with OpenMP
 
