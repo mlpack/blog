@@ -5,7 +5,7 @@ Author: Bang Liu
 
 In this blog, we summarize our project and our current contributions to mlpack project. I wish this will be helpful to anyone who is interested in what we have done, how we did, how to use it, and how to contribute to it if interested.
 
-## Brief Summary
+### Brief Summary
 
 Our project is aiming to implement multiple Neuralevolution algorithms, including CNE, NEAT and HyperNEAT (perhaps implementing more in the future).
 
@@ -20,8 +20,9 @@ Currently, the CNE algorithm can be merged after we adjust some coding styles. T
 
 Before my works being merged to the mlpack repository, you can check the most updated implementations under my github account:
 
-- Neural Evolution module code:[NE source code](https://github.com/BangLiu/mlpack/tree/ne/src/mlpack/methods/ne)
-- Neural Evolution tests code:[NE test code](https://github.com/BangLiu/mlpack/blob/ne/src/mlpack/tests/ne_test.cpp)
+[1] Neural Evolution module code:[NE source code](https://github.com/BangLiu/mlpack/tree/ne/src/mlpack/methods/ne)
+
+[2] Neural Evolution tests code:[NE test code](https://github.com/BangLiu/mlpack/blob/ne/src/mlpack/tests/ne_test.cpp)
 
 After they are merged, they can be found in the same directory under mlpack repository.
 
@@ -29,9 +30,8 @@ After they are merged, they can be found in the same directory under mlpack repo
 
 The first algorithm is Conventional Neural Evolution (CNE) algorithm. The main reference papers for the implementation of CNE includes:
 
-[1] "[Training Feedforward Neural Networks Using Genetic Algorithms](http://www.ijcai.org/Proceedings/89-1/Papers/122.pdf)"
-
-[2] "[Evolving Artificial Neural Networks](http://www.cs.bham.ac.uk/~axk/evoNN.pdf)"
+- "[Training Feedforward Neural Networks Using Genetic Algorithms](http://www.ijcai.org/Proceedings/89-1/Papers/122.pdf)"
+-  "[Evolving Artificial Neural Networks](http://www.cs.bham.ac.uk/~axk/evoNN.pdf)"
 
 Generally, different neural evolution algorithms are evolving a number of neural networks iteratively to find out a siutable neural network for solving specific tasks. So we first define some classes to represent key concepts in neural evolution algorithms. Including:
 
