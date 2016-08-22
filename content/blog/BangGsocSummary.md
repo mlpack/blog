@@ -28,10 +28,11 @@ After they are merged, they can be found in the same directory under mlpack repo
 
 ### **CNE Algorithm Implementation**
 
-The first algorithm is Conventional Neural Evolution (CNE) algorithm. The main reference papers for the implementation of CNE includes:
+The first algorithm is Conventional Neural Evolution (CNE) algorithm. The main reference papers and code for the implementation of CNE includes:
 
 - "[Training Feedforward Neural Networks Using Genetic Algorithms](http://www.ijcai.org/Proceedings/89-1/Papers/122.pdf)"
 -  "[Evolving Artificial Neural Networks](http://www.cs.bham.ac.uk/~axk/evoNN.pdf)"
+- [Multineat](http://multineat.com/index.html)
 
 Generally, different neural evolution algorithms are evolving a number of neural networks iteratively to find out a siutable neural network for solving specific tasks. So we first define some classes to represent key concepts in neural evolution algorithms. Including:
 
