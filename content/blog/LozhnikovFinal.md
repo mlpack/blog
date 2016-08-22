@@ -37,7 +37,7 @@ The changes are contained in [Pull Request #664] [664] and [Pull Request #710] [
 
 I continued my project with the R+ tree which is based on the paper [The R+-tree: A dynamic index for multi-dimensional objects] [r-plus-tree-paper]. The main advantage of the tree is the property that children do not overlap each other.
 
-When I had implemented the tree I found an error in the insertion algorithm. The paper does not discuss the method in detail. It is not difficult to think out a case when we can not insert a point and preserve the property of non-overlapping children. Another problem is that the tree does not guarantee that the number of child nodes after the split algorithm is less than the maximum allowed number. The issues appear to be well known problems. I looked through a series of articles and came across the paper [R++ tree: an efficient spatial access method for highly redundant point data] [r-plus-plus-tree-paper] that describes a variant of the R+ tree tat takes into account the maximum bounding rectangle and avoids the issues. So, I added a workaround that solves the R+ tree problems by increasing the maximum size of the node and I implemented the R++ tree.
+When I had implemented the tree I found an error in the insertion algorithm. The paper does not discuss the method in detail. It is not difficult to think out a case when we can not insert a point and preserve the property of non-overlapping children. Another problem is that the tree does not guarantee that the number of child nodes after the split algorithm is less than the maximum allowed number. The issues appear to be well known problems. I looked through a series of articles and came across the paper [R++ tree: an efficient spatial access method for highly redundant point data] [r-plus-plus-tree-paper] that describes a variant of the R+ tree that takes into account the maximum bounding rectangle and avoids the issues. So, I've added a workaround that solves the R+ tree problems by increasing the maximum size of the node and I've implemented the R++ tree.
 
 The implementation of the R+ tree and the R++ tree can be found in [Pull Request 699] [699] and [Pull Request 724] [724].
 
@@ -53,7 +53,7 @@ The changes can be found in [Pull Request 708] [708] and [Pull Request 760] [760
 
 The implementation of random projection trees are based on the paper [Random projection trees and low dimensional manifolds] [random-projection-tree-paper].
 
-I implemented two versions of the split method: the mean split and the max split. Both methods are described in the paper. Unfortunately, the tree performs much slower than the k-d tree since the bound of the random projection tree is a polytope. There are a number of methods that calculates the distance between a point and a polytope but they are based on the gradient descent method and require a lot of computations.
+I implemented two versions of the split method: the mean split and the max split. Both methods are described in the paper. Unfortunately, the tree performs much slower than the k-d tree since the bound of the random projection tree is a polytope. There are a number of methods that calculates the distance between a point and a polytope but they are based on the gradient descent method and require a lot of computations. Right now, the tree uses an ordinary rectangular bound.
 
 The tree is implemented on the basis of the `BinarySpaceTree` class. The changes can be found in [Pull Request 726] [726].
 
