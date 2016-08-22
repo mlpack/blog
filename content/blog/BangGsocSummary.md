@@ -5,7 +5,7 @@ Author: Bang Liu
 
 In this blog, we summarize our project and our current contributions to mlpack project. I wish this will be helpful to anyone who is interested in what we have done, how we did, how to use it, and how to contribute to it if interested.
 
-### Brief Summary
+### **Brief Summary**
 
 Our project is aiming to implement multiple Neuralevolution algorithms, including CNE, NEAT and HyperNEAT (perhaps implementing more in the future).
 
@@ -26,7 +26,7 @@ Before my works being merged to the mlpack repository, you can check the most up
 
 After they are merged, they can be found in the same directory under mlpack repository.
 
-## CNE Algorithm Implementation
+### **CNE Algorithm Implementation**
 
 The first algorithm is Conventional Neural Evolution (CNE) algorithm. The main reference papers for the implementation of CNE includes:
 
@@ -55,7 +55,7 @@ First, considering a problem: how to evaluate a genome given different tasks to 
 
 Second, different algorithms will have many parameters. For example, the probability to mutate a weight, the mutate size, the probability to add a new link or neuron, etc. When we create an algorithm instance, we need to specify all these algorithm parameters. If we put all of them as the paramrters of constructor function, the parameter list will be too long. To solve this problem, we define a class `Parameters` which contains all algorithm parameters. Details are in `mlpack/src/mlpack/methods/ne/parameters.hpp`. This way gives at least two benefits: first, we just need to pass a `Parameter` instance to constructor functions of different algorithms, rather than all parameters; second, we can choose the parameters we need to assign values. Different algorithms will share the same parameter name, if they are of the same meaning in different algorithm (for example, all algorithms have the operation to mutate a link's weight. Thus, `aMutateWeightProb` represents the probability to mutate a genome's weight for all algorithms).
 
-## NEAT Algorithm Implementation
+### **NEAT Algorithm Implementation**
 
 The NEAT algorithm is the most critical algorithm we implemented in our project. The main reference paper for NEAT algorithm is: [Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf).
 
@@ -96,7 +96,7 @@ Here we list a few features that we haven't implement but is going to add soon:
 - Save and load model. So that an algorithm instance can be created by loading a config file, or save to a config file.
 - Visualize genome. Currently we visualize genome by printing its links and neurons' information. I wish we can implement a more intuitive graphical method.
 
-## HyperNEAT Algorithm Implementation
+### **HyperNEAT Algorithm Implementation**
 
 The HyperNEAT algorithm is similar with NEAT. The key difference is that the evolved genomes are not used directly, but being applied to a substrate genome to generate the links. The generated genome will be applied to user's task. The main reference for HyperNEAT is: [HyperNEAT](http://eplex.cs.ucf.edu/hyperNEATpage/).
 
@@ -104,7 +104,7 @@ As HyperNEAT needs to query a substrate, i.e., a set of neuron nodes with coordi
 
 I would like to describe more details about HyperNEAT after it has passed all tests, as we may revise the design a lot during debugging.
 
-## Todos
+### **Todos**
 
 We have almost achieved all our goals in our proposal. Currently the remain works including:
 
@@ -114,7 +114,7 @@ We have almost achieved all our goals in our proposal. Currently the remain work
 
 In the future, maybe we can implement more interesting neural evolution algorithms.
 
-## Acknowledgement
+### **Acknowledgement**
 
 I have enjoied a great summer working on this interesting project! Thanks a lot to my menter Marcus Edel, who has helped me a lot by keep giving me valuable advices during coding, help with debugging, help with implementing Super Mario task, answer all my questions timely with patience, and so on. He is an excellent mentor and I learned a lot from him. Thanks Marcus! Besides, I am also grateful to the mlpack team that gives me this chance to participate into such an excited project! Thank you very much!
 
