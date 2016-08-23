@@ -7,6 +7,7 @@ I have been working this summer on the GSoC Project:
 "Approximate Nearest Neighbor Search" (Project site: [[1]][1]).
 
 The main contribution can be summarized in these pull requests:
+
  * [[pull/768]][pull/768]  (Api details)
  * [[pull/766]][pull/766]  (Fix furthest neighbor sort policy)
  * [[pull/765]][pull/765]  (Api improvement - move semantics)
