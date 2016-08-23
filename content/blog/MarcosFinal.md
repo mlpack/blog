@@ -119,7 +119,7 @@ built without overlapping.
 The `DefeatistDualTreeTraverser` is faster than the
 `DefeatistSingleTreeTraverser`, specially when the value of *tau* increases.
 
-Some results can be seen in the next graphic for the dataset *isolet*.
+Some results can be seen in the next graphic for the dataset *1000000-10-randu*.
 
 <img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/1000000-10_Spill_EffectiveErrorVsRuntime.png?raw=true" width="600">
 
