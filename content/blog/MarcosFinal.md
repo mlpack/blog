@@ -52,8 +52,7 @@ epsilon value provided.
 As expected, higher values of the epsilon parameter implies that more nodes are
 pruned nodes and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset *isolet*:
 
-![graphic1](https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true)
-
+<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true" align="left" width="500">
 
 ## Spill Trees:
 
