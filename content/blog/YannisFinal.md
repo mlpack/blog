@@ -32,7 +32,7 @@ The accepted solution was twofold.
 
 First, I discussed with Ryan and we came up with some reasonable assumptions that LSH must fulfill: Increasing the number of tables must increase recall, increasing the number of projections per table must decrease recall. A very "expensive" run should examine nearly 100% of the points and have nearly 100% recall. A very "cheap" run should examine almost no points, and have recall near 0. These tests were added in several commits that are mostly summarized by [Pull Request 605][605].
 
-The second part of the solution needed us to have write access to the (otherwise random) projection tables used by the `LSHSearch` class. I modified the code slightly to be able to do that in [Pull Request 663][663]. That PR also changes the way projection tables are used, going from `std::vector<arma::mat>` to `arma::cube`. Then, in [Pull Request 676][676], I added deterministic tests for LSH, basically exploiting the fact that, if the identity matrix is used as a projection table, the resulting hash buckets are predictable. An intuition of this idea is given in a [comment I made in a different PR][691com].
+The second part of the solution needed us to have write access to the (otherwise random) projection tables used by the `LSHSearch` class. I modified the code slightly to be able to do that in [Pull Request 663][663]. That PR also changes the way projection tables are used, going from an `std::vector` of `arma::mat`s to `arma::cube`. Then, in [Pull Request 676][676], I added deterministic tests for LSH, basically exploiting the fact that, if the identity matrix is used as a projection table, the resulting hash buckets are predictable. An intuition of this idea is given in a [comment I made in a different PR][691com].
 
 These three Pull Requests increased LSH testing coverage significantly.
 
@@ -48,7 +48,7 @@ The second optimization, summarized in [Pull Request 675][675] was made mainly b
 
 For the default parameters (`secondHashTable = 99901, bucketSize = 500`), this required almost 50 million objects of type `size_t` to be allocated. `size_t` is usually 8 bytes long, resulting in an allocation of about 400Mb when the program launched. This is bad, but it's even worse if a user sets `bucketSize` to some significantly larger size, like 3000 or 4000 (not unreasonable for larger datasets).
 
-The new version of the code refrains from such excessive allocations, using `std::vec<arma::Col>` instead of a 2-dimensional matrix.
+The new version of the code refrains from such excessive allocations, using a `std::vec` of  arma::Col`s instead of a 2-dimensional matrix.
 
 # Multiprobe LSH
 
