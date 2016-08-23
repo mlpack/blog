@@ -52,7 +52,7 @@ epsilon value provided.
 As expected, higher values of the epsilon parameter implies that more nodes are
 pruned nodes and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset *isolet*:
 
-<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true" width="700">
+<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true" width="600">
 
 ## Spill Trees:
 
@@ -121,7 +121,7 @@ The `DefeatistDualTreeTraverser` is faster than the
 
 Some results can be seen in the next graphic for the dataset *isolet*.
 
-<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/1000000-10_Spill_EffectiveErrorVsRuntime.png?raw=true" width="700">
+<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/1000000-10_Spill_EffectiveErrorVsRuntime.png?raw=true" width="600">
 
 
 ## General Greedy Search Traverser:
@@ -138,7 +138,7 @@ approachs, at the cost of some relative error in the results.
 We can simply reduce the relative error by increasing the leaf size of the tree,
 as is shown in the next graphic for the dataset *isolet*.
 
-<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_Greedy_EffectiveErrorVsRuntime.png?raw=true" width="700">
+<img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_Greedy_EffectiveErrorVsRuntime.png?raw=true" width="600">
 
 
 ## Other improvements
