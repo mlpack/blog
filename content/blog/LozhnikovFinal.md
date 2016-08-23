@@ -3,7 +3,7 @@ Date: 2016-08-23 02:00:00
 Tags: gsoc, space trees
 Author: Mikhail Lozhnikov
 
-In this blog post I'll try to describe consisely the work that I have done for the mlpack project this summer.
+In this blog post I'll try to describe consisely the work that I have done for the mlpack library as part of the GSoC project [R+ trees, Hilbert R trees, vantage point trees, random projection trees, UB trees implementation] [project-link] this summer.
 
 ### Summary
 
@@ -83,6 +83,8 @@ Another problem is concerned with [Rank-Approximate Nearest Neighbor Search] [ra
 
 That was an amazing summer, thanks to the mlpack team and especially to Ryan Curtin who looked through the code and has suggested a lot of advices on the optimization of the algorithms and to Marcos Pividori who has proposed a series of ideas on the optimization of the `RectangleTree` class (such as [Pull Request 711] [711] and [Pull Request 767] [767]).
 
+For further information see my [blog posts] [blog-posts-link].
+
 [664]: https://github.com/mlpack/mlpack/pull/664
 [699]: https://github.com/mlpack/mlpack/pull/699
 [708]: https://github.com/mlpack/mlpack/pull/708
@@ -98,6 +100,8 @@ That was an amazing summer, thanks to the mlpack team and especially to Ryan Cur
 [767]: https://github.com/mlpack/mlpack/pull/767
 [712]: https://github.com/mlpack/mlpack/issues/712
 [commits]: https://github.com/mlpack/mlpack/commits/master?author=lozhnikov
+[project-link]: https://summerofcode.withgoogle.com/projects/#6729015427596288
+[blog-posts-link]: http://mlpack.org/gsocblog/author/mikhail-lozhnikov.html
 [hrect-vp-tree]: https://github.com/lozhnikov/mlpack/tree/hollowhrectbound
 [hilbert-r-tree-paper]: http://www.cs.uml.edu/~cchen/580-S06/reading/KF94.pdf
 [hilbert-curve-paper]: http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.1751381
