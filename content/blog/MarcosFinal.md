@@ -50,7 +50,7 @@ So, the average relative error (effective error) will be much smaller than the
 epsilon value provided.
 
 As expected, higher values of the epsilon parameter implies that more nodes are
-pruned nodes and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset *isolet*:
+pruned and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset *isolet*:
 
 <img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true" width="600">
 
@@ -78,7 +78,7 @@ value is tau=0), and *"--rho"* to set different values for the balance threshold
 
 We have considered many different approaches for the implementation of Spill
 Trees, see discussions in:
-[[issues/728]][issues/728] and [[spilltrees.pdf]][spilltree.pdf].
+[[issues/728]][issues/728] and [[spilltrees-pdf]][spilltree.pdf].
 Finally, we decided to implement a similar approach to the one mentioned in Ting
 Liu's paper.
 
@@ -105,19 +105,19 @@ O(1) time).
 ### Defeatist Traversers
 
 I have implemented *Hybrid SP-Tree Search* as defined in [[3]][3].
-We can control the hybrid by varying $\tau$. If $\tau$ is zero, we have a pure
+We can control the hybrid by varying *tau*. If *tau* is zero, we have a pure
 spill tree with defeatist search, very efficient but not accurate enough.
-If $\tau$ is a very large number, then every node is a non-overlapping node and
+If *tau* is a very large number, then every node is a non-overlapping node and
 we get back to the traditional metric tree, with prunning rules, perfectly
 accurate but not very efficient.
-By setting different values for $\tau$, we have a trade-off between efficiency
+By setting different values for *tau*, we have a trade-off between efficiency
 and accuracy.
 
 Also, I implemented a Defeatist Dual Tree Traverser, where the *query tree* is
 built without overlapping.
 
 The `DefeatistDualTreeTraverser` is faster than the
-`DefeatistSingleTreeTraverser`, specially when the value of tau increases.
+`DefeatistSingleTreeTraverser`, specially when the value of *tau* increases.
 
 Some results can be seen in the next graphic for the dataset *isolet*.
 
@@ -158,7 +158,7 @@ I fixed existing code to consider slighty different bounds.
 
 I have been improving existing code for `NSModel`, as was suggested
 in [[issues/674]][issues/674], using boost variant to manage different
-options for tree types. (PR: [[pull/694]][pull/693]).
+options for tree types. (PR: [[pull/693]][pull/693]).
 
 
 ### Heaps for the list of candidates:
