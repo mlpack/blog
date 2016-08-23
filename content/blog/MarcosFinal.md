@@ -78,7 +78,7 @@ value is tau=0), and *"--rho"* to set different values for the balance threshold
 
 We have considered many different approaches for the implementation of Spill
 Trees, see discussions in:
-[[issues/728]][issues/728] and [[spilltrees-pdf]][spilltree.pdf].
+[[issues/728]][issues/728] and [[spilltrees]][spilltreepdf].
 Finally, we decided to implement a similar approach to the one mentioned in Ting
 Liu's paper.
 
@@ -200,7 +200,7 @@ For further information see my previous [[blog posts]][blog-posts].
 [issues/728]: http://github.com/mlpack/mlpack/issues/728
 [issues/674]: http://github.com/mlpack/mlpack/issues/674
 [issues/761]: https://github.com/mlpack/mlpack/issues/761
-[spilltrees.pdf]: http://github.com/mlpack/mlpack/files/372825/spilltrees.pdf
+[spilltreepdf]: http://github.com/mlpack/mlpack/files/372825/spilltrees.pdf
 [blog-posts]: http://mlpack.org/gsocblog/author/marcos-pividori.html
 [ANN]: https://www.cs.umd.edu/~mount/ANN/
 [FLANN]: http://www.cs.ubc.ca/research/flann/
