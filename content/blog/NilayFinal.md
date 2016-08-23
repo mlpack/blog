@@ -19,6 +19,7 @@ Here is the list of commits and pull requests (from recent to old) in different 
  * [edge boxes feature extraction][fm]
  * [edge boxes PR][703]
  * [inception layer PR][757]
+
 To see the week by week progress of the work done you can look at the [blog][blog].
 
 # Feature Extraction
