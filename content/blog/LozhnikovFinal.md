@@ -23,6 +23,8 @@ Here's a list of my Pull Requests. All these PRs are merged except [Pull Request
  * Vantage point tree and HRectBound improvements: [760] [760]
  * Fixed copy constructor of RectangleTree and added move constructor: [767] [767]
 
+(List of commits: [list] [commits])
+
 ### Hilbert R tree
 
 I began my work with the Hilbert R tree. The tree is implemented according to the [Hilbert R-tree: An Improved R-tree Using Fractals] [hilbert-r-tree-paper] paper on the basis of the `RectangleTree` class.
@@ -95,6 +97,7 @@ That was an amazing summer, thanks to the mlpack team and especially to Ryan Cur
 [760]: https://github.com/mlpack/mlpack/pull/760
 [767]: https://github.com/mlpack/mlpack/pull/767
 [712]: https://github.com/mlpack/mlpack/issues/712
+[commits]: https://github.com/mlpack/mlpack/commits/master?author=lozhnikov
 [hrect-vp-tree]: https://github.com/lozhnikov/mlpack/tree/hollowhrectbound
 [hilbert-r-tree-paper]: http://www.cs.uml.edu/~cchen/580-S06/reading/KF94.pdf
 [hilbert-curve-paper]: http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.1751381
