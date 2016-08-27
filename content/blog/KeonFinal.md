@@ -15,6 +15,7 @@ Below is the list of the major pull requests with self-explanatory descriptions.
  * delete unused string_util : [692]
  * fix default output problem and some styles : [680]
  * Binarize Function + Test : [666]
+ * add Split() without label: [654]
  * add cli executable for data_split : [650]
 
 ### Descriptive Statistics
@@ -85,4 +86,5 @@ I thank the mlpack mentors and especially to Tham who gave me a lot of advises t
 [692]: https://github.com/mlpack/mlpack/pull/692
 [680]: https://github.com/mlpack/mlpack/pull/680
 [666]: https://github.com/mlpack/mlpack/pull/666
+[654]: https://github.com/mlpack/mlpack/pull/654
 [650]: https://github.com/mlpack/mlpack/pull/650
