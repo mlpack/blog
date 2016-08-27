@@ -12,7 +12,7 @@ Below is the list of the major pull requests with self-explanatory descriptions.
 
  * Descriptive Statistics command-line program : [742]
  * DatasetMapper & Imputer  [694]
- * delete unused string_util : [672]
+ * delete unused string_util : [692]
  * fix default output problem and some styles : [680]
  * Binarize Function + Test : [666]
  * add cli executable for data_split : [650]
@@ -82,7 +82,7 @@ I thank the mlpack mentors and especially to Tham who gave me a lot of advises t
 
 [742]: https://github.com/mlpack/mlpack/pull/742
 [694]: https://github.com/mlpack/mlpack/pull/694
-[672]: https://github.com/mlpack/mlpack/pull/672
+[692]: https://github.com/mlpack/mlpack/pull/692
 [680]: https://github.com/mlpack/mlpack/pull/680
 [666]: https://github.com/mlpack/mlpack/pull/666
 [650]: https://github.com/mlpack/mlpack/pull/650
