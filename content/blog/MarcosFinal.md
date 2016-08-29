@@ -64,7 +64,7 @@ It is a variant of binary space trees in which the children of a node
 can "spill over" each other, and contain shared datapoints.
 
 One problem with Spill Trees is that their depth varies considerably depending
-on the overlapping size $\tau$.
+on the overlapping size *tau*.
 
 For that reason, I have implemented Hybrid Spill Trees [[3]][3],
 which provide better guarantee in the logarithmic depth of the tree.
