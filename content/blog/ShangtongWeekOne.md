@@ -1,4 +1,7 @@
-Title: Deep Reinforcement Learning Methods : Week-1 Highlights Date: 2017-06-02 20:00:00 Tags: gsoc Author: Shangtong Zhang
+Title: Deep Reinforcement Learning Methods - Week-1 Highlights
+Date: 2017-06-02 20:00:00
+Tags: gsoc
+Author: Shangtong Zhang
 
 This post contains work that has been done until now from about Feb.
 
