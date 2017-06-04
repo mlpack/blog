@@ -14,8 +14,8 @@ jenkins. The next step involved making a Docker image with all dependencies of
 mlpack in order to run a container in which one can build mlpack. This is done
 initially taking ubuntu:16.04 as the base image and installing dependencies on 
 top of it. Now, as Ernest Hemingway once said "The first draft of everything 
-is shit", so as this docker image with no hardening, susceptible to attacks, a
-a non-acceptable size (too large ~ 420MB) and not matching the mlpack's coding 
+is shit", so as this docker image with no hardening, susceptible to attacks, a 
+non-acceptable size (too large ~ 420MB) and not matching the mlpack's coding 
 standards. 
 
 The feedback from the mentor is really helpful and certainly improves the 
