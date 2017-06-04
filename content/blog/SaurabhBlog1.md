@@ -24,7 +24,7 @@ alpine:latest as the base image (initial size ~ 5MB), and tried installing all
 mlpack dependencies (boost-math boost-program_options boost-unit_test_framework
 boost-serialization arpack txt2man binutils-dev cmake g++ make git openblas 
 lapack-dev doxygen) to reduce the size to ~ 200 MB i.e. a 2x optimization in size.
-To make the container more secure, instead of root a new user id added to the
+To make the container more secure, instead of root a new user is added to the
 container. For hardening, unsetting of all setuid bits is done, [followed this
 blog](https://blog.tutum.co/2015/02/03/hardening-containers-disable-suid-programs/)
 . And, finally following the coding standards set by mlpack. 
@@ -34,7 +34,7 @@ packages missing in the package manager. While working with it, I realized that
 there is no package for armadillo (c++ linear algebra library) and I have to
 build it from scratch. 
 After completing building mlpack on this alpine linux based container, while 
-running the tests, it stops with errors. It cannot find the libarmadillo.so.x
+running the tests, it terminated with errors. It cannot find the libarmadillo.so.x
 installed on the system. On further investigation and help from the mentor, 
 turns out Alpine ships with uclibc not glibc and this will cause many other issues
 and will produce a build environment too far away from what mlpack's users 
