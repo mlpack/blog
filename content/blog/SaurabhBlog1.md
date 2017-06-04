@@ -36,8 +36,10 @@ build it from scratch.
 After completing building mlpack on this alpine linux based container, while 
 running the tests, it stops with errors. It cannot find the libarmadillo.so.x
 installed on the system. On further investigation and help from the mentor, 
-turns out Alpine ships with uclibc not glibc. So, now I'll be trying building 
-the image using another minimal base image (for eg. busybox with glibc).
+turns out Alpine ships with uclibc not glibc and this will cause many other issues
+and will produce a build environment too far away from what mlpack's users 
+typically have. So, now I'll be trying building the image using another minimal 
+base image (for eg. busybox with glibc).
 
 Stay tuned for more updates. Coding is fun! so as reading this blog, isn't it? 
 
