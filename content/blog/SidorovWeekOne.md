@@ -1,6 +1,6 @@
 Title: Augmented Recurrent Neural Networks: Community Bonding & Week 1
 Date: 2017-06-07 17:15:34
-Tags: gsoc rnn
+Tags: gsoc, rnn, neural network
 Author: Konstantin Sidorov
 
 This summer, I will be working on the implementation of neural network models augmented with some additional memory structures (hence the name). One notable example of such model is [Neural Turing Machine](http://arxiv.org/abs/1410.5401), which is a straightforward combination of the Turing machine idea and the idea of using "soft" action policies (probabilistic, in contrast to more traditional "hard" policies, which only choose action but don't show any degree of uncertainty). It is reported to be able to handle some *very* simple algorithmic tasks (e.g., copying the sequence) rather well. Of course, there are move advanced models that offer faster convergence and are able to learn in a more complex environments.
