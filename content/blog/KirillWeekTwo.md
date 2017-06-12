@@ -5,33 +5,10 @@ Author: Kirill Mishchenko
 
 During the second week I was working on tools that allow to check whether a
 given class has a method with particular name and form
-([#1020](https://github.com/mlpack/mlpack/pull/1020)). For example, for the
-following class
-
-```default
-class A
-{
- public:
-  ...
-  Train(const arma::mat&, const arma::Row<size_t>&, double);
-  ...
-};
-```
-
-and the following form of `Train` methods
-
-```default
-template<typename Class, typename...Ts>
-using TrainForm =
-    void(Class::*)(const arma::mat&, const arma::Row<size_t>&, Ts...);
-```
-
-we can check whether the class `A` has a `Train` method of the specified form:
-
-```default
-HAS_METHOD_FORM(Train, HasTrain);
-static_assert(HasTrain<A, TrainFrom>::value, "value should be true");
-```
+([#1020](https://github.com/mlpack/mlpack/pull/1020)). A usage example can be
+found above the
+[implementation](https://github.com/micyril/mlpack/blob/has_method_form/src/mlpack/core/util/sfinae_utility.hpp#L164)
+of the macro 'HAS_METHOD_FORM`.
 
 The method form detection tool will allow for a given machine learning
 algorithm to automatically extract information such as predictions type,
