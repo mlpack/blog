@@ -1,5 +1,5 @@
-Title: Build testing with Docker and VMs
-Date: 2017-06-04 12:18:00
+Title: Build testing with Docker and VMs Week 2
+Date: 2017-06-12 04:45:00
 Tags: gsoc, docker
 Author: Saurabh Gupta
 
