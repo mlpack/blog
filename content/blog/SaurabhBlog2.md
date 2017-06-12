@@ -11,7 +11,7 @@ docker image.
 
 Now, it was required to do some optimizations in order to reduce as much size
 as can be done because no one wants a docker image which is too much in size.
-Therefor, I followed this [blog](https://wiki.debian.org/ReduceDebian) to 
+Therefore, I followed this [blog](https://wiki.debian.org/ReduceDebian) to 
 reduce the size. This step is followed by making the Dockerfile script and
 installing necessary dependencies followed by hardening steps which was 
 discussed in my previous blog. 
