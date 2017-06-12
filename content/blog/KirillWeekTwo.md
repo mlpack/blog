@@ -8,7 +8,7 @@ given class has a method with particular name and form
 ([#1020](https://github.com/mlpack/mlpack/pull/1020)). For example, for the
 following class
 
-```
+```default
 class A
 {
  public:
@@ -20,7 +20,7 @@ class A
 
 and the following form of `Train` methods
 
-```
+```default
 template<typename Class, typename...Ts>
 using TrainForm =
     void(Class::*)(const arma::mat&, const arma::Row<size_t>&, Ts...);
@@ -28,7 +28,7 @@ using TrainForm =
 
 we can check whether the class `A` has a `Train` method of the specified form:
 
-```
+```default
 HAS_METHOD_FORM(Train, HasTrain);
 static_assert(HasTrain<A, TrainFrom>::value, "value should be true");
 ```
