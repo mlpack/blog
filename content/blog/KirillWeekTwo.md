@@ -8,7 +8,7 @@ given class has a method with particular name and form
 ([#1020](https://github.com/mlpack/mlpack/pull/1020)). For example, for the
 following class
 
-```c++
+```
 class A
 {
  public:
@@ -20,7 +20,7 @@ class A
 
 and the following form of `Train` methods
 
-```c++
+```
 template<typename Class, typename...Ts>
 using TrainForm =
     void(Class::*)(const arma::mat&, const arma::Row<size_t>&, Ts...);
@@ -28,9 +28,9 @@ using TrainForm =
 
 we can check whether the class `A` has a `Train` method of the specified form:
 
-```c++
-HAS\_METHOD\_FORM(Train, HasTrain);
-static\_assert(HasTrain<A, TrainFrom>::value, "value should be true");
+```
+HAS_METHOD_FORM(Train, HasTrain);
+static_assert(HasTrain<A, TrainFrom>::value, "value should be true");
 ```
 
 The method form detection tool will allow for a given machine learning
