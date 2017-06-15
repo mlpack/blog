@@ -8,8 +8,11 @@ A new optimizer is made called CMAES which works like the rest of the optimizer 
 it takes as parameters -
 
 1) number of dimensions we are working on 
+
 2) Initial start position of optimization
+
 3) Initial standard Deviations 
+
 
 the rest of the parameters are computed automatically which is convinient as the algorithm is too sensitive
 to those parameters and default parameters are fine tuned and found according to an implementation and 
@@ -21,8 +24,11 @@ moreover the most important parameters that user finds to change according to ap
 algorithms stop criteria for which appropirate getters and setters are made.
 
 the above mentioned things are all coded and two important small changes remains that are -
+
 1) making an optimize() function according to mlpack way of optimization
+
 2) evaluate() function that is used to input the function to optimize
+
 
 moreover Boost test remains of which i am not aware much 
 
