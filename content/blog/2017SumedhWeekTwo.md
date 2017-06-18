@@ -1,5 +1,5 @@
-Title: Neural Turing Machines : Week 1 Highlights
-Date: 2017-18-06 14:00:00
+Title: Neural Turing Machines : Week 2 Highlights
+Date: 2017-06-18 14:00:00
 Tags: gsoc
 Author: Sumedh Ghaisas
 
