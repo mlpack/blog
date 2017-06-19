@@ -1,5 +1,5 @@
 Title: Cross-Validation and Hyper-Parameter Tuning: Week 3
-Date: 2017-06-12 11:00:00
+Date: 2017-06-19 09:00:00
 Tags: gsoc
 Author: Kirill Mishchenko
 
