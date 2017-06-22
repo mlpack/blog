@@ -16,16 +16,14 @@ The important thing I learnt this week how important is to intialise the variabl
 We finally were able to solve the problem of training and we kind of get okay results now have a look here.
 Here is parmaeters list we got results by.
 cd-1, batch size: 20, learning rate:0.1
-The samples are generated from 1-step gibbs sampling.
 
-* [Img1](
-https://usercontent.irccloud-cdn.com/file/QERLV50g/mnist_50K_sample.png)
-
-* [Img2](https://usercontent.irccloud-cdn.com/file/sA2VhM6J/mnist_250_sample.png
-)
-
-* [Img3](http://imgur.com/a/jE6gH)
-The last image uses mnist-binary dataset with threshold value of 0.2
+<p style="text-align: center;">The samples are generated from 1-step gibbs sampling.</p>
+<p style="text-align: center;">
+<img src="images/mnist_50K_sample.jpg" style="float:left;" width="200" height="200" hspace="10"/>
+<img src="images/mnist_250_sample.jpg" style="float:left;" width="200" height="200" hspace="2"/>
+<img src="images/mnist-binary.png" width="200" height="200" hspace="2"/>
+</p>
+<p style="text-align: center;">The last image uses mnist-binary dataset with threshold value of 0.2</p>
 
 ### Next Week
 I had hoped to finish Binary RBM in the previous week but now it has to be extended this week. Major goals for this week include
