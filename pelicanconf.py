@@ -28,3 +28,4 @@ PLUGIN_PATH = 'pelican-plugins'
 PLUGINS = ['assets', 'latex']
 THEME = "theme"
 SUMMARY_MAX_LENGTH = None
+STATIC_PATHS = ['images', 'static/favicon.ico']
