@@ -1,5 +1,5 @@
 Title: Neural Evolution Algorithms for NES games - Week 3 Progress
-Date: 2017-06-24 24:38:00
+Date: 2017-06-24 01::00::00
 Tags: gsoc , neural_evolution
 Author: Kartik Nighania (Mentor: Marcus Edel)
 
