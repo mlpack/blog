@@ -11,11 +11,11 @@ We did a lot of trial and error's(mainly with the gibbs sampling step) to make i
 #### **Here are is our Result on the mnist Dataset**
 <p style = "text-aling: center;"> The samples are generated from *1000 steps gibbs sampling*</p>
 <p style = "text-aling: center;">
-<img src = "images/mnist_out.png" width = "400" height = "200" hspace = "10"/>
+<img src = "images/mnist_out.png" width = "600" height = "300" hspace = "10"/>
 </p>
 #### This is image is generated from deeplearnin.net example
 <p>
-<img src = "images/mnist_deep_learning.png" width = "400" height = "200" hspace = "10"/>
+<img src = "images/mnist_deep_learning.png" width = "600" height = "300" hspace = "10"/>
 </p>
 
 We also added another test which basically a classification test using the latent learnt representation of mnist dataset. We compared our results with sci-kit learn framework. And we were able to get better accuracy than them on the subset of test cases. Though I think it would be a fair comparison if we do a 10-fold cross validation.
