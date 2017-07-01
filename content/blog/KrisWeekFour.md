@@ -1,7 +1,6 @@
-**Title: Deep Learning Module in MLpack(Week 4)**
-</br>
-Date: 2017-06-30
-</br>
+Title: Deep Learning Module in MLpack(Week 4)
+Date: 2017-06-30 23:00:00
+Tags: neural networks, restricted boltzmann machines
 Author: Kris Singh
 
 ### Week Four
