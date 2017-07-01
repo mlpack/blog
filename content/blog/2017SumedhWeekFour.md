@@ -1,4 +1,4 @@
-Title: Collaborative filtering package improvements : Week 3 and 4 Highlights
+Title: Neural Turing Machines : Week 3 and 4 Highlights
 Date: 2017-06-06 14:00:00
 Tags: gsoc
 Author: Sumedh Ghaisas
