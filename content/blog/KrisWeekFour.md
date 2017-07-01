@@ -4,7 +4,7 @@ Tags: neural networks, restricted boltzmann machines
 Author: Kris Singh
 
 ### Week Four
-This week we mainly put finishing touches upon out existing Binary RBM PR. The finishing touches took time mainly because we were not able to train to the RBM correctly and one disastrous commit that I submitted that actually rolled back the changes that I had made earlier :(. 
+This week we mainly put finishing touches upon out existing Binary RBM PR. The finishing touches took time mainly because we were not able to train to the RBM correctly and one disastrous commit that I submitted that actually rolled back the changes that I had made earlier :(.
 </br>
 We did a lot of trial and error's(mainly with the gibbs sampling step) to make it finally work. I do now undertand why people in Deep Learning talk so much about how hard it is to train DL models.
 </br>
@@ -13,7 +13,7 @@ We did a lot of trial and error's(mainly with the gibbs sampling step) to make i
 <p style = "text-aling: center;">
 <img src = "images/mnist_out.png" width = "600" height = "300" hspace = "10"/>
 </p>
-#### This is image is generated from deeplearnin.net example
+#### This is image is generated from deeplearning.net example
 <p>
 <img src = "images/mnist_deep_learning.png" width = "600" height = "300" hspace = "10"/>
 </p>
