@@ -1,5 +1,5 @@
-**Title: Deep Learning Module in MLpack(Week 5)**
-**Date: 2017-07-07 13:00:00**
+Title: Deep Learning Module in MLpack(Week 5)
+Date: 2017-07-07 13:00:00
 Tags: neural networks, restricted Boltzmann machines
 Author: Kris Singh
 
