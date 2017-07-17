@@ -1,5 +1,5 @@
 Title: Deep Learning Module in MLPack(Week 6)
-Date: 2017-16-07 13:00:00
+Date: 2017-07-16 13:00:00
 Tags: neural network, restricted Boltzmann machines, GAN
 Author: Kris Singh
 
