@@ -10,3 +10,4 @@ use the Cifar-10 dataset which is around 178Mb so i think that test is not good 
 This week I also implemented the GAN. Though there are some issues that we have to work with. Testing GAN would be easy if we don't run into any issues with training of GAN's which is a known issue.
 
 This week I planning to get the test for ssRBM right and opening a PR for GAN.
+P.S: Sorry for the Late blog post
