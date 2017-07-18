@@ -8,7 +8,7 @@ This week featured even more fixes for baseline model. The most notable achievem
 To this end, several small (but important) changes had to be implemented:
 
 - The `CrossEntropyError` layer - earlier the model was learned on MSE objective. Cross entropy penalizes the mistakes sharper than MSE (e.g., assigning 0 probability to the true label results in +infinity loss with cross entropy and in only +1 loss with MSE).
-- Gradient clipping - to rectify the problem of *objective explosion*, all gradient components that were bigger in absolute value than some fixed number were replaced with that value. In math: `g0 = min(max(g, minValue), maxValue).
+- Gradient clipping - to rectify the problem of *objective explosion*, all gradient components that were bigger in absolute value than some fixed number were replaced with that value. In math: `g0 = min(max(g, minValue), maxValue)`.
 
 Also, the model was transferred to `MiniBatchSGD` from `Adam` - the latter exposed gradient explosion problem, which resulted in a heavy overfitting.
 
