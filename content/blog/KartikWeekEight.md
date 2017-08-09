@@ -3,7 +3,7 @@ Date: 2017-08-07 00:27:00
 Tags: gsoc , neural_evolution
 Author: Kartik Nighania
 
-this week have been really exiting for me. I have completed CMAES algorithm. The main highlights are.
+this week have been really exciting for me. I have completed CMAES algorithm. The main highlights are-
 
 
 1) introduced a new time parameter by which search can be optimised very well. This method uses CPU time and calculates time return according to implementation time for some functions. This solved a major bug in the code which was huge problem back then. Now searching for hard function optimization like the Rosenbrock function upto 50 dimensions was also found to be working accurately.
