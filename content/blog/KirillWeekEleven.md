@@ -18,5 +18,5 @@ accepting a DatasetMapper parameter describing data type and possible values (if
 it is of categorical type) for each dimension (that corresponds to a
 hyper-parameter in the case of hyper-parameter optimization).
 
-The remaining time of GSoC I'm going to work on supporting gradient decent for
-hyper-parameter tuning, as well as to write a final report.
+During the remaining time of GSoC I'm going to work on supporting gradient
+decent for hyper-parameter tuning, as well as to write a final report.
