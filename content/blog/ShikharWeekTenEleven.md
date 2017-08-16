@@ -1,5 +1,5 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 9 & 10
-Date: 2017-08-17 15:50
+Title: Profiling for parallelization and parallel stochastic optimization methods - Week 10 & 11
+Date: 2017-08-17 01:09
 Tags: gsoc, openMP, parallel, optimization
 Author: Shikhar Bhardwaj
 
