@@ -5,13 +5,19 @@ Author: Kirill Mishchenko
 
 My GSoC project can be summarized in these PRs:
 
-[#1016 Add accuracy and mean squared error](https://github.com/mlpack/mlpack/pull/1016)
-[#1020 Add a method form detection tool](https://github.com/mlpack/mlpack/pull/1020)
-[#1031 Add a meta information extractor](https://github.com/mlpack/mlpack/pull/1031)
-[#1044 Add simple cross-validation](https://github.com/mlpack/mlpack/pull/1044)
-[#1074 Add precision, recall and F1](https://github.com/mlpack/mlpack/pull/1074)
-[#1095 Add k-fold cross-validation](https://github.com/mlpack/mlpack/pull/1095)
-[#XXXX Add a hyper-parameter tuning module](https://github.com/micyril/mlpack/pull/2)
+* [#1016 Add accuracy and mean squared error](https://github.com/mlpack/mlpack/pull/1016)
+
+* [#1020 Add a method form detection tool](https://github.com/mlpack/mlpack/pull/1020)
+
+* [#1031 Add a meta information extractor](https://github.com/mlpack/mlpack/pull/1031)
+
+* [#1044 Add simple cross-validation](https://github.com/mlpack/mlpack/pull/1044)
+
+* [#1074 Add precision, recall and F1](https://github.com/mlpack/mlpack/pull/1074)
+
+* [#1095 Add k-fold cross-validation](https://github.com/mlpack/mlpack/pull/1095)
+
+* [#XXXX Add a hyper-parameter tuning module](https://github.com/micyril/mlpack/pull/2)
 (this link will be updated once the mlpack codebase is ready for opening the PR
 in the main repository).
 
@@ -24,13 +30,16 @@ validation set. The second cross-validation strategy is k-fold
 cross-validation.
 
 The cross-validation module has the following features.
+
 * Data preparation happens only once when a cross-validation object is
   constructed.
+
 * In many cases you don't need to be explicit about data of what types you are
   going to pass: the developed meta-programming tools are used to deduce types
   that should be used for storing data. It also allows you to pass objects that
   can be converted to the target types (e.g. objects of types that used by
   [armadillo](http://arma.sourceforge.net/) to store intermediate results).
+
 * The interface is designed in the way that you first pass common (among
   machine learning algorithms implemented in mlpack) constructor parameters
   including data, number of classes and information about dimensions
@@ -45,15 +54,18 @@ you optimize hyper-parameters using one of the cross-validation strategies in
 couple with one of the metrics as objective.
 
 The implemented module has the following features.
+
 * It has the same interface for constructors as in the cross-validation module,
   and all features mentioned for the cross-validation module about construction
   are applied here too.
+
 * What strategy to use during optimization is specified by a user. By now
   support for two strategies has been implemented. With the first strategy -
   GridSearch - users specify a set of values for each hyper-parameter they want
   to optimize. The second strategy - GradientDescent - uses numerically
   calculated gradients of functions based on cross-validation to optimize
   real-valued hyper-parameters.
+
 * If some hyper-parameter should not be optimized, it can be marked with the
   Fixed function.
 
