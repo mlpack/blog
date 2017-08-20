@@ -60,9 +60,9 @@ module, and all features mentioned for the cross-validation module about
 construction are applied here too.
 
 II. What strategy to use during optimization is specified by a user. By now
-support for two strategies has been implemented. With the first strategy -
-GridSearch - users specify a set of values for each hyper-parameter they want
-to optimize. The second strategy - GradientDescent - uses numerically
+support for two strategies has been implemented. With the first strategy,
+GridSearch, users specify a set of values for each hyper-parameter they want
+to optimize. The second strategy, GradientDescent, uses numerically
 calculated gradients of functions based on cross-validation to optimize
 real-valued hyper-parameters.
 
