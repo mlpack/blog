@@ -34,15 +34,15 @@ The cross-validation module has the following features.
 I. Data preparation happens only once when a cross-validation object is
 constructed.
 
-II. In many cases you don't need to be explicit about data of what types you are
-going to pass: the developed meta-programming tools are used to deduce types
-that should be used for storing data. It also allows you to pass objects that
-can be converted to the target types (e.g. objects of types that used by
+II. In many cases you don't need to be explicit about data of what types you
+are going to pass: the developed meta-programming tools are used to deduce
+types for storing data. It also allows you to pass objects that can be
+converted to the target types (e.g. objects of types that used by
 [armadillo](http://arma.sourceforge.net/) to store intermediate results).
 
 III. The interface is designed in the way that you first pass common (among
 machine learning algorithms implemented in mlpack) constructor parameters
-including data, number of classes and information about dimensions
+including data, number of classes, and information about dimensions
 (datasetInfo). During this step your compiler will check whether the specified
 machine learning algorithm accepts these parameters. If some check fails, a
 human-readable message will be printed.
