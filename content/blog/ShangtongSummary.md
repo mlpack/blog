@@ -1,4 +1,7 @@
-Title: Deep Reinforcement Learning Methods - Summary Date: 2017-08-21 22:00:00 Tags: gsoc Author: Shangtong Zhang
+Title: Deep Reinforcement Learning Methods - Summary 
+Date: 2017-08-21 22:00:00 
+Tags: gsoc 
+Author: Shangtong Zhang
 
 This blog is the summary of my gsoc project -- implementation of popular deep reinforcement learning methods.
 During this project, I implemented deep (double) q learning, asynchronous one/n step q learning, asynchronous one step sarsa and asynchronous advantage actor critic (in progress), as well as two classical control problems, i.e. mountain car and cart pole, to test my implementations.
