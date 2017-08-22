@@ -32,7 +32,7 @@ Refactoring of existing neural network components is another important part of m
 
 - PVS convention: Now many of mlpack components comply with `pass-by-reference`, which is less flexible. I proposed the idea of `pass-by-value` in combination with `std::move`. This is assumed to be a very huge change, now only newly added components adopts this convention. Ryan is working on old codebase. 
 
-- Exposure of `Forward` and `Backward`: Before this we only have `Predict`, which may lead to duplicate computation in some case. By the exposure of `Forward` and `Backward`, we can address this issue.
+- Exposure of `Forward` and `Backward`: Before this we only have `Predict` and `Train`, which may lead to duplicate computation in some case. By the exposure of `Forward` and `Backward`, we can address this issue.
 
 - Support for shared layers: This is still in progress, however I think it's very important for A3C to work with Atari. We proposed the `Alias` layer to address this issue. This is also a huge change, which will influence all the visitors.
 
