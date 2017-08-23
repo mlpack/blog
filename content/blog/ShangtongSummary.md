@@ -38,7 +38,7 @@ Refactoring of existing neural network components is another important part of m
 
 - Misc update of old APIs.
 
-Detailed usage can be found in the two test cases: `async_learning_test.cpp` and `q_learning_test.cpp`.
+Detailed usage can be found in the two test cases: `async_learning_test.cpp` and `q_learning_test.cpp`. You can run the test cases by `bin/mlpack_test -t QLearningTest` and `bin/mlpack_test -t AsyncLearningTest`.
 
 In total, I contributed following PRs:
 
