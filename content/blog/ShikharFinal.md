@@ -11,16 +11,17 @@ The primary goal of the "Profiling for parallelisation" project was to find part
 
 ## Executive summary
 Here is the list of Pull Requests with work related to this project. These PRs have all the code that was intended to be committed to the library :
-1. [#1015:Add tests to the CTest framework](https://github.com/mlpack/mlpack/pull/1015)
-2. [#1024:Parallel implementation of NaiveKMeans](https://github.com/mlpack/mlpack/pull/1024)
-3. [#1037:Implementation of parallel SGD](https://github.com/mlpack/mlpack/pull/1037)
-4. [#1075:Implementation of Stochastic Coordinate Descent](https://github.com/mlpack/mlpack/pull/1075)
+
+- [#1015:Add tests to the CTest framework](https://github.com/mlpack/mlpack/pull/1015)
+- [#1024:Parallel implementation of NaiveKMeans](https://github.com/mlpack/mlpack/pull/1024)
+- [#1037:Implementation of parallel SGD](https://github.com/mlpack/mlpack/pull/1037)
+- [#1075:Implementation of Stochastic Coordinate Descent](https://github.com/mlpack/mlpack/pull/1075)
 
 The list of commits merged into the codebase is [here](https://github.com/mlpack/mlpack/commits?author=shikharbhardwaj). [Here](https://github.com/mlpack/mlpack/graphs/contributors?from=2017-05-31&type=c) is a better visualisation of the contributions made during GSoC.
 
 In addition to the above library code, I wrote a number of benchmarks and examples to try out different ideas and gather more information about the performance of existing implementations in and outside of mlpack. Some important ones are listed [here](https://gist.github.com/shikharbhardwaj/a8fcb0eb6233459842cf91d4f88bb19e).
 
-A weekly update of the progress on the project was posted as a blog posts on this blog, which can be cumulatively found [here](http://mlpack.org/gsocblog/author/shikhar-bhardwaj.html).
+A weekly update of the progress on the project was posted as blog posts on this blog, which can be cumulatively found [here](http://mlpack.org/gsocblog/author/shikhar-bhardwaj.html).
 
 ### Parallel testing framework
 This part of the project involved adding the tests under the Boost unit testing framework to the CTest test runner included with CMake, which would allow for spawning of multiple jobs and make testing faster. For automating this process, a CMake script for parsing the required test suite names was written. Overall, there is about 2x reduction in testing times with four jobs.
@@ -39,11 +40,12 @@ As more changes needed to be added to the `FunctionType` policy in mlpack, some 
 Working on this project made me appreciate the kind of power a robust API like OpenMP brings. With minimal changes to existing code, fast, cross-platform multi core implementations could be written which scale nearly linearly with the number of threads. Particularly, the implementation of HOGWILD! was much less complex with OpenMP involved to take over the work-sharing and synchronisation, while providing equivalent (or better) performance than a hand-rolled implementation of a thread pool and memory barriers.
 
 ## Future work
-Some ideas which would build upon work done during this project over the summer : 
- - More algorithms in mlpack need to be profiled for potential parallelization. One particularly interesting and major change would be with the introduction of parallel tree traversers (although the impact of such an implementation needs to be analyzed if it will be worth the time and effort for parallelization).
- - The implementation of SCD needs some trivial changes to work on multiple cores.
- - SCD could also use a line search algorithm instead of gradients to optimize the function under consideration, possibly leading to a much faster optimizer.
- - An in-depth empirical analysis of the implemented parallel optimizers, with different problems and datasets.
+Some ideas which would build upon work done during this project over the summer :
+
+- More algorithms in mlpack need to be profiled for potential parallelization. One particularly interesting and major change would be with the introduction of parallel tree traversers (although the impact of such an implementation needs to be analyzed if it will be worth the time and effort for parallelization).
+- The implementation of SCD needs some trivial changes to work on multiple cores.
+- SCD could also use a line search algorithm instead of gradients to optimize the function under consideration, possibly leading to a much faster optimizer.
+- An in-depth empirical analysis of the implemented parallel optimizers, with different problems and datasets.
 
 ## Conclusion
 This summer has been a great learning experience for me, from not only the work done during my project but also seeing the constant flow of interesting work from the projects from other students.
