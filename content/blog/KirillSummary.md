@@ -17,9 +17,7 @@ My GSoC project can be summarized in the following PRs.
 
 * [#1095 Add k-fold cross-validation](https://github.com/mlpack/mlpack/pull/1095)
 
-* [#XXXX Add a hyper-parameter tuning module](https://github.com/micyril/mlpack/pull/2)
-(this link will be updated once the mlpack codebase is ready for opening the PR
-in the main repository).
+* [#1101 Add a hyper-parameter tuning module](https://github.com/mlpack/mlpack/pull/1101)
 
 # Cross-validation module
 
