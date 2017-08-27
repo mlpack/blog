@@ -86,13 +86,13 @@ There are at present no techniques for testing GAN's we tested our implementatio
 
 </br>
 <p>
-<img src = "../images/mnist7.gif" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/mnist7.gif" width = "400" height = "400" hspace = "10"/>
 </p>
 
 Here is te final image the network is trained for just 60 epoch's. We can get better results if we find better hyperparameters.
 </br>
 <p>
-<img src = "../images/output.png" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/output.png" width = "400" height = "400" hspace = "10"/>
 </p>
 
 3. [DcGan(Strip Down Version)](https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners) We also tested our GAN's implementation for generation of digits using CNN's. This basically would give us a simpler version of the famous DCGAN implementation. For completing this test we had to add to the Resize Layer(Bilinear Interpolation of images) and the CrossEntropy with logits layer. Right now we are testing our implementation for this test you can find the code [here](https://gist.github.com/kris-singh/40dc1db9f257c1694245393392e4e9cf).
