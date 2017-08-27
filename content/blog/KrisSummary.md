@@ -1,4 +1,4 @@
-Title: Deep Learning Modules
+Title: Deep Learning Modules Summary
 Date: 2017-08-26 22:05:00 
 Tags: gsoc, rbm, ssRBM, Gan, deep learning
 Author: Kris Singh
