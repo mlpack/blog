@@ -1,9 +1,6 @@
 Title: Deep Learning Modules
-
 Date: 2017-08-26 22:05:00 
-
-Tags: gsoc, rbm, ssRBM, deep learning 
-
+Tags: gsoc, rbm, ssRBM, deep learning
 Author: Kris Singh
 
 ### Goals for the summer
@@ -19,7 +16,7 @@ I These were the following algorithms I proposed for implementation.
 
 I was able to implement RBM, ssRBM and GAN this summer. Though unfortunately none of my code has been merged till now. You can find the PR's that opened below
 
-1. [RBM](https://github.com/mlpack/mlpack/pull/1027/files)
+1. [RBM](https://github.com/mlpack/mlpack/pull/1027/files)*
 2. [ssRBM](https://github.com/mlpack/mlpack/pull/1046)
 3. [GAN](https://github.com/mlpack/mlpack/pull/1066)
 4. [ResizeLayer Implementation](https://github.com/mlpack/mlpack/pull/1098)
@@ -28,8 +25,7 @@ I was able to implement RBM, ssRBM and GAN this summer. Though unfortunately non
 
 The ssRBM and rbm are ready to be merged. The GAN PR is also mostly complete. I think only superficial style changes are required.
 
-In addition to implementing these algorithms. I am happy to say that RBM, ssRBM and GAN are very well tested. You can find some of the code [here](https://gist.github.com/kris-singh/40dc1db9f257c1694245393392e4e9cf). I would also like to point out that for RBM we are comparable to the sklearn library in terms of speed(1.5x faster) and accuracy(similar). We couldn't benchmark the ssRBM, as none of the libraries actually implement the ssRBM PR. For GAN's we tested out implementation with examples from keras and tensor flow. I am happy to say that in terms of visual reconstruction in both the examples of Mnist digit generation and Gaussian distribution generation we were able to get comparable results with keras and tensorflow.
-
+In addition to implementing these algorithms. I am happy to say that RBM, ssRBM and GAN are very well tested. You can find some of the code [here](https://gist.github.com/kris-singh/40dc1db9f257c1694245393392e4e9cf). I would also like to point out that for RBM we are comparable to the sklearn library in terms of speed(1.5x faster) and accuracy(similar). We couldn't benchmark the ssRBM, as none of the libraries actually implement the ssRBM PR. For GAN's we tested out implementation with examples from keras and tensor flow. I am happy to say that in terms of visual reconstruction for the Gaussian distribution generation we were able to get comparable results with tensorflow. We also implemented the test for generation of Mnist images using FFN as the discriminator and generator network. The results are not as good as that of the keras example but we can see the training of Gan and that it converges to some stable results. You can look at the results below.
 
 ### RBM
 ---
@@ -55,13 +51,11 @@ Our accuracy on the digits dataset was around 86% be this can go higher with som
 
 ### ssRBM
 ---
-Spike and Slab RBM were hardest to implement lessons because there are no existing implementations of the paper. We had to figure out some formulas ourselves like the free energy function. Some of the details in the paper are a little unclear the radius parameter for rejecting samples etc. We also had to decide how we wanted to represent parameters such as spike variables, slab variables and lambda bias variables the paper states them to diagonal matrices but we found that most of the papers just have constant value for the diagonal entries so, we decided to represent them as scalar, giving us major speed and memory improvements.
+Spike and Slab RBM were hardest to implement mainly because there are no existing implementations of the paper. We had to figure out some formulas ourselves like the free energy function. Some of the details in the paper are a little unclear like the radius parameter for rejecting samples etc. We also had to decide how we wanted to represent parameters such as spike variables, slab variables and lambda bias variables the paper states them to diagonal matrices but we found that most of the papers just have constant value for the diagonal entries so, we decided to represent them as scalar, giving us major speed and memory improvements.
 
-We tested ssRBM on digits data set again we were able to get an accuracy of around ~82% with the digits dataset. One of the reasons accuracy of ssRBM is less than ssRBM is because ssRBM is suited for a dataset that has high correlation within the parts of the images something like the cifar dataset so the correlation can be captured by the slab variables. We tried ssRBM on the cifar data set [code](https://gist.github.com/kris-singh/55a4934c463bbddb3c8d321dd889d194) but due to the large volume of data set and scarcity of the computation resources, we decided that it was not really required.
+We tested ssRBM on digits data set again we were able to get an accuracy of around ~82% with the digits dataset. One of the reasons accuracy of ssRBM is less than binary RBM is because ssRBM is suited for a dataset that has high correlation within the parts of the images something like the cifar dataset so the correlation can be captured by the slab variables. We tried ssRBM on the cifar data set [code](https://gist.github.com/kris-singh/55a4934c463bbddb3c8d321dd889d194) but due to the large volume of data set and scarcity of the computation resources, we got around 70% accuracy but the results should be taken with a bit of salt as I saw that increasing of samples size lets to decrease in the accuracy.
 
-We also tried bringing down the running time of the ssRBM considerably and were able to do so. We are still looking at the issue to gain possibly more improvements. We tried the cifar data set for ssRBM testing there were a couple of problems the paper didn't give a detailed list of parameters that it used either for training the ssRBM nor for the creation of features vectors from the ssRBM for testing. Also, the cifar dataset set is quite huge and the problem was compounded by the fact the paper suggested that we create patches 8\*8 from every image, leading to an increased size in the dataset set.
-
-I would also like to say here that Mikhail tried to convert mu-ssRBM code for testing our implementation but it took a lot of time finally.
+We also tried bringing down the running time of the ssRBM considerably and were able to do so. We are still looking at the issue to gain possibly more improvements. We tried the cifar data set for ssRBM testing there were a couple of problems, the paper didn't give a detailed list of parameters that it used either for training the ssRBM nor for the creation of features vectors from the ssRBM for testing. Also, the cifar dataset set is quite huge and the problem was compounded by the fact the paper suggested that we create patches 8\*8 from every image, leading to an increased size in the dataset set.
 
 **Refrences**: 
 1. [Main Paper](http://proceedings.mlr.press/v15/courville11a.html)
@@ -71,14 +65,14 @@ I would also like to say here that Mikhail tried to convert mu-ssRBM code for te
 ### GAN
 ---
 
-We implement the Generative Adversarial Networks in a pretty unique than most of the other implementations in TensorFlow and Pytorch in the following way. 
+We implement the Generative Adversarial Networks in a pretty unique way than most of the other implementations in TensorFlow and Pytorch in the following way. 
 
 1. Using single optimizer for training.
 2. No need for separate noise data.
 3. No need to have separate noise and real labels.
 4. Providing parameters such as Generator Update step defining when to update the generator network.
 
-The main ideas of implementing GAN's this way came from Mikhail. The above formulation has the advantage of being easy to use and using fewer resources in terms of space requirements and making a lot more logical sense.
+The main idea of implementing GAN's this way came from Mikhail. The above formulation has the advantage of being easy to use and using fewer resources in terms of space requirements and making a lot more logical sense.
 
 There are at present no techniques for testing GAN's we tested our implementation on the following examples
 1. [1D Gaussian Test](http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/): This test aims to generate data from Gaussian of mean = 4 and var = 0.5 give that the noise function is the uniform distribution.
@@ -101,10 +95,7 @@ Here is te final image the network is trained for just 60 epoch's. We can get be
 <img src = "../images/output.png" width = "600" height = "300" hspace = "10"/>
 </p>
 
-
-
-
-3. [DcGan(Strip Down Version)](https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners) We also tested our GAN's implementation for generation of digits using CNN's. This basically would give us a simpler version of the famous DCGAN implementation. For completing this test we had to add to the Resize Layer(Bilinear Interpolation of images) and the CrossEntropy with logits layer.
+3. [DcGan(Strip Down Version)](https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners) We also tested our GAN's implementation for generation of digits using CNN's. This basically would give us a simpler version of the famous DCGAN implementation. For completing this test we had to add to the Resize Layer(Bilinear Interpolation of images) and the CrossEntropy with logits layer. Right now we are testing our implementation for this test you can find the code [here](https://gist.github.com/kris-singh/40dc1db9f257c1694245393392e4e9cf).
 
 We also added some of the training hacks from Soumith Chintala's workshop on Gan's
 1. Batch Training for discriminator and generator
@@ -124,13 +115,17 @@ Most of my last 15-20 days were spent in hyper parameter tuning for the various 
 
 One of the major problems faced also was that for testing Deep Learning modules correctly we require huge amounts of data and resources. I found my computing rig in some cases to be very slow for the purpose. Hence, I am looking forward to Bandicoot and testing all this code on a GPU.
 
+I also found the problem of training GAN's particularly the DCGAN example very time consuming there is no efficient way for parameter hyper tuning.
+
 ### Future Work
 ---
 
 1. I think ssRBM needs to be tested on data set such as the Cifar but first, we are required to confirm that the existing implementation of ssRBM do achieve good results on some parameters so we can replicate the same results.(Preferably this code should be run on GPU since it would lead to faster results and hence faster hyper parameter tuning).
 2. Implementation of Wasserstein GAN. Lately, a lot of noise in the deep learning community of late has been around how great WGAN are compared to GAN. Hence I think it is reasonable to implement it next.
 3. I think we need support for DeConv Layers, BatchNormalisation and other image manipulation functions.
+4. I think something similar to [hyperopt](https://github.com/hyperopt/hyperopt) would be very useful.
+5. Implementation of stacking module for rbm and gan's.
 
 ### Conclusion
 ---
-The summer has been quite eventful. I am really happy to say that I have learned a lot about having to persevere through an implementation to make it work. The need for constant improvements of the code base is one of the important lessons I have learned. I also added some serious debugging skills to my skillset.  Finally, I want to give a huge thank you to Mikhail Lozhnikov without whom the project would not have been possible. I would also like to thank Marcus for his valuable inputs from time to time and also guiding me with the code base. I really think this experience has made a more patient and much better programmer than I was before. Thanks again :)
+The summer has been quite eventful. I am really happy to say that I have learned a lot about having to persevere through an implementation to make it work. The need for constant improvements of the code base is one of the important lessons I have learned. I also added some serious debugging skills to my skillset.  Finally, I want to give a huge thank you to Mikhail Lozhnikov without whom the project would not have been possible. I would also like to thank Marcus for his valuable inputs from time to time and also guiding me with the code base. I really think this experience has made a more patient and much better programmer than I was before. Thanks again to the whole mlpack community :)
