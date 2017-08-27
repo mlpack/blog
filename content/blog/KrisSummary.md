@@ -1,6 +1,6 @@
 Title: Deep Learning Modules
 Date: 2017-08-26 22:05:00 
-Tags: gsoc, rbm, ssRBM, deep learning
+Tags: gsoc, rbm, ssRBM, Gan, deep learning
 Author: Kris Singh
 
 ### Goals for the summer
