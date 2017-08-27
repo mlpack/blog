@@ -38,11 +38,11 @@ The major difficulty with implementing RBM's was deciding on architecture that c
 Here are the results of our implementation on the digits dataset(smaller version Mnist).
 <p style = "text-aling: center;"> The samples are generated from *1000 steps gibbs sampling*</p>
 <p style = "text-aling: center;">
-<img src = "images/mnist_out.png" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/mnist_out.png" width = "600" height = "300" hspace = "10"/>
 </p>
 #### This is image is generated from deeplearning.net example
 <p>
-<img src = "images/mnist_deep_learning.png" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/mnist_deep_learning.png" width = "600" height = "300" hspace = "10"/>
 </p>
 
 
@@ -84,7 +84,7 @@ There are at present no techniques for testing GAN's we tested our implementatio
 1. [1D Gaussian Test](http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/): This test aims to generate data from Gaussian of mean = 4 and var = 0.5 give that the noise function is the uniform distribution.
 </br>
 <p>
-<img src = "images/gaussian1d.gif" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/gaussian1d.gif" width = "600" height = "300" hspace = "10"/>
 </p>
 
 
@@ -92,8 +92,16 @@ There are at present no techniques for testing GAN's we tested our implementatio
 
 </br>
 <p>
-<img src = "images/mnist7.gif" width = "600" height = "300" hspace = "10"/>
+<img src = "../images/mnist7.gif" width = "600" height = "300" hspace = "10"/>
 </p>
+
+Here is te final image the network is trained for just 60 epoch's. We can get better results if we find better hyperparameters.
+</br>
+<p>
+<img src = "../images/output.png" width = "600" height = "300" hspace = "10"/>
+</p>
+
+
 
 
 3. [DcGan(Strip Down Version)](https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners) We also tested our GAN's implementation for generation of digits using CNN's. This basically would give us a simpler version of the famous DCGAN implementation. For completing this test we had to add to the Resize Layer(Bilinear Interpolation of images) and the CrossEntropy with logits layer.
