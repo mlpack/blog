@@ -37,8 +37,8 @@ Logistic Regression | Tolerance and Max Iterations                              
 
 *Merged PR's*
 
- * [### 60](https://github.com/mlpack/benchmarks/pull/60)
- * [61](https://github.com/mlpack/benchmarks/pull/61)
+ * [https://github.com/mlpack/benchmarks/pull/60](https://github.com/mlpack/benchmarks/pull/60)
+ * [https://github.com/mlpack/benchmarks/pull/61](https://github.com/mlpack/benchmarks/pull/61)
 
 #### Benchmarking Against Milk Machine Learning Toolkit for Python
 
@@ -46,7 +46,7 @@ Introduced a new library called Milk to benchmark against. Implemented Adaboost,
 
 *Merged PR's*
 
- * [64](https://github.com/mlpack/benchmarks/pull/64)
+ * [https://github.com/mlpack/benchmarks/pull/64](https://github.com/mlpack/benchmarks/pull/64)
 
 #### Unit Test file for Adaboost
 
@@ -54,7 +54,7 @@ There was no unit test file for Adaboost present so added the same for the sciki
 
 *Merged PR's* 
 
- * [65](https://github.com/mlpack/benchmarks/pull/65)
+ * [https://github.com/mlpack/benchmarks/pull/65](https://github.com/mlpack/benchmarks/pull/65)
 
 #### Updating the Shogun implementations.
 
@@ -62,7 +62,7 @@ Shogun had been updated from 5.0.0 to 6.0.0 so most of the implementations neede
 
 *Merged PR's*
  
- * [79](https://github.com/mlpack/benchmarks/pull/79)
+ * [https://github.com/mlpack/benchmarks/pull/79](https://github.com/mlpack/benchmarks/pull/79)
 
 #### Avoid building the model twice.
 
@@ -70,15 +70,15 @@ In the scikit and shogun implementations, the model was being built twice, once 
 
 *Merged PR's*
 
- * [80](https://github.com/mlpack/benchmarks/pull/80)
- * [81](https://github.com/mlpack/benchmarks/pull/81)
- * [82](https://github.com/mlpack/benchmarks/pull/82)
- * [83](https://github.com/mlpack/benchmarks/pull/83)
- * [84](https://github.com/mlpack/benchmarks/pull/84)
- * [85](https://github.com/mlpack/benchmarks/pull/85)
- * [86](https://github.com/mlpack/benchmarks/pull/86)
- * [88](https://github.com/mlpack/benchmarks/pull/88)
- * [91](https://github.com/mlpack/benchmarks/pull/91)
+ * [https://github.com/mlpack/benchmarks/pull/80](https://github.com/mlpack/benchmarks/pull/80)
+ * [https://github.com/mlpack/benchmarks/pull/81](https://github.com/mlpack/benchmarks/pull/81)
+ * [https://github.com/mlpack/benchmarks/pull/82](https://github.com/mlpack/benchmarks/pull/82)
+ * [https://github.com/mlpack/benchmarks/pull/83](https://github.com/mlpack/benchmarks/pull/83)
+ * [https://github.com/mlpack/benchmarks/pull/84](https://github.com/mlpack/benchmarks/pull/84)
+ * [https://github.com/mlpack/benchmarks/pull/85](https://github.com/mlpack/benchmarks/pull/85)
+ * [https://github.com/mlpack/benchmarks/pull/86](https://github.com/mlpack/benchmarks/pull/86)
+ * [https://github.com/mlpack/benchmarks/pull/88](https://github.com/mlpack/benchmarks/pull/88)
+ * [https://github.com/mlpack/benchmarks/pull/91](https://github.com/mlpack/benchmarks/pull/91)
 
 #### Updating MATLAB implementations.
 
@@ -86,8 +86,8 @@ There were around 3-4 MATLAB implementations present and earlier and these were 
 
 *Merged PR's*
 
- * [89](https://github.com/mlpack/benchmarks/pull/89)
- * [94](https://github.com/mlpack/benchmarks/pull/94)
+ * [https://github.com/mlpack/benchmarks/pull/89](https://github.com/mlpack/benchmarks/pull/89)
+ * [https://github.com/mlpack/benchmarks/pull/94](https://github.com/mlpack/benchmarks/pull/94)
 
 #### Updating WEKA implementations.
 
@@ -95,7 +95,7 @@ The current WEKA folder hosted around 3 implementations and after weka got updat
 
 *Merged PR’s*
  
- * [95](https://github.com/mlpack/benchmarks/pull/95)
+ * [https://github.com/mlpack/benchmarks/pull/95](https://github.com/mlpack/benchmarks/pull/95)
 
 #### Benchmarking against Dlib-ml
 
@@ -103,10 +103,10 @@ Introduced a new C++ Machine Learning library called dlib-ml to the benchmarking
 
 *Merged PR's*
 
- * [96](https://github.com/mlpack/benchmarks/pull/96)
- * [97](https://github.com/mlpack/benchmarks/pull/97)
- * [98](https://github.com/mlpack/benchmarks/pull/98)
- * [99](https://github.com/mlpack/benchmarks/pull/99)
+ * [https://github.com/mlpack/benchmarks/pull/96](https://github.com/mlpack/benchmarks/pull/96)
+ * [https://github.com/mlpack/benchmarks/pull/97](https://github.com/mlpack/benchmarks/pull/97)
+ * [https://github.com/mlpack/benchmarks/pull/98](https://github.com/mlpack/benchmarks/pull/98)
+ * [https://github.com/mlpack/benchmarks/pull/99](https://github.com/mlpack/benchmarks/pull/99)
 
 #### Make specifying K Necessary
 
@@ -114,7 +114,7 @@ Some of the K-Nearest Neighbors implementations took the default value of k as 5
 
 *Merged PR's*
 
- * [101](https://github.com/mlpack/benchmarks/pull/101)
+ * [https://github.com/mlpack/benchmarks/pull/101](https://github.com/mlpack/benchmarks/pull/101)
 
 #### Benchmarking Against R
 
@@ -122,10 +122,10 @@ This is something that I was personally inclined to do. There is a worldwide deb
 
 *Merged PR’s*
 
- * [102](https://github.com/mlpack/benchmarks/pull/102)
- * [103](https://github.com/mlpack/benchmarks/pull/103)
- * [104](https://github.com/mlpack/benchmarks/pull/104)
- * [105](https://github.com/mlpack/benchmarks/pull/105)
+ * [https://github.com/mlpack/benchmarks/pull/102](https://github.com/mlpack/benchmarks/pull/102)
+ * [https://github.com/mlpack/benchmarks/pull/103](https://github.com/mlpack/benchmarks/pull/103)
+ * [https://github.com/mlpack/benchmarks/pull/104](https://github.com/mlpack/benchmarks/pull/104)
+ * [https://github.com/mlpack/benchmarks/pull/105](https://github.com/mlpack/benchmarks/pull/105)
 
 #### The webpage
 
