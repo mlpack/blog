@@ -25,15 +25,47 @@ Before officially becoming a Google Summer of Code intern I made the following c
 
 The scikit implementations were updated to facilitate specifying more options and storing metrics like Accuracy, Precision, Recall, MSE along with runtime. The config.yaml file did not have any block for the Logistic Regression and ICA methods, so these were also added. The following table enumerates the parameters added to the various methods:
 
-Method              | Parameters Added                                            | 
-:------------------:|:-----------------------------------------------------------:|
-LSHForest           | Min_hash_match, n_candidates, radius and radius_cutoff_ratio|
-ALLKNN              | Radius, tree_type, metric and n_jobs                        |
-Elastic Net         | Max_iter, tolerance and selection                           |
-GMM                 | Tolerance and Max_iter                                      |
-ICA                 | N_components, algorithm, fun, max_iter and tolerance.       |
-KMEANS              | algorithm                                                   |
-Logistic Regression | Tolerance and Max Iterations                                |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-d3ez{font-weight:bold;background-color:#bb2222;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-d3ez"> Method</th>
+    <th class="tg-d3ez">Parameters Added</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">LSHForest</td>
+    <td class="tg-baqh">Min_hash_match, n_candidates, radius and radius_cutoff_ratio</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ALLKNN</td>
+    <td class="tg-baqh">Radius, tree_type, metric and n_jobs</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Elastic Net</td>
+    <td class="tg-baqh">Max_iter, tolerance and selection</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">GMM</td>
+    <td class="tg-baqh">Tolerance and Max_iter</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">ICA</td>
+    <td class="tg-baqh">N_components, algorithm, fun, max_iter and tolerance</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">KMEANS</td>
+    <td class="tg-baqh">Algorithm</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">Logistic Regression</td>
+    <td class="tg-baqh">Tolerance and Max Iterations</td>
+  </tr>
+</table>
 
 *Merged PR's*
 
@@ -52,7 +84,7 @@ Introduced a new library called Milk to benchmark against. Implemented Adaboost,
 
 There was no unit test file for Adaboost present so added the same for the scikit and milk implementations.
 
-*Merged PR's* 
+*Merged PR's*
 
  * [https://github.com/mlpack/benchmarks/pull/65](https://github.com/mlpack/benchmarks/pull/65)
 
@@ -61,7 +93,7 @@ There was no unit test file for Adaboost present so added the same for the sciki
 Shogun had been updated from 5.0.0 to 6.0.0 so most of the implementations needed updation. Also earlier only the runtime metric was being collected in the implementations, so the codes were changed to collect other metrics like Accuracy, Precision, Recall and MSE.
 
 *Merged PR's*
- 
+
  * [https://github.com/mlpack/benchmarks/pull/79](https://github.com/mlpack/benchmarks/pull/79)
 
 #### Avoid building the model twice.
@@ -94,7 +126,7 @@ There were around 3-4 MATLAB implementations present and earlier and these were 
 The current WEKA folder hosted around 3 implementations and after weka got updated those scripts had become outdated . So the presently benchmarked methods had to be re-implemented and many other methods were also added. After updating the weka folder holds Decision Stump, Decision Tree, Logistic Regression, Naive Bayes, Perceptron, Random Forest, ALLKNN, KMEANS, Linear Regression and PCA implementations. The python scripts to call and store the results and the Unit test files were also implemented.
 
 *Merged PR’s*
- 
+
  * [https://github.com/mlpack/benchmarks/pull/95](https://github.com/mlpack/benchmarks/pull/95)
 
 #### Benchmarking against Dlib-ml
@@ -118,7 +150,7 @@ Some of the K-Nearest Neighbors implementations took the default value of k as 5
 
 #### Benchmarking Against R
 
-This is something that I was personally inclined to do. There is a worldwide debate on Python vs R and I thought that this is the best platform to settle it to some extent and see which one performs faster. Using mlr - The machine learning framework for R implemented methods like NBC, Adaboost, QDA, LDA, Decision Tree, K-Nearest Classifier, Random Forest, Support Vector Classifier, Lasso, Linear Regression and Support Vector Regression. Also wrote the Python Scripts and Unit Test file for the same. 
+This is something that I was personally inclined to do. There is a worldwide debate on Python vs R and I thought that this is the best platform to settle it to some extent and see which one performs faster. Using mlr - The machine learning framework for R implemented methods like NBC, Adaboost, QDA, LDA, Decision Tree, K-Nearest Classifier, Random Forest, Support Vector Classifier, Lasso, Linear Regression and Support Vector Regression. Also wrote the Python Scripts and Unit Test file for the same.
 
 *Merged PR’s*
 
@@ -162,10 +194,3 @@ While I learnt useful tools and languages I also gained some general advice.
 I wish to continue contributing to the benchmarking system and the initial plans are adding MachineLearning.jl and Shark libraries to the benchmarks. Thereafter writing a manuscript along with my Mentors Ryan Curtin and Marcus Edel on the results. Looking forward to a long time association with them.
 
 In closing I would like to thank Ryan and Marcus for being such amazing mentors, for teaching me so many things and for putting up with me whenever I used to struggle. This is the best internship experience I’ve ever had and I hope I can meet them in person soon.
-
-
-
-
-
-
-
