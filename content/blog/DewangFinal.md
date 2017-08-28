@@ -37,7 +37,7 @@ Logistic Regression | Tolerance and Max Iterations                              
 
 *Merged PR's*
 
- * [60](https://github.com/mlpack/benchmarks/pull/60)
+ * [### 60](https://github.com/mlpack/benchmarks/pull/60)
  * [61](https://github.com/mlpack/benchmarks/pull/61)
 
 #### Benchmarking Against Milk Machine Learning Toolkit for Python
