@@ -1,5 +1,5 @@
 Title: Summary of Evolution Algorithms
-Date: 2016-08-29 06:08:00
+Date: 2017-08-29 06:08:00
 Tags: gsoc, neuroevolution, CMAES, CNE, NEAT, HyperNEAT
 Author: Kartik Nighania
 
