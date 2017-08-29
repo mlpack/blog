@@ -7,9 +7,13 @@ Author: Kartik Nighania
 
 My Google Summer of Code project was to create neural evolution algorithms for NES games.
 under which:
+
 - CNE: Conventional Neural Evolution.
+
 - CMAES: Covariance Matrix Adaptation Evolution Strategy.
+
 - NEAT: Neural Evolution through Augmented Topologies.
+
 
 and HyperNEAT which is exactly same as NEAT but the gemones go through a substrate layer to get the links has to be implemented. All the evolution algorithm as planned before was supposed to be neural network optimization algorithms. But we later switched to using it as a genralised optimizer which can be used with other functions and machine learning methods, like logictic regression class implemented in MLPack as well. Therefore CMAES and CNE were designed as an optimizer.
 
@@ -147,4 +151,4 @@ I loved the idea of adding [gaussian process implementation](https://github.com/
 
 
 ## Conclusion
-I would like to thank MLPack for giving me a chance to contribute to this beautiful library. I have a very different perspective for open source now. A big thanks to my mentor Marcus Edel for tolerating me. There were multiple times i asked for his help and he always responded in no time and with a lot of patience. Also the detailed code review and improvements that he suggested were unmatched and clearly ensure that good quality code gets in the main codebase. Thanks to Ryan for the code review and lastly Google for encouraging open source contribution. Looking forward to more contributions from my side and becoming a better engineer.
+I would like to thank MLPack for giving me a chance to contribute to this beautiful library. I have a very different perspective for open source now. A big thanks to my mentor Marcus Edel for tolerating me. There were multiple times i asked for his help and he always responded in no time and with a lot of patience. Also the detailed code review and improvements that he suggested were unmatched and clearly ensure that good quality code gets in the main codebase. Thanks to Ryan for the code review and final edits. Lastly Google for encouraging open source contribution. Looking forward to more contributions from my side and becoming a better engineer.
