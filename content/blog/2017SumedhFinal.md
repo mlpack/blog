@@ -1,4 +1,4 @@
-Title: Neural Turing Machines : Week 5
+Title: Neural Turing Machines : Final Summary
 Date: 2017-07-06 14:00:00
 Tags: gsoc
 Author: Sumedh Ghaisas
