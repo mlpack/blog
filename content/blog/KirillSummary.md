@@ -19,6 +19,8 @@ My GSoC project can be summarized in the following PRs.
 
 * [#1101 Add a hyper-parameter tuning module](https://github.com/mlpack/mlpack/pull/1101)
 
+* [#1108 Add a tutorial for the cross-validation and hyper-parameter tuning modules](https://github.com/mlpack/mlpack/pull/1108)
+
 # Cross-validation module
 
 During the summer I have implemented two cross-validation strategies. The first
