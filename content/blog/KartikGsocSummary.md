@@ -15,7 +15,7 @@ under which:
 - NEAT: Neural Evolution through Augmented Topologies.
 
 
-and HyperNEAT which is exactly same as NEAT but the gemones go through a substrate layer to get the links has to be implemented. All the evolution algorithm as planned before was supposed to be neural network optimization algorithms. But we later switched to using it as a genralised optimizer which can be used with other functions and machine learning methods, like logictic regression class implemented in MLPack as well. Therefore CMAES and CNE were designed as an optimizer.
+and HyperNEAT which is exactly same as NEAT but the gemones go through a substrate layer to get the links has to be implemented. All the evolution algorithms as planned before was supposed to be neural network optimization algorithms. But we later switched to using it as a generalised optimizer which can be used with other functions and machine learning methods, like logistic regression class implemented in MLPack as well. Therefore CMAES and CNE were designed as an optimizer.
 
 
 
@@ -40,7 +40,7 @@ I have a medium blog describing how this algorithm works followed by describing 
 
 ### Test Cases
 CMAES algorithm works by using clever probability distribution (using a modifiable Gaussian distribution) and moving the mean to minima and updating the covariance matrix in the process.
-Unlike other derivative methods for optimization this method is great for discontinuous and ill conditioned functions. Therefore one of the performance test was done using Rosenbrock function and that too iteratively for upto 50 dimensions. A change in 1e-5 in values leads to very different result. Alot of time was spent to make the algorithm better and removing some major bugs. I can confidently present the optimizer now which works perfectly giving accurate results each time.
+Unlike other derivative methods for optimization this method is great for discontinuous and ill conditioned functions. Therefore one of the performance test was done using Rosenbrock function and that too iteratively upto 50 dimensions. A change in 1e-5 in values leads to very different results. Alot of time was spent to make the algorithm better and removing some major bugs. I can confidently present the optimizer now which works perfectly giving accurate results each time.
 
 
 ### Tutorial
