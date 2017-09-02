@@ -1,7 +1,9 @@
-Title: Finalized Parallelization, Week 1 of Modeling LSH
-Date: 2016-07-12 20:20:20
-Tags: gsoc, lsh, parallel, modeling
-Author: Yannis Mentekidis
+@brief Finalized Parallelization - Modeling LSH - Week 7
+@author Yannis Mentekidis
+@page Yannis2016WeekSeven Finalized Parallelization - Modeling LSH - Week 7
+@date 2016-07-12 20:20:20
+
+@section Yannis2016WeekSeven Finalized Parallelization - Modeling LSH - Week 7
 
 This week's work can be organized in two sections - Finalizing LSH Parallelization and Beginning the LSH Model.
 

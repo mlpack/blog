@@ -1,7 +1,9 @@
-Title: QUIC-SVD
-Date: 2014-06-03 15:52:00 
-Tags: gsoc, cosine tree, svd, cf 
-Author: Siddharth Agrawal
+@brief QUIC-SVD - Week 2
+@author Siddharth Agrawal
+@page Siddharth2016WeekTwo QUIC-SVD - Week 2
+@date 2014-06-03 15:52:00 
+
+@section Siddharth2016WeekTwo QUIC-SVD - Week 2
 
 My project is titled 'Collaborative Filtering Package Improvements', where I have proposed to add three new matrix factorization techniques, namely QUIC-SVD, Regularized SVD and Probabilistic Matrix Factorization. This blog post is about QUIC-SVD, and the challenges I faced while implementing it.
 

@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 9
-Date: 2017-08-02 21:09:00
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 9
+@author Konstantin Sidorov
+@page Konstantin2017WeekNine Augmented Recurrent Neural Networks - Week 9
+@date 2017-08-02 21:09:00
+
+@section Konstantin2017WeekNine Augmented Recurrent Neural Networks - Week 9
 
 As we're entering into the final month of the GSoC '17, the work is naturally heating up. The main feature of the week was the wrap-up of the long-running benhchmarking PR.
 

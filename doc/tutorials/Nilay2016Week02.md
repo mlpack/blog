@@ -1,7 +1,9 @@
-Title: We need to go deeper - Googlenet - Week-2 Highlights
-Date: 2016-06-06 8:00:00
-Tags: gsoc, edge boxes
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 2
+@author Nilay Jain
+@page Nilay2016WeekTwo We need to go deeper, Googlenet - Week 2
+@date 2016-06-06 8:00:00
+
+@section Nilay2016WeekTwo We need to go deeper, Googlenet - Week 2
 
 This week was more about applying the things I learnt in the first week. It was also a week where I spent most hours debugging. I have completed the code on feature extraction and opened a pull request. Hopefully not a lot of edits will be required as I spent time on using effective ways. I also manually tested the code to some extent to try to ensure that it is correct. Because the number of features is large, I had to think a lot on how to avoid complex reshape operations on the regular and self similarity features. I think these issues can still be reviewed and will surely come up when pull request is evaluated.
 

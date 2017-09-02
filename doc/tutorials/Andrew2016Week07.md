@@ -1,7 +1,9 @@
-Title: "Pointless"
-Date: 2014-07-11 10:00:00
-Tags: gsoc
-Author: Andrew Wells
+@brief Implementation of tree types - "Pointless" - Week 7
+@author Andrew Wells
+@page Andrew2016Seven Implementation of tree types - "Pointless" - Week 7
+@date 2014-07-11 10:00:00
+
+@section Andrew2016Seven Implementation of tree types - "Pointless" - Week 7
 
 The clever pun you see at the top of the page accidentally made its way into one of my comments, but I decided to let it stay.  I also decided I could use it as the title of this post because I am currently working on removing points.  Ingenious no?
 

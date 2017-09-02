@@ -1,7 +1,9 @@
-Title: LSH Utility Features, Multiprobe LSH Benchmarking
-Date: 2016-06-13 20:20:20
-Tags: gsoc, lsh, multiprobe, optimization
-Author: Yannis Mentekidis
+@brief LSH Utility Features, Multiprobe LSH Benchmarking - Week 3
+@author Yannis Mentekidis
+@page Yannis2016WeekThree LSH Utility Features, Multiprobe LSH Benchmarking - Week 3
+@date 2016-06-13 20:20:20
+
+@section Yannis2016WeekThree LSH Utility Features, Multiprobe LSH Benchmarking - Week 3
 
 This is week 3 of GSoC and, according to plan, I am still working on multiprobe LSH. I thought this would have progressed faster - since a first working version of the algorithm was actually completed by the end of Week 1, but I learned that debugging and testing machine learning algorithms is actually harder than I expected :)
 

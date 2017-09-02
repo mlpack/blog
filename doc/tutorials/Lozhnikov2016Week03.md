@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 3
-Date: 2016-06-13 10:30:00
-Tags: gsoc, space trees, dual-tree algorithms, single-tree algorithms
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 3
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekThree Implementation of tree types - Week 3
+@date 2016-06-13 10:30:00
+
+@section Lozhnikov2016WeekThree Implementation of tree types - Week 3
 
 As I had planned in the previous post I modified base cases and pruning rules for the neighbor search method, the range search algorithm and the k rank-approximate-nearest-neighbors search method.
 

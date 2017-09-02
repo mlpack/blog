@@ -1,6 +1,9 @@
-Title: Deep Learning Module in MLpack(Week 9)
-Date: 2017-08-3
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 9
+@author Kris Singh
+@page Kris2017WeekNine Deep Learning Module in mlpack - Week 9
+@date 2017-08-3 12:20:00
+
+@section Kris2017WeekNine Deep Learning Module in mlpack - Week 9
 
 ### Week Nine
 Most of the week was spent in just fixing both the ssRBM and GAN PR.

@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 10
-Date: 2016-08-03 17:15:00
-Tags: gsoc, space trees, UB-tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 10
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekTen Implementation of tree types - Week 10
+@date 2016-08-03 17:15:00
+
+@section Lozhnikov2016WeekTen Implementation of tree types - Week 10
 
 Last week I have been working on the universal B tree. I finished the implementation of the bound and wrote a series of tests.
 

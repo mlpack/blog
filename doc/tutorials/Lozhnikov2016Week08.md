@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 8
-Date: 2016-07-18 23:00:00
-Tags: gsoc, space trees, Vantage point tree, random projection tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 8
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekEight Implementation of tree types - Week 8
+@date 2016-07-18 23:00:00
+
+@section Lozhnikov2016WeekEight Implementation of tree types - Week 8
 
 Last week I continued working on the vantage point tree. Since the first point of each left subtree of the vantage point tree is the centroid of its bound and the right subtree does not contain the centroid at all, I added a new method (`IsFirstPointCentroid()`) to the TreeType API. This check should allow dual and single tree algorithms to use some optimizations.
 

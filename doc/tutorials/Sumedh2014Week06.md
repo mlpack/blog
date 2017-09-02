@@ -1,7 +1,9 @@
-Title: Collaborative filtering package improvements : Week 5-6 Highlights
-Date: 2014-07-10 00:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Collaborative filtering package improvements - Week 5 + 6
+@author Sumedh Ghaisas
+@page Sumedh2014WeekSix Collaborative filtering package improvements - Week 5 + 6
+@date 2014-07-10 00:00:00
+
+@section Sumedh2014WeekSix Collaborative filtering package improvements - Week 5 + 6
 
 Finally after 6 weeks Collaborative Filtering model of MLPACK has 2 more SVD algorithms
 namely SVDBatch and SVDBatchWithMomentum. As these algorithms share many common features 

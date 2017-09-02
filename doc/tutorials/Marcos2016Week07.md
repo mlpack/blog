@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 7
-Date: 2016-07-13 21:00:00
-Tags: gsoc, knn, kfn, spill-tree
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 7
+@author Marcos Pividori
+@page Marcos2016WeekSeven Approximate Nearest Neighbor Search - Week 7
+@date 2016-07-13 21:00:00
+
+@section Marcos2016WeekSeven Approximate Nearest Neighbor Search - Week 7
 
 Last week, I have completed the implementation of Hybrid Spill Trees [[1]](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_187.pdf).
 
@@ -19,4 +21,3 @@ As mentioned in last blog post, Hybrid Spill trees have both overlapping and non
 We can control the hybrid by varying $\tau$. If $\tau$ is zero, we have a pure spill tree with defeatist search, very efficient but not accurate enough. If $\tau$ is a very large number, then every node is a non-overlapping node and we get back to the traditional metric tree, with prunning rules, perfectly accurate but not very efficient. By setting different values for $\tau$, we have a trade-off between efficiency and accuracy.
 
 Next week, I will continue improving the implementation of Spill Trees and the Defeatist Seach and write some tests. Also, I have to continue thinking about possible alternatives to implement Hybrid SP-Tree Search as a dual tree algorithm. Follow the progress in: [[2]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
-

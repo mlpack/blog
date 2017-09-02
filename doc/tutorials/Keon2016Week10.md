@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week - 10 and 11 Highlights
-Date: 2016-08-08 16:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 10 + 11
+@author Keon Kim
+@page Keon2016SWeekTenEleven Dataset and Experimentation Tools - Week 10 + 11
+@date 2016-08-08 16:00:00
+
+@section Keon2016SWeekTenEleven Dataset and Experimentation Tools - Week 10 + 11
 
 I've been building a preprocess_validate cli-executable,
 a simple app that prints out warnings for possible invalid values in a dataset.
@@ -94,4 +96,3 @@ I think this is intuitively a good approach.
 And this can replace the use of all other mapping policies.
 I think this way we can make mlpack more user-friendly by reducing
 introductions to new concepts.
-

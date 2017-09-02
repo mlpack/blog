@@ -1,7 +1,9 @@
-Title: Build testing with Docker and VMs Week 2
-Date: 2017-06-12 04:45:00
-Tags: gsoc, docker
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 2
+@author Saurabh Gupta
+@page Saurabh2017WeekTwo Build testing with Docker and VMs - Week 2
+@date 2017-06-12 04:45:00
+
+@section Saurabh2017WeekTwo Build testing with Docker and VMs - Week 2
 
 Building packages from scratch in order to make docker image with mlpack's 
 dependencies inside it is found  way too complicated to be pursued. That put
@@ -32,4 +34,4 @@ of using the package manager. After all this is done, now I am looking to add
 some suitable docker plugin on Jenkins server (the masterblaster) to enable me
 add build steps with Docker. 
 
-Stay tuned for more updates from coming weeks! Keep coding!  
+Stay tuned for more updates from coming weeks! Keep coding!

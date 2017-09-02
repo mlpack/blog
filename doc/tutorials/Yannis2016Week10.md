@@ -1,7 +1,9 @@
-Title: Modeling LSH - Implementation Week 2
-Date: 2016-08-01 20:20:20
-Tags: gsoc, lsh, modeling
-Author: Yannis Mentekidis
+@brief Modeling LSH - Implementation - Week 10
+@author Yannis Mentekidis
+@page Yannis2016WeekTen Modeling LSH - Implementation - Week 10
+@date 2016-08-01 20:20:20
+
+@section Yannis2016WeekTen Modeling LSH - Implementation - Week 10
 
 Week ten of GSoC was quite productive for me - I finally understood the proposed model in full detail. I am outlining here the design I decided to go with, the outline of which will be pushed to GitHub soon.
 

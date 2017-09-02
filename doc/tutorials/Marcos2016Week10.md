@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 10
-Date: 2016-08-03 09:00:00
-Tags: gsoc, knn, spill-tree
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 10
+@author Marcos Pividori
+@page Marcos2016WeekTen Approximate Nearest Neighbor Search - Week 10
+@date 2016-08-03 09:00:00
+
+@section Marcos2016WeekTen Approximate Nearest Neighbor Search - Week 10
 
 Last week, I have implemented Spill trees with axis-orthogonal splitting hyperplanes [[1]](https://github.com/MarcosPividori/mlpack/tree/spill-trees/src/mlpack/core/tree/spill_tree).
 

@@ -1,7 +1,9 @@
-Title: Neural Turing Machines : Week 3 and 4 Highlights
-Date: 2017-06-06 14:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Neural Turing Machines - Week 3 + 4
+@author Sumedh Ghaisas
+@page Sumedh2017WeekFour Neural Turing Machines - Week 3 + 4
+@date 2017-06-06 14:00:00
+
+@section Sumedh2017WeekFour Neural Turing Machines - Week 3 + 4
 
 Past two weeks were spent on designing and implementing the variable length 
 support for RNN. The new framework now can break 

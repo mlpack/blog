@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Summary
-Date: 2016-08-23 02:00:00
-Tags: gsoc, space trees
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Summary
+@author Mikhail Lozhnikov
+@page Lozhnikov2016Summary Implementation of tree types - Summary
+@date 2016-08-23 02:00:00
+
+@section Lozhnikov2016Summary Implementation of tree types - Summary
 
 In this blog post I'll try to describe consisely the work that I have done for the mlpack library as part of the GSoC project [R+ trees, Hilbert R trees, vantage point trees, random projection trees, UB trees implementation] [project-link] this summer.
 

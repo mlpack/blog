@@ -1,7 +1,9 @@
-Title: Collaborative filtering package improvements : Week 1-2 Highlights
-Date: 2014-06-02 20:58:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Collaborative filtering package improvements - Week 1 + 2
+@author Sumedh Ghaisas
+@page Sumedh2014WeekTwo Collaborative filtering package improvements - Week 1 + 2
+@date 2014-06-02 20:58:00
+
+@section Sumedh2014WeekTwo Collaborative filtering package improvements - Week 1 + 2
 
 2 weeks of fun coding. Most of the time is spent designing the abstraction and user interface. 
 The following additions/modifications were made: 

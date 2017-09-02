@@ -1,7 +1,9 @@
-Title: LSH optimizations, modifications, and benchmarking
-Date: 2016-06-06 20:20:20
-Tags: gsoc, lsh, multiprobe
-Author: Yannis Mentekidis
+@brief LSH optimizations, modifications, and benchmarking - Week 2
+@author Yannis Mentekidis
+@page Yannis2016WeekThree LSH optimizations, modifications, and benchmarking - Week 2
+@date 2016-06-06 20:20:20
+
+@section Yannis2016WeekThree LSH optimizations, modifications, and benchmarking - Week 2
 
 I began this week by debugging my multiprobe implementation which I discussed in my previous post. The algorithm is quite complicated and so I wanted to make sure it runs correctly before moving on to benchmarking and optimization.
 

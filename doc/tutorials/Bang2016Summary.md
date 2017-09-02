@@ -1,7 +1,9 @@
-Title: Summary of Neuroevolution Algorithms Implementation
-Date: 2016-08-22 10:20:00
-Tags: gsoc, neuroevolution, CNE, NEAT, HyperNEAT
-Author: Bang Liu
+@brief Neuroevolution Algorithms Implementation - Summary
+@author Bang Liu
+@page Bang2016Summary Neuroevolution Algorithms Implementation - Summary
+@date 2016-08-22 10:20:00
+
+@section Bang2016Summary Neuroevolution Algorithms Implementation - Summary
 
 In this blog, we summarize our project and our current contributions to mlpack project. I wish this will be helpful to anyone who is interested in what we have done, how we did, how to use it, and how to contribute to it if interested.
 

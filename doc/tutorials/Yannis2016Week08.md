@@ -1,7 +1,9 @@
-Title: Some thoughts on the LSH Model
-Date: 2016-07-19 20:20:20
-Tags: gsoc, lsh, modeling
-Author: Yannis Mentekidis
+@brief Some thoughts on the LSH Model - Week 8
+@author Yannis Mentekidis
+@page Yannis2016WeekEight Some thoughts on the LSH Model - Week 8
+@date 2016-07-19 20:20:20
+
+@section Yannis2016WeekEight Some thoughts on the LSH Model - Week 8
 
 As I've discussed before, LSH has one major problem - a large number of parameters which are difficult to tune. Other approximate nearest neighbors algorithms accept a relative error $\epsilon$ and, through theoretical guarantees, return points that are less than (1+$\epsilon$) times further from the nearest neighbors.
 
@@ -22,4 +24,3 @@ To do that, the authors define a statistical expression for Recall(.) and Select
 If (hopefully) the functions are convex, then we can use binary search to get to their minima efficiently, thus producing a favorable parameter set for LSH.
 
 The statistical models that come from the authors' analysis are quite complex and require a lot of stuff to be done. I have begun by implementing an algorithm that fits the parameters of a gamma distribution to a dataset, and creating a checklist of what needs to be done next.
-

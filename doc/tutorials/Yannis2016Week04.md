@@ -1,7 +1,9 @@
-Title: LSH Parallelization
-Date: 2016-06-19 20:20:20
-Tags: gsoc, lsh, multiprobe, openMP, parallel
-Author: Yannis Mentekidis
+@brief LSH Parallelization - Week 4
+@author Yannis Mentekidis
+@page Yannis2016WeekFour LSH Parallelization - Week 4
+@date 2016-06-19 20:20:20
+
+@section Yannis2016WeekFour LSH Parallelization - Week 4
 
 I have done a few things this week on the LSH code, but I want to talk mainly about parallelization of the `LSHSearch` object, a topic which I find very interesting.
 

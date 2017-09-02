@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 5
-Date: 2016-06-27 21:00:00
-Tags: gsoc, knn, kfn
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 5
+@author Marcos Pividori
+@page Marcos2016WeekFive Approximate Nearest Neighbor Search - Week 5
+@date 2016-06-27 21:00:00
+
+@section Marcos2016WeekFive Approximate Nearest Neighbor Search - Week 5
 
 Last week, I have been working on the benchmarking system [[1]](https://github.com/zoq/benchmarks/pull/17).
 After considering different options, I created a new view to plot the progress of a specific metric for different values of a method parameter. For example, for knn, it is possible to analyze the number of base cases and runtime for different values of approximation error (epsilon), with different libraries/configurations.

@@ -1,7 +1,9 @@
-Title: Implementation of Multi-Class Adaboost Algorithm: Week 10 and 11 Highlights
-Date: 2014-08-03 22:30:00
-Tags: gsoc, adaboost, perceptron, decision stump
-Author: Udit Saxena
+@brief Implementation of Multi-Class Adaboost Algorithm - Week 10 + 11
+@author Udit Saxena
+@page Udit2015WeekTenEleven Implementation of Multi-Class Adaboost Algorithm - Week 10 + 11
+@date 2014-08-03 22:30:00
+
+@section Udit2015WeekTenEleven Implementation of Multi-Class Adaboost Algorithm - Week 10 + 11
 
 Nearing the end guys ! Two weeks left !
 

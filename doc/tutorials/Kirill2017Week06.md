@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 6
-Date: 2017-07-10 12:45:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 6
+@author Kirill Mishchenko
+@page Kirill2017WeekSix Cross-Validation and Hyper-Parameter Tuning - Week 6
+@date 2017-07-10 12:45:00
+
+@section Kirill2017WeekSix Cross-Validation and Hyper-Parameter Tuning - Week 6
 
 During the sixth week I implemented k-fold cross-validation. I haven't sent it
 for review yet since the previous PR

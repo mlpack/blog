@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 3
-Date: 2017-06-23 21:15:18
-Tags: gsoc, rnn, neural network
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 3
+@author Konstantin Sidorov
+@page Konstantin2017WeekThree Augmented Recurrent Neural Networks - Week 3
+@date 2017-06-23 21:15:18
+
+@section Konstantin2017WeekThree Augmented Recurrent Neural Networks - Week 3
 
 Week 3 was rather quiescent - it mostly featured fixing weird bugs from previous two weeks and refactoring/cleaning the code. Some of the noteworthy changes and observations:
 

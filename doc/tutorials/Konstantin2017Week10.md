@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 10
-Date: 2017-08-10 11:07:35
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 10
+@author Konstantin Sidorov
+@page Konstantin2017WeekTen Augmented Recurrent Neural Networks - Week 10
+@date 2017-08-10 11:07:35
+
+@section Konstantin2017WeekTen Augmented Recurrent Neural Networks - Week 10
 
 Since my benchmarking PR was finally merged, I started working full-time on implementing HAM unit. Of course, this is a very complicated task, so it also deserves some segmentation.
 

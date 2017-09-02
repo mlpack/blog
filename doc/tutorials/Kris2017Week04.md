@@ -1,7 +1,9 @@
-Title: Deep Learning Module in MLpack(Week 4)
-Date: 2017-06-30 23:00:00
-Tags: neural networks, restricted boltzmann machines
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 4
+@author Kris Singh
+@page Kris2017WeekFour Deep Learning Module in mlpack - Week 4
+@date 2017-06-30 23:00:00
+
+@section Kris2017WeekFour Deep Learning Module in mlpack - Week 4
 
 ### Week Four
 This week we mainly put finishing touches upon out existing Binary RBM PR. The finishing touches took time mainly because we were not able to train to the RBM correctly and one disastrous commit that I submitted that actually rolled back the changes that I had made earlier :(.

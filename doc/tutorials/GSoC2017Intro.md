@@ -1,7 +1,9 @@
-Title: mlpack in Google Summer of Code 2017
-Date: 2017-05-30 18:00:00
-Tags: gsoc
-Author: Marcus Edel
+@brief mlpack in Google Summer of Code 2017
+@author Marcus Edel
+@page GSoC2017Intro mlpack in Google Summer of Code 2017
+@date 2017-05-30 18:00:00
+
+@section GSoC2017Intro mlpack in Google Summer of Code 2017
 
 GSoC 2017 just started today, We are very excited to work with 10 awesome
 students over the summer. Here is what they will be working on this summer:

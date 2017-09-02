@@ -1,8 +1,9 @@
-Title: Implementation of Multiprobe LSH
-Date: 2016-05-29 20:20:20
-Tags: gsoc, lsh, multiprobe
-Author: Yannis Mentekidis
+@brief Implementation of Multiprobe LSH - Week 1
+@author Yannis Mentekidis
+@page Yannis2016WeekOne Implementation of Multiprobe LSH - Week 1
+@date 2016-05-29 20:20:20
 
+@section Yannis2016WeekOne Implementation of Multiprobe LSH - Week 1
 
 This summer my goal is to improve various features of the current Locality Sensitive Hashing implementation of mlpack, making it faster, smarter, and easier to use. LSH is an approximate nearest neighbors algorithm that uses hashing to greatly reduce the amount of points needed to be examined
 

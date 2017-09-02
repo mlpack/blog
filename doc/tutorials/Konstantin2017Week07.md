@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 7
-Date: 2017-07-18 23:15:18
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 7
+@author Konstantin Sidorov
+@page Konstantin2017WeekSeven Augmented Recurrent Neural Networks - Week 7
+@date 2017-07-18 23:15:18
+
+@section Konstantin2017WeekSeven Augmented Recurrent Neural Networks - Week 7
 
 This week featured even more fixes for baseline model. The most notable achievement is that we've finally managed to make an LSTM model that would be able to *completely* learn the CopyTask (even for maximum length and repetitions parameters).
 

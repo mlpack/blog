@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 2
-Date: 2017-06-12 11:00:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 2
+@author Kirill Mishchenko
+@page Kirill2017WeekTwo Cross-Validation and Hyper-Parameter Tuning - Week 2
+@date 2017-06-12 11:00:00
+
+@section Kirill2017WeekTwo Cross-Validation and Hyper-Parameter Tuning - Week 2
 
 During the second week I was working on tools that allow to check whether a
 given class has a method with particular name and form

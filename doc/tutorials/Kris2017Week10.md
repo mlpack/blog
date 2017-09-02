@@ -1,7 +1,9 @@
-Title: Deep Learning Module in MLpack(Week 10)
-Date: 2017-08-10 13:00:00
-Tags: neural networks, restricted Boltzmann machines
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 10
+@author Kris Singh
+@page Kris2017WeekTen Deep Learning Module in mlpack - Week 10
+@date 2017-08-10 13:00:00
+
+@section Kris2017WeekTen Deep Learning Module in mlpack - Week 10
 
 ### Week Ten
 The past week has seen some good progress. I was finally able to finish the
@@ -15,4 +17,3 @@ that Goodfellow's original paper is based on. Though the test meant more for sho
 The goal for the next week is mainly finishing up with the GAN PR. The major
 problem as pointed out by Mikhail is that of the CreateBatch function. I think
 that needs refactoring.
-

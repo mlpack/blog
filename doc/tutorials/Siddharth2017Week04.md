@@ -1,7 +1,9 @@
-Title: QUIC-SVD - Wrapping Up
-Date: 2014-06-17 22:45:00
-Tags: gsoc, cosine tree, svd
-Author: Siddharth Agrawal
+@brief QUIC-SVD - Week 5
+@author Siddharth Agrawal
+@page Siddharth2016WeekFour QUIC-SVD - Week 5
+@date 2014-06-17 22:45:00
+
+@section Siddharth2016WeekFour QUIC-SVD - Week 5
 
 The past two weeks was one hell of a ride! It involved wrangling with inefficiencies and punching segmentation faults with a series of tests. Okay, let's be more specific.
 

@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 2
-Date: 2017-06-15 21:55:34
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 2
+@author Konstantin Sidorov
+@page Konstantin2017WeekTwo Augmented Recurrent Neural Networks - Week 2
+@date 2017-06-15 21:55:34
+
+@section Konstantin2017WeekTwo Augmented Recurrent Neural Networks - Week 2
 
 This week I had fixed various issues of task classes - mostly refactoring old code and rewriting it to use Armadillo native features. Also, I managed to write up a simple baseline solver for `CopyTask` (it crashes on `AddTask` and `SortTask`, though - I'm planning to fix that bug on Week 3).
 

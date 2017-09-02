@@ -1,7 +1,9 @@
-Title: Atom domain code for vector problems - Week 8
-Date: 2017-07-30 22:00:00
-Tags: gsoc, optimization
-Author: Chenzhe Diao
+@brief Atom domain code for vector problems - Week 8
+@author Chenzhe Diao
+@page Chenzhe2017WeekEight Atom domain code for vector problems - Week 8
+@date 2017-07-30 22:00:00
+
+@section Chenzhe2017WeekEight Atom domain code for vector problems - Week 8
 
 Firstly, I tried to merge my first PR with my current code this week. Also, I tried to create a new PR with my vector problem code. Unfortunately, I had a bad practice when using git. I didn't separete my commits between vector problems code and matrix problems code. so I had to pick my current files and merge all changes manually. This was quite a painful process since there were a lot of API changes.
 

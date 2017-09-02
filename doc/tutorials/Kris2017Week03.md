@@ -1,10 +1,13 @@
-Title: Deep Learning Module in MLpack(Week 3)
-Date: 2017-06-22
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 3
+@author Kris Singh
+@page Kris2017WeekThree Deep Learning Module in mlpack - Week 3
+@date 2017-06-22 12:20:00
+
+@section Kris2017WeekThree Deep Learning Module in mlpack - Week 3
 
 ### Week Three
 This week I tried to finish the PR of the BinaryRBM implmentation.
-I expected t is would not take much time. But as the famous saying goes "We make plans and god laugh". Most of the time this week was spent in debuggin the existing implmentation of the RBM implementation.This code majority of my time this week though the code alse went through some major changes. 
+I expected t is would not take much time. But as the famous saying goes "We make plans and god laugh". Most of the time this week was spent in debuggin the existing implmentation of the RBM implementation.This code majority of my time this week though the code alse went through some major changes.
 Some of the major Changes it underwent were as follows:
 1. Change of the evaluation function
 2. Major Style Fixes

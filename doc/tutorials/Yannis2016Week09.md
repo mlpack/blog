@@ -1,7 +1,9 @@
-Title: Modeling LSH - Implementation Week 1
-Date: 2016-07-26 20:20:20
-Tags: gsoc, lsh, modeling, gamma
-Author: Yannis Mentekidis
+@brief Modeling LSH - Implementation - Week 9
+@author Yannis Mentekidis
+@page Yannis2016WeekNine Modeling LSH - Implementation - Week 9
+@date 2016-07-26 20:20:20
+
+@section Yannis2016WeekNine Modeling LSH - Implementation - Week 9
 
 This past week I began making the changes that will be required in order to make the LSH model a part of mlpack.
 

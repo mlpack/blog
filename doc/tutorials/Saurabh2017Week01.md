@@ -1,7 +1,9 @@
-Title: Build testing with Docker and VMs
-Date: 2017-06-04 12:18:00
-Tags: gsoc, docker, mlpack, containerization
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 1
+@author Saurabh Gupta
+@page Saurabh2017WeekOne Build testing with Docker and VMs - Week 1
+@date 2017-06-04 12:18:00
+
+@section Saurabh2017WeekOne Build testing with Docker and VMs - Week 1
 
 With getting selected in Google Summer of Code 2017 to work for the project mlpack
 this is my first major opportunity to contribute to the open source community. 
@@ -41,5 +43,4 @@ and will produce a build environment too far away from what mlpack's users
 typically have. So, now I'll be trying building the image using another minimal 
 base image (for eg. busybox with glibc).
 
-Stay tuned for more updates. Coding is fun! so as reading this blog, isn't it? 
-
+Stay tuned for more updates. Coding is fun! so as reading this blog, isn't it?

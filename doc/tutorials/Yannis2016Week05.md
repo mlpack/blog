@@ -1,7 +1,9 @@
-Title: LSH Parallelization - Week 2
-Date: 2016-06-27 20:20:20
-Tags: gsoc, lsh, multiprobe, openMP, parallel
-Author: Yannis Mentekidis
+@brief LSH Parallelization - Week 5
+@author Yannis Mentekidis
+@page Yannis2016WeekFive LSH Parallelization - Week 5
+@date 2016-06-27 20:20:20
+
+@section Yannis2016WeekFive LSH Parallelization - Week 5
 
 This week I focused on implementing the parallelization changes I discussed in my previous blog post. I also spent some time on bug fixes and style changes of Multiprobe LSH, but I will not bore you with that.
 

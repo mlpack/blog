@@ -1,7 +1,9 @@
-Title: "like a tomato struggling for self-expression."
-Date: 2014-06-26 10:00:00
-Tags: gsoc
-Author: Andrew Wells
+@brief Implementation of tree types - "like a tomato struggling for self-expression." - Week 5
+@author Andrew Wells
+@page Andrew2016Five Implementation of tree types - "like a tomato struggling for self-expression." - Week 5
+@date 2014-06-26 10:00:00
+
+@section Andrew2016Five Implementation of tree types - "like a tomato struggling for self-expression." - Week 5
 
 The title comes from P.G. Wodehouse--perhaps my favorite English language author.  For those who don't know who he is,
 he was a commic writer who wrote mostly between WWI and WWII.  A few excerpts should give you a general

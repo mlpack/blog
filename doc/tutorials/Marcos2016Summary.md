@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Conclusion
-Date: 2016-08-23 3:00:00
-Tags: gsoc, knn, kfn, spill-tree
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Summary
+@author Marcos Pividori
+@page Marcos2016Summary Approximate Nearest Neighbor Search - Summary
+@date 2016-08-23 3:00:00
+
+@section Marcos2016Summary Approximate Nearest Neighbor Search - Summary
 
 I have been working this summer on the GSoC Project:
 "Approximate Nearest Neighbor Search" (Project site: [[1]][1]).

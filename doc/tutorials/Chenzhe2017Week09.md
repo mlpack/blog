@@ -1,7 +1,9 @@
-Title: Tests of Atom domain code for vector problems - Week 9 and 10
-Date: 2017-08-12 19:00:00
-Tags: gsoc, optimization
-Author: Chenzhe Diao
+@brief Tests of Atom domain code for vector problems - Week 9 + 10
+@author Chenzhe Diao
+@page Chenzhe2017WeekNineTen Tests of Atom domain code for vector problems - Week 9 + 10
+@date 2017-08-12 19:00:00
+
+@section Chenzhe2017WeekNineTen Tests of Atom domain code for vector problems - Week 9 + 10
 
 I finally fixed all the API issues and many bugs, and opened a new PR for vector problems code. It contains the code for:
 

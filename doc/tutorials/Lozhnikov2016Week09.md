@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 9
-Date: 2016-07-27 00:30:00
-Tags: gsoc, space trees, Vantage point tree, UB-tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 9
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekNine Implementation of tree types - Week 9
+@date 2016-07-27 00:30:00
+
+@section Lozhnikov2016WeekNine Implementation of tree types - Week 9
 
 Last week I have been working on the vantage point tree and the universal B-tree.
 

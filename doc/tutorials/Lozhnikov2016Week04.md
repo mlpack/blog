@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 4
-Date: 2016-06-20 14:00:00
-Tags: gsoc, space trees, R+ tree, R++ tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 4
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekFour Implementation of tree types - Week 4
+@date 2016-06-20 14:00:00
+
+@section Lozhnikov2016WeekFour Implementation of tree types - Week 4
 
 Last week I had been working on the R+ tree implementation. I came across some curious issues. Namely, the R+ tree appears to be buggy.
 

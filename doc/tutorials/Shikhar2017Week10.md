@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 10 & 11
-Date: 2017-08-17 01:09
-Tags: gsoc, openMP, parallel, optimization
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 10 + 11
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekTenEleven Profiling for parallelization and parallel stochastic optimization methods - Week 10 + 11
+@date 2017-08-17 01:09
+
+@section Shikhar2017WeekTenEleven Profiling for parallelization and parallel stochastic optimization methods - Week 10 + 11
 
 The past two weeks were spent on finishing up the implementation of SCD(adding the Greedy descent 
 policy based on GS rule), adding more tests for the new code and making changes to existing

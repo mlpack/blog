@@ -1,7 +1,9 @@
-Title: Is this thing on?
-Date: 2014-06-02 16:17:00
-Tags: gsoc
-Author: Andrew Wells
+@brief Implementation of tree types - Is this thing on? - Week 2
+@author Andrew Wells
+@page Andrew2016Two Implementation of tree types - Is this thing on? - Week 2
+@date 2014-06-02 16:17:00
+
+@section Andrew2016Two Implementation of tree types - Is this thing on? - Week 2
 
 Hello.  I'm, as the author tag hopefully indicates, Andrew Wells--user of
 sentences convoluted and loquacious.  Well, actually no.  They're usually
@@ -23,14 +25,14 @@ the general structure of the code:
 
 *rectangle_tree*:  This is a generic type of tree that will be reused for all of the above named type.
 
-*tree_split*:  This code controls how the tree is split.  This is where most of 
+*tree_split*:  This code controls how the tree is split.  This is where most of
 the differences in the different trees comes in.
 
 *tree_traversal*:  This code controls the traversal of the trees.  Existing
-algorithms are quite simple and quite good, but are there better ways to 
+algorithms are quite simple and quite good, but are there better ways to
 traverse trees?
 
-*descent_hueristic*:  The tree's are not (necessarily) binary, so we have a 
+*descent_hueristic*:  The tree's are not (necessarily) binary, so we have a
 hueristic to try to choose the best node for inserting a point when this is
 non-obvious (ie. the point is not inside the hyperrectangle)
 

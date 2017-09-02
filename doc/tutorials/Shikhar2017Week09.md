@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 9
-Date: 2017-08-02 03:50
-Tags: gsoc, openMP, parallel, optimization
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 9
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekNine Profiling for parallelization and parallel stochastic optimization methods - Week 9
+@date 2017-08-02 03:50
+
+@section Shikhar2017WeekNine Profiling for parallelization and parallel stochastic optimization methods - Week 9
 
 This week was spent implementing some initial ideas for Stochastic Co ordinate descent. I 
 have started with a serial implementation first, as I believe parallelizing the serial code

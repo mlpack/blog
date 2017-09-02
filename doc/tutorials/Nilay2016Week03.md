@@ -1,7 +1,9 @@
-Title: We need to go deeper, Googlenet : Week-3 Highlights
-Date: 2016-06-13 20:00:00
-Tags: gsoc, edge_boxes
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 3
+@author Nilay Jain
+@page Nilay2016WeekThree We need to go deeper, Googlenet - Week 3
+@date 2016-06-13 20:00:00
+
+@section Nilay2016WeekThree We need to go deeper, Googlenet - Week 3
 
 This week I cleaned up the code on feature extraction, wrote tests related to it and read mlpack code that will be used for implementation of the next part of edge boxes algorithm. The details follow.
 

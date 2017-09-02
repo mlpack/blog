@@ -1,7 +1,9 @@
-Title: Improvement of Automatic Benchmarking System : Week-6 Highlights
-Date: 2014-06-29 22:42:00
-Tags: gsoc
-Author: Anand Soni
+@brief Improvement of Automatic Benchmarking System - Week 6
+@author Anand Soni
+@page Anand2016Week6 Improvement of Automatic Benchmarking System - Week 6
+@date 2014-06-29 22:42:00
+
+@section Anand2016Week6 Improvement of Automatic Benchmarking System - Week 6
 
 The midterm evaluations are already over. And the good news is : I have passed the evaluation!
 

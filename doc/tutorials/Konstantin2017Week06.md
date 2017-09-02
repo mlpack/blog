@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Weeks 5 & 6
-Date: 2017-07-11 22:09:18
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 5 + 6
+@author Konstantin Sidorov
+@page Konstantin2017WeekSix Augmented Recurrent Neural Networks - Week 5 + 6
+@date 2017-07-11 22:09:18
+
+@section Konstantin2017WeekSix Augmented Recurrent Neural Networks - Week 5 + 6
 
 This two weeks featured a lot of weird bugs. The most memorable, in my opinion, are:
 

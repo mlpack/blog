@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 7
-Date: 2016-07-12 12:00:00
-Tags: gsoc, space trees, Vantage point tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 7
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekSeven Implementation of tree types - Week 7
+@date 2016-07-12 12:00:00
+
+@section Lozhnikov2016WeekSeven Implementation of tree types - Week 7
 
 Last week, I have been working on the implementation of `HollowBallBound`. This class represents the area included between two concentric ball bounds. The radius of the inner ball may be equal to 0.
 

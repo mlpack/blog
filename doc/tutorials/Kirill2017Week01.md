@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Community Bonding Period and Week 1
-Date: 2017-06-05 09:00:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 1
+@author Kirill Mishchenko
+@page Kirill2017WeekOne Cross-Validation and Hyper-Parameter Tuning - Week 1
+@date 2017-06-05 09:00:00
+
+@section Kirill2017WeekOne Cross-Validation and Hyper-Parameter Tuning - Week 1
 
 Before coding officially began I had done some preparatory work. Specifically, I
 had changed the interface for passing responses in LinearRegression and LARS

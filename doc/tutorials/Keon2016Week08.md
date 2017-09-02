@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week-8 Highlights
-Date: 2016-07-20 16:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 8
+@author Keon Kim
+@page Keon2016SWeekEight Dataset and Experimentation Tools - Week 8
+@date 2016-07-20 16:00:00
+
+@section Keon2016SWeekEight Dataset and Experimentation Tools - Week 8
 
 This week, I:
 

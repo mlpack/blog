@@ -1,7 +1,9 @@
-Title: Build testing with Docker and VMs Week 3 & 4
-Date: 2017-06-27 03:00:00
-Tags: gsoc, docker
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 3 + 4
+@author Saurabh Gupta
+@page Saurabh2017WeekThree Build testing with Docker and VMs - Week 3 + 4
+@date 2017-06-27 03:00:00
+
+@section Saurabh2017WeekThree Build testing with Docker and VMs - Week 3 + 4
 
 
 This time, I collected different versions of armadillo and boost libraries.
@@ -24,4 +26,3 @@ so that the shell script can be generated in one go.
 
 Currently, I am trying to install gcc compiler from source. Once this is done,
 I am going to do the same for clang.
-

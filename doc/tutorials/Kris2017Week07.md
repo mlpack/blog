@@ -1,7 +1,9 @@
-Title: Deep Learning Module in MLpack(Week 7)
-Date: 2017-07-24 13:00:00
-Tags: neural networks, restricted Boltzmann machines
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 7
+@author Kris Singh
+@page Kris2017WeekSeven Deep Learning Module in mlpack - Week 7
+@date 2017-07-24 13:00:00
+
+@section Kris2017WeekSeven Deep Learning Module in mlpack - Week 7
 
 ## Week Seven
 

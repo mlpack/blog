@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 6
-Date: 2016-07-04 22:00:00
-Tags: gsoc, space trees, R+ tree, R++ tree, Vantage point tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 6
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekSix Implementation of tree types - Week 6
+@date 2016-07-04 22:00:00
+
+@section Lozhnikov2016WeekSix Implementation of tree types - Week 6
 
 Last week I had been working on some fixes of the `RectangleTree` class, including the removal of `RectangleTree::Points()`, the removal of `RectangleTree::Children()` and the optimization of `RectangleTree::NumDescendants()`.
 

@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Summary
-Date: 2016-08-23 14:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Summary
+@author Keon Kim
+@page Keon2016Summary Dataset and Experimentation Tools - Summary
+@date 2016-08-23 14:00:00
+
+@section Keon2016Summary Dataset and Experimentation Tools - Summary
 
 In this blog post I'll try to describe my contributions I've made to mlpack this summer.
 

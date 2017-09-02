@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week-3 Highlights
-Date: 2016-06-13 18:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 3
+@author Keon Kim
+@page Keon2016SWeekThree Dataset and Experimentation Tools - Week 3
+@date 2016-06-13 18:00:00
+
+@section Keon2016SWeekThree Dataset and Experimentation Tools - Week 3
 
 Last week, I planned to finalize missing variable and imputation strategies.
 Tham gave me advices and ideas for implementing the Imputer and DatasetMapper classes.

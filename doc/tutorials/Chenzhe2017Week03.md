@@ -1,9 +1,11 @@
-Title: Sparse Optimization with regularization and support truncation - Week 3 and 4
-Date: 2017-06-27 16:00:00
-Tags: gsoc, optimization
-Author: Chenzhe Diao
+@brief Sparse Optimization with regularization and support truncation - Week 3 + 4
+@author Chenzhe Diao
+@page Chenzhe2017WeekThreeFour Sparse Optimization with regularization and support truncation - Week 3 + 4
+@date 2017-06-27 16:00:00
 
-Sorry that I didn't update blog last week. During these two weeks, I was working on techniques to make the FrankWolfe type sparse optimization algorithm to converge faster. 
+@section Chenzhe2017WeekThreeFour Sparse Optimization with regularization and support truncation - Week 3 + 4
+
+Sorry that I didn't update blog last week. During these two weeks, I was working on techniques to make the FrankWolfe type sparse optimization algorithm to converge faster.
 
 The first technique is to have regularization on the atom domain. The regularization parameter could be optionally provided by the user. Ideally, it should be equal to the l2 norm of the atoms, or the l2 norm of the columns of the sensing matrix. The second technique is the support truncation, which is mentioned in [RaoShahWright](https://arxiv.org/abs/1404.5692) and [BoydSchiebingerRecht](https://arxiv.org/abs/1507.01562).
 

@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 1
-Date: 2016-05-29 21:00:00
-Tags: gsoc, knn, kfn
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 1
+@author Marcos Pividori
+@page Marcos2016WeekOne Approximate Nearest Neighbor Search - Week 1
+@date 2016-05-29 21:00:00
+
+@section Marcos2016WeekOne Approximate Nearest Neighbor Search - Week 1
 
 I am working this summer on the implementation of approximate nearest neighbor search.
 

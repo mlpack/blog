@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week-4 Highlights
-Date: 2016-06-20 16:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 4
+@author Keon Kim
+@page Keon2016SWeekFour Dataset and Experimentation Tools - Week 4
+@date 2016-06-20 16:00:00
+
+@section Keon2016SWeekFour Dataset and Experimentation Tools - Week 4
 
 This week, I worked on restructuring imputer and imputation methods.
 Here are briefs of what I did.

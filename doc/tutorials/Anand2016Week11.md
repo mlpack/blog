@@ -1,9 +1,11 @@
-Title: Improvement of Automatic Benchmarking System : Week-11 Highlights
-Date: 2014-08-03 21:55:00
-Tags: gsoc
-Author: Anand Soni
+@brief Improvement of Automatic Benchmarking System - Week 11
+@author Anand Soni
+@page Anand2016Week11 Improvement of Automatic Benchmarking System - Week 11
+@date 2014-08-03 21:55:00
 
-Eleventh week! More coding, more debugging, more fun!  
+@section Anand2016Week11 Improvement of Automatic Benchmarking System - Week 11
+
+Eleventh week! More coding, more debugging, more fun!
 
 This week I had to work on the representation of results using d3. But before starting with that, I had to finish up some pending things. What I did first was add the Simple Mean Squared Error metric to the metric definitions. The MSE originally implemented requires some probabilities and all the methods do not offer such probabilities directly! So, we needed this simple predictions based definition.
 
@@ -11,6 +13,6 @@ To create the representations, we decided to first store the metrics in the data
 
 I need to add some more visualizations now. I am still working on that part. I am tinkering over the kind of plots to draw. As always, we also had some silly errors to fix.
 
-For the next week, as I said, more plots and visualizations! 
+For the next week, as I said, more plots and visualizations!
 
 Thank you for visiting and feel free to catch me on IRC regarding any queries about the project or even for a quick chat!

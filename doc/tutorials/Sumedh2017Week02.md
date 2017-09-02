@@ -1,7 +1,9 @@
-Title: Neural Turing Machines : Week 2 Highlights
-Date: 2017-06-18 14:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Neural Turing Machines - Week 2
+@author Sumedh Ghaisas
+@page Sumedh2017WeekTwo Neural Turing Machines - Week 2
+@date 2017-06-18 14:00:00
+
+@section Sumedh2017WeekTwo Neural Turing Machines - Week 2
 
 The second week of gsoc went harder than I thought. Encountered lot of 
 roadblocks in testing Grated Recurrent Unit in RNN.  While testing, we came up with 

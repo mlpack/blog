@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 3
-Date: 2017-06-21 15:14:00
-Tags: gsoc, openMP, parallel
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 3
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekThree Profiling for parallelization and parallel stochastic optimization methods - Week 3
+@date 2017-06-21 15:14:00
+
+@section Shikhar2017WeekThree Profiling for parallelization and parallel stochastic optimization methods - Week 3
 
 During week 3, I finished up work on the parallel implementation of KMeans, making the mlpack
 implementation nearly 4x faster with 4 threads available. The next algorithms for profiling would

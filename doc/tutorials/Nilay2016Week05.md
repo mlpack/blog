@@ -1,7 +1,9 @@
-Title: We need to go deeper, Googlenet : Week-5 Highlights
-Date: 2016-06-28 15:00:00
-Tags: gsoc, edge_boxes, CNN, googlenet, deep learning
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 5
+@author Nilay Jain
+@page Nilay2016WeekFive We need to go deeper, Googlenet - Week 5
+@date 2016-06-28 15:00:00
+
+@section Nilay2016WeekFive We need to go deeper, Googlenet - Week 5
 
 I started this week by discussing "Going Deeper with Convolutions " paper with my mentor, to get an idea how to implement the inception layer. I also clarified some of the concepts regarding backprop, convolutions, and standard regularization techniques like dropout which are used in deep networks. I read the network in network paper to get an idea about 1 x 1 convolutions which was introduced here, and how smaller neural nets are used to build larger networks.
 

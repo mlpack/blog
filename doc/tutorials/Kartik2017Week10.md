@@ -1,10 +1,11 @@
-Title: Neural Evolution Algorithms for NES games - Week 10 Progress
-Date: 2017-08-21 23:51:00
-Tags: gsoc , neural_evolution
-Author: Kartik Nighania
+@brief Neural Evolution Algorithms for NES games - Week 10
+@author Kartik Nighania
+@page Kartik2017WeekTen Neural Evolution Algorithms for NES games - Week 10
+@date 2017-08-21 23:51:00
+
+@section Kartik2017WeekTen Neural Evolution Algorithms for NES games - Week 10
 
 This week started by working on my previous PRs.
-
 
 After some small final touches the CNE PR is ready. My mentor provided very detailed code review.
 The time that he put into for finding small spaces and other style issues that I missed in between
@@ -34,4 +35,4 @@ I finished reading the codebase by last year contributor Bang Lui and is setting
 
 
 This week will be to debug the whole process and see for potential errors in the code.
-Also adding a tutorial for NEAT will add my small contribution too :)  
+Also adding a tutorial for NEAT will add my small contribution too :)

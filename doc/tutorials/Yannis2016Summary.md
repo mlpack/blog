@@ -1,7 +1,9 @@
-Title: Summary of LSH changes for GSoC 2016
-Date: 2016-08-20 20:20:20
-Tags: gsoc, lsh, multiprobe, tuning, parallel
-Author: Yannis Mentekidis
+@brief LSH changes - Summary
+@author Yannis Mentekidis
+@page Yannis2016Summary LSH changes - Summary
+@date 2016-08-20 20:20:20
+
+@section Yannis2016Summary LSH changes - Summary
 
 As we are approaching the pencils down date, I think it is a good time to create a short summary of my contributions to mlpack this summer. Seeing all the students being very active, and so much code being committed, I believe summing up what I've done in the last months is going to help anyone wanting to come up-to-speed with the part of the changes I'm responsible for.
 

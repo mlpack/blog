@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 2
-Date: 2017-06-13 18:14:00
-Tags: gsoc, openMP, parallel
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 2
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekTwo Profiling for parallelization and parallel stochastic optimization methods - Week 2
+@date 2017-06-13 18:14:00
+
+@section Shikhar2017WeekTwo Profiling for parallelization and parallel stochastic optimization methods - Week 2
 
 Week 2 continued with finishing up work on the CTest PR and profiling algorithms in 
 mlpack for parallelization. The first algorithm under testing was the Gaussian Naive Bayes 

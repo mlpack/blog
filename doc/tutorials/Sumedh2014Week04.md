@@ -1,7 +1,9 @@
-Title: Collaborative filtering package improvements : Week 3-4 Highlights
-Date: 2014-06-17 07:30:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Collaborative filtering package improvements - Week 3 + 4
+@author Sumedh Ghaisas
+@page Sumedh2014WeekFour Collaborative filtering package improvements - Week 3 + 4
+@date 2014-08-19 12:20:00
+
+@section Sumedh2014WeekFour Collaborative filtering package improvements - Week 3 + 4
 
 Week 4 is over. Had fun with segmentation faults and undecodable generic programming errors. :)
 In past week the following things have been added to the AMF module -

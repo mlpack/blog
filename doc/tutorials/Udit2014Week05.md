@@ -1,7 +1,9 @@
-Title: Implementation of Multi-Class Adaboost Algorithm: Week 5 - Implementing the Perceptron
-Date: 2014-06-23 23:30:00
-Tags: gsoc, adaboost, perceptron, update policies, weight matrix, initialization
-Author: Udit Saxena
+@brief Implementation of Multi-Class Adaboost Algorithm (Implementing the Perceptron) - Week 5
+@author Udit Saxena
+@page Udit2015WeekFive Implementation of Multi-Class Adaboost Algorithm (Implementing the Perceptron) - Week 5
+@date 2014-08-19 12:20:00
+
+@section Udit2015WeekFive Implementation of Multi-Class Adaboost Algorithm (Implementing the Perceptron) - Week 5
 
 Almost halfway ! 
 

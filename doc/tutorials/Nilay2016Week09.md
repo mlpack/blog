@@ -1,7 +1,9 @@
-Title: We need to go deeper, Googlenet : Week-9 Highlights
-Date: 2016-07-26 18:00:00
-Tags: gsoc, CNN, googlenet, deep learning
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 9
+@author Nilay Jain
+@page Nilay2016WeekNine We need to go deeper, Googlenet - Week 9
+@date 2016-07-26 18:00:00
+
+@section Nilay2016WeekNine We need to go deeper, Googlenet - Week 9
 
 I started this week by first testing the inception layer. While writing tests I was not getting the expected outputs, so I checked the codes of ConvLayer and Pooling Layer which are called in the Inception Layer. I then corrected the code in pooling layer so that we can pool with stride correctly now. I added this feature last week only but was still not getting correct results, so I corrected the logic and tested it, and it works now. We have merged this feature.
 

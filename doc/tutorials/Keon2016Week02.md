@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week-2 Highlights
-Date: 2016-06-05 21:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 2
+@author Keon Kim
+@page Keon2016SWeekTwo Dataset and Experimentation Tools - Week 2
+@date 2016-06-05 21:00:00
+
+@section Keon2016SWeekTwo Dataset and Experimentation Tools - Week 2
 
 Here are some things I've done in week 2.
 

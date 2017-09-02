@@ -1,7 +1,9 @@
-Title: We need to go deeper, Googlenet : Project Summary
-Date: 2016-08-23 11:30:20
-Tags: gsoc, googlenet, edge_boxes, CNN, deep learning
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Summary
+@author Nilay Jain
+@page Nilay2016Summary We need to go deeper, Googlenet - Summary
+@date 2016-08-23 11:30:20
+
+@section Nilay2016Summary We need to go deeper, Googlenet - Summary
 
 This blogpost discusses the project summary and my contributions over the summer, as GSoC 2016, approaches its conclusion. First we'll discuss how you can find most of the work that I did, this will be a list of commits from [mlpack][mlpack] or from various branches in my [fork][fork]. Then we'll discuss what were the goals of the project, and how much we accomplished them, and finally what I learnt over the summer and why working on this project with my mentors was great! :)
 

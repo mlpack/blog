@@ -1,7 +1,9 @@
-Title: Implementation of Multi-Class Adaboost Algorithm: Week 7, 8 and 9 Highlights
-Date: 2014-07-20 22:30:00
-Tags: gsoc, adaboost, perceptron, code review, decision stump
-Author: Udit Saxena
+@brief Implementation of Multi-Class Adaboost Algorithm - Week 7 + 8 + 9
+@author Udit Saxena
+@page Udit2015WeekSevenEightNine Implementation of Multi-Class Adaboost Algorithm - Week 7 + 8 + 9
+@date 2014-07-20 22:30:00
+
+@section Udit2015WeekSevenEightNine Implementation of Multi-Class Adaboost Algorithm - Week 7 + 8 + 9
 
 Woah ! It's been a while. A lot of updates to follow.
 
@@ -12,4 +14,4 @@ I began with the m1 and got stuck for a while when considering how to incorporat
 
 I went ahead with the weighted Perceptron scheme in hand, hoping to read up something that would shed furhter light on the Decision Stump problem. As of now, I've implemented the Adaboost.mh algorithm and am going to design tests this week; extending the adaboost.m1 to SAMME should be a simple job. It's the former which is going to be tricky.
 
-The adaboost.mh algorithm involves going through a 2-Dimensional matrix every time the weights are updated, which I fear will, over hundreds and thousands of iterations, turn out to be quite slow, and this is something I also hope to optimize this week (if possible at all). 
+The adaboost.mh algorithm involves going through a 2-Dimensional matrix every time the weights are updated, which I fear will, over hundreds and thousands of iterations, turn out to be quite slow, and this is something I also hope to optimize this week (if possible at all).

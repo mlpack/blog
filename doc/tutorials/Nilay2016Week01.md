@@ -1,7 +1,9 @@
-Title: We need to go deeper - Googlenet - Week-1 Highlights
-Date: 2016-05-30 12:09:00
-Tags: gsoc, edge boxes
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 1
+@author Nilay Jain
+@page Nilay2016WeekOne We need to go deeper, Googlenet - Week 1
+@date 2016-05-30 12:09:00
+
+@section Nilay2016WeekOne We need to go deeper, Googlenet - Week 1
 
 The goal of my project is to develop googlenet such that it integrates in mlpack's existing ANN API and the methods developed in this project can be used in any other related applications. After a discussion with my mentors we chose edge boxes method for object localization, as it is a very fast method and gives competing performance with state of the art.
 

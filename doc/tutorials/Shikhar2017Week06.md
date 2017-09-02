@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 6
-Date: 2017-07-12 20:08:00
-Tags: gsoc, openMP, parallel, optimization
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 6
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekSix Profiling for parallelization and parallel stochastic optimization methods - Week 6
+@date 2017-07-12 20:08:00
+
+@section Shikhar2017WeekSix Profiling for parallelization and parallel stochastic optimization methods - Week 6
 
 This week was spent in further research into testing methods for the implementations in 
 the PR([#1037](https://github.com/mlpack/mlpack/pull/1037)). Several runs and experiments are

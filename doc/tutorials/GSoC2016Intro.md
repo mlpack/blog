@@ -1,7 +1,9 @@
-Title: mlpack in Google Summer of Code 2016
-Date: 2016-05-17 14:25:06
-Tags: gsoc
-Author: Ryan Curtin
+@brief mlpack in Google Summer of Code 2016
+@author Ryan Curtin
+@page GSoC2016Intro mlpack in Google Summer of Code 2016
+@date 2016-05-17 14:25:06
+
+@section GSoC2016Intro mlpack in Google Summer of Code 2016
 
 This year is shaping up to be a productive and exciting year for mlpack; after
 being accepted into Google Summer of Code 2016, we received an astounding 119

@@ -1,7 +1,9 @@
-Title: Regularized SVD
-Date: 2014-07-07 22:45:00
-Tags: gsoc, svd, cf
-Author: Siddharth Agrawal
+@brief Regularized SVD - Week 6
+@author Siddharth Agrawal
+@page Siddharth2016WeekSix Regularized SVD - Week 6
+@date 2014-07-07 22:45:00
+
+@section Siddharth2016WeekSix Regularized SVD - Week 6
 
 I spent the past two weeks writing and testing Regularized SVD, which has been the most popular algorithm for Collaborative Filtering and also won the Netflix challenge. Below you can find a description of the algorithm that I included in my application:
 

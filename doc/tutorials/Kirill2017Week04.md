@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 4
-Date: 2017-06-26 12:30:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 4
+@author Kirill Mishchenko
+@page Kirill2017WeekFour Cross-Validation and Hyper-Parameter Tuning - Week 4
+@date 2017-06-26 12:30:00
+
+@section Kirill2017WeekFour Cross-Validation and Hyper-Parameter Tuning - Week 4
 
 During the fourth week I was working on a class that implements a simple
 cross-validation strategy. The strategy by itself is not difficult to

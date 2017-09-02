@@ -1,7 +1,9 @@
-Title: Neural Evolution Algorithms for NES games - Week 6 and 7 Progress
-Date: 2017-07-27 02:50:00
-Tags: gsoc , neural_evolution
-Author: Kartik Nighania
+@brief Neural Evolution Algorithms for NES games - Week 6 + 7
+@author Kartik Nighania
+@page Kartik2017WeekSixSeven Neural Evolution Algorithms for NES games - Week 6 + 7
+@date 2017-07-27 02:50:00
+
+@section Kartik2017WeekSixSeven Neural Evolution Algorithms for NES games - Week 6 + 7
 
 these 2 weeks on writing some more test cases for the CMAES algorithm. I faced a lot of difficulties along the way also and had to spend a lot of time on errors.
 i implemented logistic regression using CMAES which is working well and is able to classify accurately.

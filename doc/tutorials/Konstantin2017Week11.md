@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 11
-Date: 2017-08-17 14:49:57
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 11
+@author Konstantin Sidorov
+@page Konstantin2017WeekEleven Augmented Recurrent Neural Networks - Week 11
+@date 2017-08-17 14:49:57
+
+@section Konstantin2017WeekEleven Augmented Recurrent Neural Networks - Week 11
 
 As we keep approaching the finale of the GSoC program, the HAM work also gets deeper into the implementation stage. For instance, we have finally implemented *and tested* the implementation of `HAMUnit` forward pass.
 

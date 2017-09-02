@@ -1,7 +1,9 @@
-Title: Build testing with Docker and VMs Week 7
-Date: 2017-07-18 11:22:00
-Tags: gsoc, docker
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 7
+@author Saurabh Gupta
+@page Saurabh2017WeekSeven Build testing with Docker and VMs - Week 7
+@date 2017-07-18 11:22:00
+
+@section Saurabh2017WeekSeven Build testing with Docker and VMs - Week 7
 
 
 After resolving a lot of issues with clang and gcc compilers I ,finally,

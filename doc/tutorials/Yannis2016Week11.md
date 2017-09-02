@@ -1,7 +1,9 @@
-Title: Modeling LSH - Implementation Week 3
-Date: 2016-08-09 20:20:20
-Tags: gsoc, lsh, modeling
-Author: Yannis Mentekidis
+@brief Modeling LSH - Implementation - Week 3
+@author Yannis Mentekidis
+@page Yannis2016WeekThree Modeling LSH - Implementation - Week 3
+@date 2014-08-19 12:20:00
+
+@section Yannis2016WeekThree Modeling LSH - Implementation - Week 3
 
 The past week, I continued the implementation of the LSH model, the skeleton of which I outlined in my previous blog post.
 

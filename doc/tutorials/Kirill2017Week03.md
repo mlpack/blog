@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 3
-Date: 2017-06-19 09:00:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 3
+@author Kirill Mishchenko
+@page Kirill2017WeekThree Cross-Validation and Hyper-Parameter Tuning - Week 3
+@date 2017-06-19 09:00:00
+
+@section Kirill2017WeekThree Cross-Validation and Hyper-Parameter Tuning - Week 3
 
 During the third week I was working on meta tools that for a given machine
 learning algorithm allow to extract meta information about it, e.g. predictions

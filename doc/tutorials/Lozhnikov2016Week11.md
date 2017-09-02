@@ -1,7 +1,9 @@
-Title: Implementation of tree types : Week 11
-Date: 2016-08-10 11:00:00
-Tags: gsoc, space trees, UB-tree, Vantage point tree, random projection tree
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 11
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekEleven Implementation of tree types - Week 11
+@date 2016-08-10 11:00:00
+
+@section Lozhnikov2016WeekEleven Implementation of tree types - Week 11
 
 Last week I have been working on fixing various tree types.
 

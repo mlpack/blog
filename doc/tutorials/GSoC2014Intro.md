@@ -1,7 +1,9 @@
-Title: Welcome Google Summer of Code 2014 Students!
-Date: 2014-05-03 14:09:00
-Tags: gsoc
-Author: Marcus Edel
+@brief mlpack in Google Summer of Code 2014
+@author Marcus Edel
+@page GSoC2014Intro mlpack in Google Summer of Code 2014
+@date 2014-05-03 14:09:00
+
+@section GSoC2014Intro mlpack in Google Summer of Code 2014
 
 We are pleased to welcome the following students to work with us closely this summer on five Google Summer of Code projects!
 

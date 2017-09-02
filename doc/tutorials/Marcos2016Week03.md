@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 3
-Date: 2016-06-13 21:00:00
-Tags: gsoc, knn, kfn
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 3
+@author Marcos Pividori
+@page Marcos2016WeekThree Approximate Nearest Neighbor Search - Week 3
+@date 2016-06-13 21:00:00
+
+@section Marcos2016WeekThree Approximate Nearest Neighbor Search - Week 3
 
 Last week, I finished the extension for approximate neighbor search
 [[1]](http://github.com/mlpack/mlpack/pull/684).

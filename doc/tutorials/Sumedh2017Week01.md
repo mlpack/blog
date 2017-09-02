@@ -1,7 +1,9 @@
-Title: Neural Turing Machines : Week 1 Highlights
-Date: 2017-06-06 14:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Neural Turing Machines - Week 1
+@author Sumedh Ghaisas
+@page Sumedh2017WeekOne Neural Turing Machines - Week 1
+@date 2017-06-06 14:00:00
+
+@section Sumedh2017WeekOne Neural Turing Machines - Week 1
 
 This summer I will working o implementing The Neural Turing Machine(NTM) architecture in MLPACK.
 Although at the start, while I get myself familiarized with the mathematics behind NTM, I will be implementing a Grated Recurrent Unit(GRU) and Batch Normalization Layer.

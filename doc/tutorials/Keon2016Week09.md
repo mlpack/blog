@@ -1,7 +1,9 @@
-Title: Dataset and Experimentation Tools : Week-9 Highlights
-Date: 2016-07-26 16:00:00
-Tags: gsoc, dataset, data
-Author: Keon Kim
+@brief Dataset and Experimentation Tools - Week 9
+@author Keon Kim
+@page Keon2016SWeekNine Dataset and Experimentation Tools - Week 9
+@date 2016-07-26 16:00:00
+
+@section Keon2016SWeekNine Dataset and Experimentation Tools - Week 9
 
 This week, pull request for DatasetMapper & Imputer is merged. I thank Zoq, Rcurtin and especially, Tham for all the feedbacks.
 I feel like I gave them more work than I did.

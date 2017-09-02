@@ -1,7 +1,9 @@
-Title: Deep Reinforcement Learning Methods - Week-2 Highlights
-Date: 2017-06-10 20:00:00
-Tags: gsoc
-Author: Shangtong Zhang
+@brief Deep Reinforcement Learning Methods - Week 2
+@author Shangtong Zhang
+@page Shangtong2017WeekTwo Deep Reinforcement Learning Methods - Week 2
+@date 2017-06-10 20:00:00
+
+@section Shangtong2017WeekTwo Deep Reinforcement Learning Methods - Week 2
 
 This week I mainly worked on merging my DQN PR. During the merge process, many new ideas came out. For example, we decided to use pass-by-value convention to replace old const lvalue reference and rvalue reference overloads for API. This will give user more flexibility and make mlpack codebase more compact. We also decided to totally separate model instance and optimizer instance, which is necessary for asynchronous deep RL methods and is also helpful for the hyperparameter tuner project.
 

@@ -1,7 +1,9 @@
-Title: Neural Turing Machines : Week 5
-Date: 2017-07-06 14:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Neural Turing Machines - Week 5
+@author Sumedh Ghaisas
+@page Sumedh2017WeekFive Neural Turing Machines - Week 5
+@date 2017-07-06 14:00:00
+
+@section Sumedh2017WeekFive Neural Turing Machines - Week 5
 
 No major contribution from me in this as I was mostly sick due to bad weather.
 Fixed couple of bugs in GRU PR and wrote forward and gradients tests for it.

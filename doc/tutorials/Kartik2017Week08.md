@@ -1,7 +1,9 @@
-Title: Neural Evolution Algorithms for NES games - Week 8 Progress
-Date: 2017-08-07 00:27:00
-Tags: gsoc , neural_evolution
-Author: Kartik Nighania
+@brief Neural Evolution Algorithms for NES games - Week 8
+@author Kartik Nighania
+@page Kartik2017WeekEight Neural Evolution Algorithms for NES games - Week 8
+@date 2017-08-07 00:27:00
+
+@section Kartik2017WeekEight Neural Evolution Algorithms for NES games - Week 8
 
 this week have been really exciting for me. I have completed CMAES algorithm. The main highlights are-
 

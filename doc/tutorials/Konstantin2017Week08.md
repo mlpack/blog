@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 8
-Date: 2017-07-27 09:23:11
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 8
+@author Konstantin Sidorov
+@page Konstantin2017WeekEight Augmented Recurrent Neural Networks - Week 8
+@date 2017-07-27 09:23:11
+
+@section Konstantin2017WeekEight Augmented Recurrent Neural Networks - Week 8
 
 Unlike previous weeks, this week was rather quiescent. It didn't feature insane bugs, weird behaviors of the code, mind-boggling compiler messages and anything else of the kind.
 

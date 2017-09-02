@@ -1,7 +1,9 @@
-Title: Improvement of Automatic Benchmarking System : Weeks-7,8 Highlights
-Date: 2014-07-13 14:50:00
-Tags: gsoc
-Author: Anand Soni
+@brief Improvement of Automatic Benchmarking System - Week 7 + 8
+@author Anand Soni
+@page Anand2016Week7 Improvement of Automatic Benchmarking System - Week 7 + 8
+@date 2014-07-13 14:50:00
+
+@section Anand2016Week7 Improvement of Automatic Benchmarking System - Week 7 + 8
 
 Alright, I am back! I was travelling home last week and couldn't work much. So, this week I resumed and completed some pending work. We also had our second merge with the master!
 

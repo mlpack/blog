@@ -1,7 +1,9 @@
-Title: Gsoc Week 1
-Author: Krishnakant Singh
-Date:   June 7, 2017
-Tags: DeepLearning Gsoc RBM ssRBM
+@brief Deep Learning Module in mlpack - Week 1
+@author Krishnakant Singh
+@page Kris2017WeekOne Deep Learning Module in mlpack - Week 1
+@date 2014-06-07 12:20:00
+
+@section Kris2017WeekOne Deep Learning Module in mlpack - Week 1
 
 ### Goal
 This summer I will be working on implementing Deep
@@ -21,6 +23,3 @@ I have implemented a rough sketch of the solution
 * We also created layers for the visible and hidden units for the RBM they have been implemented here [Layers](https://gist.github.com/kris-singh/8e65d23d91a2583679461c0c725f8df0). They would be very helpful when we begin the ssRBM as we would have to change the visible layer only(with other modification to RBM file of course)
 
 I would also like to share with you some of approaches we tried for [generic](https://gist.github.com/kris-singh/20a234c5560b505e0e5b89904dd8a3d1) [gibbs](https://gist.github.com/kris-singh/935d5d46b78935cfafb81133c68acee6) [sampler](https://gist.github.com/kris-singh/cdd952a793b7b7dc932ddac83c579761) but the efforts went in vain. Most of the implementation of RBM's in [python](https://github.com/blaswan/rbm-mnist/blob/master/code/rbm.py) also do not use generic Gibbs sampler.
-
-
-

@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 9
-Date: 2016-07-27 01:00:00
-Tags: gsoc, knn, kfn, spill-tree
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 9
+@author Marcos Pividori
+@page Marcos2016WeekNine Approximate Nearest Neighbor Search - Week 9
+@date 2016-07-27 01:00:00
+
+@section Marcos2016WeekNine Approximate Nearest Neighbor Search - Week 9
 
 Last week, I have been improving NeighborSearchRules and considering differents approaches for the implementation of Hybrid Spill Trees [[1]](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_187.pdf).
 

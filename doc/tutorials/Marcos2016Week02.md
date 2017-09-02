@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 2
-Date: 2016-06-05 21:00:00
-Tags: gsoc, knn, kfn
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 2
+@author Marcos Pividori
+@page Marcos2016WeekTwo Approximate Nearest Neighbor Search - Week 2
+@date 2016-06-05 21:00:00
+
+@section Marcos2016WeekTwo Approximate Nearest Neighbor Search - Week 2
 
 Last week we finished the discussion about neighbor search's bounds [[1]](http://github.com/mlpack/mlpack/issues/642).  I updated existing code to consider slighty different bounds. Then, I compared the performance, using the benchmarking system with a modification to measure the number of base cases for ALLKNN/ALLKFN. Results shown exactly the same num of base cases for many datasets, so we decided to go ahead and merge it.
 

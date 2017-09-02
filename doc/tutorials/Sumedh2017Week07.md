@@ -1,7 +1,9 @@
-Title: Neural Turing Machines : Week 7-8
-Date: 2017-07-06 14:00:00
-Tags: gsoc
-Author: Sumedh Ghaisas
+@brief Neural Turing Machines - Week 7 + 8
+@author Sumedh Ghaisas
+@page Sumedh2017WeekSevenEight Neural Turing Machines - Week 7 + 8
+@date 2017-07-06 14:00:00
+
+@section Sumedh2017WeekSevenEight Neural Turing Machines - Week 7 + 8
 
 Completed Memory Head which is most essential part of Neural Turing Machine Framework.
 Memory Head is tested for gradient check and forward pass check.

@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Summary
-Date: 2017-08-23 19:33:54
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Summary
+@author Konstantin Sidorov
+@page augmented-recurrent-neural-networks-summary Augmented Recurrent Neural Networks - Summary
+@date 2017-08-23 19:33:54
+
+@section augmented-recurrent-neural-networks-summary Augmented Recurrent Neural Networks - Summary
 
 This post is the summary of my GSoC work.
 

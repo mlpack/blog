@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 9
-Date: 2017-08-02 15:15:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning: Week 9
+@author Kirill Mishchenko
+@page Kirill2017WeekNine Cross-Validation and Hyper-Parameter Tuning - Week 9
+@date 2017-08-02 15:15:00
+
+@section Kirill2017WeekNine Cross-Validation and Hyper-Parameter Tuning - Week 9
 
 During the ninth week I was primarily working on the classification metrics
 (precision, recall, and F1) for the cross-validation and hyper-parameter tuning

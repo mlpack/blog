@@ -1,7 +1,9 @@
-Title: Multiprobe LSH Finalized, LSH Parallelization
-Date: 2016-07-05 20:20:20
-Tags: gsoc, lsh, multiprobe, parallel
-Author: Yannis Mentekidis
+@brief Multiprobe LSH Finalized, LSH Parallelization - Week 6
+@author Yannis Mentekidis
+@page Yannis2016WeekSix Multiprobe LSH Finalized, LSH Parallelization - Week 6
+@date 2016-07-05 20:20:20
+
+@section Yannis2016WeekSix Multiprobe LSH Finalized, LSH Parallelization - Week 6
 
 I started this week by making the final changes to Multiprobe LSH - I fixed the style issues, corrected some bugs, and implemented or re-implemented some tests.
 

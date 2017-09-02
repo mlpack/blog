@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 11
-Date: 2016-08-10 15:00:00
-Tags: gsoc, knn, spill-tree
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 11
+@author Marcos Pividori
+@page Marcos2016WeekEleven Approximate Nearest Neighbor Search - Week 11
+@date 2016-08-10 15:00:00
+
+@section Marcos2016WeekEleven Approximate Nearest Neighbor Search - Week 11
 
 Last week, I have implemented generalized Spill Trees, to consider general splitting hyperplanes, not necessarily axis-orthogonal.
 

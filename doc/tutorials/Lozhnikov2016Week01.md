@@ -1,7 +1,9 @@
-Title: Implementation of tree types. Week 1 (Implementation of Hilbert R tree)
-Date: 2016-05-30 01:45:00
-Tags: gsoc, Hilbert R tree, Hilbert value
-Author: Mikhail Lozhnikov
+@brief Implementation of tree types - Week 1
+@author Mikhail Lozhnikov
+@page Lozhnikov2016WeekOne Implementation of tree types - Week 1
+@date 2016-05-30 01:45:00
+
+@section Lozhnikov2016WeekOne Implementation of tree types - Week 1
 
 The main goal of my project is to extend the mlpack's list of tree types by implementing R+ trees, Hilbert R trees, vantage point trees, random projection trees and UB trees for the purpose of using them in mlpack's dual-tree algorithms. I decided to begin with the Hilbert R tree.
 

@@ -1,8 +1,9 @@
-Title: Deep Learning Module in MLpack(Week 11 & 12)
-Date: 2017-08-21 23:00:00
-Tags: neural networks, restricted boltzmann machines
-Author: Kris Singh
+@brief Deep Learning Module in mlpack - Week 11 + 12
+@author Kris Singh
+@page Kris2017WeekElevenTwelve Deep Learning Module in mlpack - Week 11 + 12
+@date 2017-08-21 23:00:00
 
+@section Kris2017WeekElevenTwelve Deep Learning Module in mlpack - Week 11 + 12
 
 This week was mostly spent in writing test for the GAN PR and Fixing changes in the GAN PR.
 We wanted to implement the [Orilley](https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners) example. I faced a lot of problems implementing this example as valid convolution padding used in

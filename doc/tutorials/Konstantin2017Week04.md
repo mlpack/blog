@@ -1,7 +1,9 @@
-Title: Augmented Recurrent Neural Networks: Week 4
-Date: 2017-06-30 19:12:34
-Tags: gsoc, rnn, neural network, lstm
-Author: Konstantin Sidorov
+@brief Augmented Recurrent Neural Networks - Week 4
+@author Konstantin Sidorov
+@page Konstantin2017WeekFour Augmented Recurrent Neural Networks - Week 4
+@date 2017-06-30 19:12:34
+
+@section Konstantin2017WeekFour Augmented Recurrent Neural Networks - Week 4
 
 Unlike Week 3, this week was more eventful, but mostly it revolved around creating baseline for all three tasks. We finally managed to get a clean & working baseline code for `CopyTask`, `AddTask` and `SortTask` - it could be seen in my [pull request to `mlpack/models`](https://github.com/mlpack/models/pull/1).
 

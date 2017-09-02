@@ -1,7 +1,9 @@
-Title: Profiling for parallelization and parallel stochastic optimization methods - Week 7 & 8
-Date: 2017-07-25 15:50
-Tags: gsoc, openMP, parallel, optimization
-Author: Shikhar Bhardwaj
+@brief Profiling for parallelization and parallel stochastic optimization methods - Week 7 + 8
+@author Shikhar Bhardwaj
+@page Shikhar2017WeekEight Profiling for parallelization and parallel stochastic optimization methods - Week 7 + 8
+@date 2017-07-25 15:50
+
+@section Shikhar2017WeekEight Profiling for parallelization and parallel stochastic optimization methods - Week 7 + 8
 
 These past two weeks were spent on two things : running HOGWILD! on larger datasets to find performance
 issues and fixing them and working on an implementation of SCD.

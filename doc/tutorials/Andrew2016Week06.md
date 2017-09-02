@@ -1,7 +1,9 @@
-Title: "Andrew Week 6"
-Date: 2014-07-03 11:00:00
-Tags: gsoc
-Author: Andrew Wells
+@brief Implementation of tree types - Week 6
+@author Andrew Wells
+@page Andrew2016Six Implementation of tree types - Week 6
+@date 2014-07-03 11:00:00
+
+@section Andrew2016Six Implementation of tree types -  Week 6
 
 As regards my program:
 

@@ -1,8 +1,9 @@
-Title: Build testing with Docker and VMs Week 6
-Date: 2017-07-12 10:07:00
-Tags: gsoc, docker
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 6
+@author Saurabh Gupta
+@page Saurabh2017WeekSix Build testing with Docker and VMs - Week 6
+@date 2017-07-12 10:07:00
 
+@section Saurabh2017WeekSix Build testing with Docker and VMs - Week 6
 
 After building first draft image with clang, there were a lot of problems with
 the Dockerfile. I need to install the boost, armadillo, clang into the 

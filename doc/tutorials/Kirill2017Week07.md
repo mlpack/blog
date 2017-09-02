@@ -1,7 +1,9 @@
-Title: Cross-Validation and Hyper-Parameter Tuning: Week 7
-Date: 2017-07-17 12:00:00
-Tags: gsoc
-Author: Kirill Mishchenko
+@brief Cross-Validation and Hyper-Parameter Tuning - Week 7
+@author Kirill Mishchenko
+@page Kirill2017WeekSeven Cross-Validation and Hyper-Parameter Tuning - Week 7
+@date 2017-07-17 12:00:00
+
+@section Kirill2017WeekSeven Cross-Validation and Hyper-Parameter Tuning - Week 7
 
 During the seventh week I have been primarily working on implementation of
 different parts of the hyper-parameter tuning module. I have implemented the

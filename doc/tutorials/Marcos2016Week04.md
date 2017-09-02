@@ -1,7 +1,9 @@
-Title: Approximate Nearest Neighbor Search - Week 4
-Date: 2016-06-20 21:00:00
-Tags: gsoc, knn, kfn
-Author: Marcos Pividori
+@brief Approximate Nearest Neighbor Search - Week 4
+@author Marcos Pividori
+@page Marcos2016WeekFour Approximate Nearest Neighbor Search - Week 4
+@date 2016-06-20 21:00:00
+
+@section Marcos2016WeekFour Approximate Nearest Neighbor Search - Week 4
 
 Last week, I completed the improvement of existing code for NSModel
 [[1]](http://github.com/mlpack/mlpack/issues/674), using boost variant to manage
@@ -33,4 +35,3 @@ neighbor search accurately and doing it quickly.
 Next week, I plan to finish this comparison and start working in the
 implementation of some alternative approaches like Spill Trees
 [[4]](http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_187.pdf).
-

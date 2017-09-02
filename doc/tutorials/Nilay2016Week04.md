@@ -1,7 +1,9 @@
-Title: We need to go deeper, Googlenet : Week-4 Highlights
-Date: 2016-06-20 20:00:00
-Tags: gsoc, edge_boxes
-Author: Nilay Jain
+@brief We need to go deeper, Googlenet - Week 4
+@author Nilay Jain
+@page Nilay2016WeekFour We need to go deeper, Googlenet - Week 4
+@date 2016-06-20 20:00:00
+
+@section Nilay2016WeekFour We need to go deeper, Googlenet - Week 4
 
 So this week I spent time on more editing and cleaning, doing some easy optimizations and removing some of the redundant calculations that were there in the code. Also after discussion it was concluded the design of the class needs to be changed, to be similar to other parts of the library code, so we did that.
 

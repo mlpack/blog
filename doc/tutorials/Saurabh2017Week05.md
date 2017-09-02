@@ -1,7 +1,9 @@
-Title: Build testing with Docker and VMs Week 5
-Date: 2017-07-03 19:25:00
-Tags: gsoc, docker
-Author: Saurabh Gupta
+@brief Build testing with Docker and VMs - Week 5
+@author Saurabh Gupta
+@page Saurabh2017WeekFive Build testing with Docker and VMs - Week 5
+@date 2017-07-03 19:25:00
+
+@section Saurabh2017WeekFive Build testing with Docker and VMs - Week 5
 
 
 Passed in first evaluations, I am happy to continue the work in this project.
@@ -19,6 +21,4 @@ image with a dockerfile which installs clang, armadillo and boost from source.
 clang here is used as an alternative to gcc. (By the way, installing clang takes 
 more than 3 hours, that's why the wait). I am currently installing mlpack inside 
 the container run using clang based docker image. There were a lot of warnings.
-So, I am looking into this only. 
-
-
+So, I am looking into this only.
