@@ -61,6 +61,39 @@ def extractContent(htmlFile):
 
     return ""
 
+def contentTable(files):
+    postHeader = '''
+    <li >
+        <a class="el" href="%(page)s">%(title)s</a>
+    </li>'''
+
+    tableContent = '<h1 ><a class="anchor"></a>Table of Contents </h1>'
+    tableContent += '<CENTER><p >A list of all recent posts this page contains.</p></CENTER><ul>'
+
+    for htmlFile in files:
+        with open(htmlFile) as f: content = f.read()
+
+        authorPattern = re.compile('.*By (.*),.*', re.MULTILINE|re.DOTALL)
+        datePattern = re.compile('.*By .*, (.*)</a></div>.*', re.MULTILINE|re.DOTALL)
+        titlePattern = re.compile('.*<div class="title">(.*).*</div>  </div>', re.MULTILINE|re.DOTALL)
+
+        date = datePattern.match(content)
+        author = authorPattern.match(content)
+        title = titlePattern.match(content)
+
+        if date and author and title:
+            date = date.groups()[0]
+            author = author.groups()[0]
+            title = title.groups()[0]
+
+            tableContent = tableContent + postHeader % {
+                                        'author' : author + ", " + date,
+                                        'page' : os.path.basename(htmlFile),
+                                        'title' : title,}
+
+    tableContent += '</ul> </li></ul>'
+    return tableContent
+
 def insertContent(htmlFile, htmlContent):
     with open(htmlFile) as f: content = f.read()
 
@@ -92,7 +125,7 @@ if __name__ == '__main__':
         files = glob.glob(path)
         files = lastPosts(files, 12)
 
-        content = ""
+        content = contentTable(files)
 
         for i in range(len(files)):
             content = content + extractContent(files[i])
@@ -101,4 +134,3 @@ if __name__ == '__main__':
 
         indexFile = "blog/doxygen/index.html"
         insertContent(indexFile, content)
-
