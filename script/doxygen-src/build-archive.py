@@ -38,11 +38,14 @@ def extractContent(files):
     article = '''
     <tr>
       <td class="entry">
-        <span style="width:32px;display:inline-block;">&#160;</span>
-            <span class="icona"><span class="icon">%(id)s</span>
+        <span style="width:32px;height:20px;display:inline-block;">&#160;</span>
+            <span class="mlabel" style="border: 0px solid #333333;">
+                <a href="%(authorpage)s.html" style="color:#ffffff !important">%(author)s</a>
+            </span>
         </span>
         <a class="el" href="%(page)s.html">%(brief)s</a>
       </td>
+      <td class="desc"></td>
     </tr>'''
 
     dates = {}
@@ -50,15 +53,19 @@ def extractContent(files):
     for htmlFile in files:
         with open(htmlFile) as f: content = f.read()
 
-        datePattern = re.compile('.*By .*, (.*)</a></div>.*', re.MULTILINE|re.DOTALL)
+        authorPattern = re.compile('.*AUTHORSTART (.*) AUTHORSTOP.*', re.MULTILINE|re.DOTALL)
+        datePattern = re.compile('.*DATESTART (.*) DATESTOP.*', re.MULTILINE|re.DOTALL)
         pagePattern = re.compile(r'.*page ([\w+-]*).*', re.MULTILINE|re.DOTALL)
-        brief = re.compile('.*@brief (.*)\n.*', re.MULTILINE)
+        briefPattern = re.compile('.*@brief (.*)\n.*', re.MULTILINE)
+        authorPagePattern = re.compile('.*PAGESTART (.*) PAGESTOP.*', re.MULTILINE|re.DOTALL)
 
         date = datePattern.match(content)
         page = pagePattern.match("\n".join(content.split("\n")[:4]))
-        brief = brief.match(content)
+        brief = briefPattern.match(content)
+        author = authorPattern.match(content)
+        authorPage = authorPagePattern.match(content)
 
-        if date and page and brief:
+        if date and page and brief and author and authorPage:
             date = date.groups()[0]
 
             if "Unknown" in date:
@@ -66,18 +73,20 @@ def extractContent(files):
 
             page = page.groups()[0]
             brief = brief.groups()[0]
+            author = author.groups()[0]
+            authorPage = authorPage.groups()[0]
 
             # Truncate brief.
-            brief = (brief[:75] + ' ..') if len(brief) > 75 else brief
+            brief = (brief[:70] + ' ..') if len(brief) > 70 else brief
 
             dateKey = date.split(" ", )
             dateKey = dateKey[0] + " " \
                 + str(strptime(dateKey[1][:3],'%b').tm_mon) + " " + dateKey[2]
 
             if dateKey in dates:
-                dates[dateKey].append((page, brief, date))
+                dates[dateKey].append((page, brief, date, author, authorPage))
             else:
-                dates[dateKey] = [(page, brief, date),]
+                dates[dateKey] = [(page, brief, date, author, authorPage),]
 
     dateKeys = sorted(dates, key=lambda x: datetime.datetime.strptime(x, '%d %m %Y'), reverse=True)
 
@@ -85,12 +94,11 @@ def extractContent(files):
 
         info = dates[dateKey]
         datesContent = datesContent + dateHeader % {'date' : info[0][2],}
-        i = 1
-        for page, brief, date in info:
-            datesContent = datesContent + article % {'id' : str(i),
+        for page, brief, date, author, authorPage in info:
+            datesContent = datesContent + article % {'author' : author,
+                                                     'authorpage' : authorPage,
                                                      'page' : page,
                                                      'brief' : brief,}
-            i = i + 1
 
     return datesContent
 

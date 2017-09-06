@@ -30,7 +30,7 @@ def extractContent(files):
     <tr class="even" id="row_%(row)s_">
         <td class="entry">
         <span style="width:0px;display:inline-block;">&#160;</span>
-        <span class="arrow" onclick="toggleFolder('%(row)s_')">&#9660;</span>
+        <span class="arrow" onclick="toggleFolder('%(row)s_')">&#9658;</span>
         <a class="el" href="%(authorpage)s.html">%(author)s</a></td>
     </tr>'''
 
@@ -50,25 +50,25 @@ def extractContent(files):
     authors = {}
     for htmlFile in files:
         with open(htmlFile) as f: content = f.read()
-        authorPattern = re.compile('.*By (.*),.*', re.MULTILINE|re.DOTALL)
+
+        authorPattern = re.compile('.*AUTHORSTART (.*) AUTHORSTOP.*', re.MULTILINE|re.DOTALL)
         pagePattern = re.compile(r'.*page ([\w+-]*).*', re.MULTILINE|re.DOTALL)
-        brief = re.compile('.*@brief (.*).*', re.MULTILINE)
+        briefPattern = re.compile('.*@brief (.*).*', re.MULTILINE)
+        datePattern = re.compile('.*DATESTART (.*) DATESTOP.*', re.MULTILINE|re.DOTALL)
 
         author = authorPattern.match(content)
         page = pagePattern.match("\n".join(content.split("\n")[:4]))
-        brief = brief.match(content)
+        brief = briefPattern.match(content)
+        date = datePattern.match(content)
 
-        if author and page and brief:
+        if author and page and brief and date:
             author = author.groups()[0]
             page = page.groups()[0]
             brief = brief.groups()[0]
+            date = date.groups()[0]
 
             # Truncate brief.
             brief = (brief[:75] + ' ..') if len(brief) > 75 else brief
-
-
-            date = datetime.datetime.fromtimestamp(
-                os.path.getmtime(htmlFile)).strftime('%Y-%m-%d')
 
             if author in authors:
                 authors[author].append((page, brief, date))
@@ -84,20 +84,20 @@ def extractContent(files):
         i = 1
         for page, brief, date in info:
             articleContentNone = article % {'id' : str(i),
-                                        'page' : page,
-                                        'brief' : brief,
-                                        'row' : str(row),
-                                        'rowID' : str(i),
-                                        'display' : 'none',
-                                        'date' : "",}
+                                            'page' : page,
+                                            'brief' : brief,
+                                            'row' : str(row),
+                                            'rowID' : str(i),
+                                            'display' : 'none',
+                                            'date' : "",}
 
             articleContentDisplay = article % {'id' : str(i),
-                                        'page' : page,
-                                        'brief' : brief,
-                                        'row' : str(row),
-                                        'rowID' : str(i),
-                                        'display' : 'table-row',
-                                        'date' : "",}
+                                               'page' : page,
+                                               'brief' : brief,
+                                               'row' : str(row),
+                                               'rowID' : str(i),
+                                               'display' : 'table-row',
+                                               'date' : "",}
 
             authorsContent = authorsContent + articleContentNone + "\n"
             authorContent[author] = authorContent[author] + articleContentDisplay + "\n"

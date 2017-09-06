@@ -1,23 +1,20 @@
 #!/bin/bash
 #
-# build the blog.
+# git pull, then rebuild the docs.
+#
+# $1: version of mlpack (should be unpacked into /var/www/www.mlpack.org/mlpack-x.y.z/)
+# should be in the format "mlpack-2.2.3" or similar.  "mlpack-git" for git
+# master.
+srcdir=/Volumes/koch/src/blog/
+docdir=/Volumes/koch/src/blog/script/$1/
+postdir=/Volumes/koch/src/blog/script/doxygen-post/
+doxygensrcdir=/Volumes/koch/src/blog/script/doxygen-src
 
-srcdir=../
-docdir=../script/$1/
-postdir=../script/doxygen-post/
-doxygensrcdir=../script/doxygen-src
-
-# Change into working directory.
 cd $srcdir
 cd build
 
-# Do we need to update the Doxygen stylesheet?
-modified_lines=`cat $srcdir/Doxyfile | grep 'doxygen-src/header.html' | wc -l`;
-# Remove spaces from output.
-modified_lines="${modified_lines// /}"
-
 # Adjust each post and add date.
-$doxygensrcdir/adjust-dates.py
+$doxygensrcdir/adjust-meta.py
 
 # We have to build everything for the sake of the man pages.
 # This probably precipitates cleaning the environment.
@@ -40,7 +37,6 @@ for i in *.html; do
 done
 cd ../../
 
-# Create blog directory.
 mkdir -p $docdir
 
 # Now move the HTML to the right place.
@@ -64,10 +60,16 @@ cp $docdir/doxygen/index.html $docdir/doxygen/author.html
 
 # Create index html file.
 cd ../script
-$doxygensrcdir/build-index.py --path=$srcdir/doc/tutorials/
-
 # Create authors page and author pages.
 $doxygensrcdir/build-authors.py --path=$srcdir/doc/tutorials/
 
 # Create authors page and author pages.
 $doxygensrcdir/build-archive.py --path=$srcdir/doc/tutorials/
+
+$doxygensrcdir/adjust-author.py --path=$docdir/doxygen
+
+$doxygensrcdir/build-index.py --path=$srcdir/doc/tutorials/
+
+
+
+

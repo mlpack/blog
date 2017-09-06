@@ -15,7 +15,7 @@ def lastPosts(files, number):
     for htmlFile in files:
         with open(htmlFile) as f: content = f.read()
 
-        datePattern = re.compile('.*By .*, (.*)</a></div>.*', re.MULTILINE|re.DOTALL)
+        datePattern = re.compile('.*DATESTART (.*) DATESTOP.*', re.MULTILINE|re.DOTALL)
         pagePattern = re.compile(r'.*page ([\w+-]*).*', re.MULTILINE|re.DOTALL)
 
         date = datePattern.match(content)
@@ -73,21 +73,13 @@ def contentTable(files):
     for htmlFile in files:
         with open(htmlFile) as f: content = f.read()
 
-        authorPattern = re.compile('.*By (.*),.*', re.MULTILINE|re.DOTALL)
-        datePattern = re.compile('.*By .*, (.*)</a></div>.*', re.MULTILINE|re.DOTALL)
         titlePattern = re.compile('.*<div class="title">(.*).*</div>  </div>', re.MULTILINE|re.DOTALL)
-
-        date = datePattern.match(content)
-        author = authorPattern.match(content)
         title = titlePattern.match(content)
 
-        if date and author and title:
-            date = date.groups()[0]
-            author = author.groups()[0]
+        if title:
             title = title.groups()[0]
 
             tableContent = tableContent + postHeader % {
-                                        'author' : author + ", " + date,
                                         'page' : os.path.basename(htmlFile),
                                         'title' : title,}
 
