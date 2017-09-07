@@ -15,7 +15,7 @@ under which:
 - NEAT: Neural Evolution through Augmented Topologies.
 
 
-and HyperNEAT which is exactly same as NEAT but the gemones go through a substrate layer to get the links has to be implemented. All the evolution algorithms as planned before was supposed to be neural network optimization algorithms. But we later switched to using it as a generalised optimizer which can be used with other functions and machine learning methods, like logistic regression class implemented in MLPack as well. Therefore CMAES and CNE were designed as an optimizer.
+and HyperNEAT which is exactly same as NEAT but the genomes go through a substrate layer to get the links has to be implemented. All the evolutionary algorithm as planned before was supposed to be neural network optimization algorithms. But we later switched to using it as a generalized optimizer which can be used with other functions and machine learning methods, like logistic regression class implemented in MLPack as well. Therefore CMAES and CNE were designed as an optimizer.
 
 
 
@@ -39,8 +39,8 @@ I have a medium blog describing how this algorithm works followed by describing 
 
 
 ### Test Cases
-CMAES algorithm works by using clever probability distribution (using a modifiable Gaussian distribution) and moving the mean to minima and updating the covariance matrix in the process.
-Unlike other derivative methods for optimization this method is great for discontinuous and ill conditioned functions. Therefore one of the performance test was done using Rosenbrock function and that too iteratively upto 50 dimensions. A change in 1e-5 in values leads to very different results. Alot of time was spent to make the algorithm better and removing some major bugs. I can confidently present the optimizer now which works perfectly giving accurate results each time.
+CMA-ES algorithm works by using clever probability distribution (using a modifiable Gaussian distribution) and moving the mean to minima and updating the covariance matrix in the process.
+Unlike other derivative methods for optimization, this method is great for discontinuous and ill conditioned functions. Therefore one of the performance tests was done using Rosenbrock function and that too iteratively for up to 50 dimensions. A change in 1e-5 in values leads to a very different result. A lot of time was spent to make the algorithm better and removing some major bugs. I can confidently present the optimizer now which works perfectly giving accurate results each time.
 
 
 ### Tutorial
@@ -52,7 +52,7 @@ A full descriptive tutorial on using CMAES has been added in the documentation c
 - Using as optimizer with other models.
 
 
-This PR was very challenging for me. The time I decided was way too much less than actually needed. Also during this time I was new to armadillo library for which my mentor came to the rescue. I made a lot of modifications to the PR and also spend alot more in debugging. This PR was indeed a bit scary learning experience. But finally this PR got completed after optimization, improvements and bug fixes.
+This PR was very challenging for me. The time I decided was way too much less than actually needed. Also during this time, I was new to Armadillo library for which my mentor came to the rescue. I made a lot of modifications to the PR and also spend a lot more in debugging. This PR was indeed a bit scary learning experience. But finally, this PR got completed after optimization, improvements and bug fixes.
 
 
 
@@ -72,7 +72,7 @@ Divided into three sections:
 
 
 ### Optimizer
- Conventional Neural Evolution implemented in MLPack is an optimizer that works like biological evolution in nature which selects best candidates based on their fitness scores and creates new generation by mutation and crossover of population. This then keeps on repeating iteratively till several generations after which healthy candidates are found which perform well in getting the desired output. 
+ Conventional Neural Evolution implemented in MLPack is an optimizer that works like biological evolution in nature which selects best candidates based on their fitness scores and creates new generation by mutation and crossover of the population. This then keeps on repeating iteratively till several generations after which healthy candidates are found which perform well in getting the desired output. 
 
 
 ### References
@@ -87,10 +87,10 @@ The research paper and reference code that I used to learn CNE were:
 ### Test Cases
 Test cases were written for three very different scenarios.
 - Optimizing a given function: XOR function.
-- Optimizing a vanilla network: It worked for both iris dataset and the thyroid dataset. 
-  But for making the test case faster only iris dataset is used.
+- Optimizing a vanilla network: It worked for both iris data set and the thyroid dataset. 
+  But for making the test case faster only iris data set is used.
 - Testing with MLPack existing model: Logistic regression model was given the optimizer to
-  learn a dataset.
+  learn a data set.
 
 
 ### Tutorial
@@ -113,13 +113,13 @@ This PR is not yet complete. [PR 1105](https://github.com/mlpack/mlpack/pull/110
 
 
 ### Reference
-The main reference paper for NEAT algorithm that i went through is:
+The main reference paper for NEAT algorithm that I went through is:
 
 
 - [Evolving Neural Networks through Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf).
 
 
-Also a very beutiful implementation video is present on youtube that is worth watching:
+Also, a very beautiful implementation video is present on youtube that is worth watching:
 
 
 - [SethBling MarIO](https://www.youtube.com/watch?v=qv6UVOQ0F44)
@@ -135,20 +135,20 @@ This class is already made by previous GSoC 2016 participant Bang Lui and so rat
 
 
 
-Some of my time went on to make this one year old PR live and working again. I made more than 270 indentation fixes and other code optimization and style fixes that does not get caught by the cppCheck bot. A tutorial for documentation is also under process. I was able to find some errors which created some critical changes in evolution. Also changes are under testing and debugging for now.
+Some of my time went on to make this one-year-old PR live and working again. I made more than 270 indentation fixes and other code optimization and style fixes that do not get caught by the cppCheck bot. A tutorial for documentation is also under process. I was able to find some errors which created some critical changes in evolution. Also, changes are under testing and debugging for now.
 
 
 
 
 
 ## Future work
-My future work is to complete NEAT till it gets merged successfully. Looking at the work done by Bang Lui the code is worth fixing and pushing to the codebase. For hyperNEAT which is a small extention to NEAT a new PR will follow which is not a major task. 
+My future work is to complete NEAT till it gets merged successfully. Looking at the work done by Bang Lui the code is worth fixing and pushing to the codebase. For hyperNEAT which is a small extension to NEAT, a new PR will follow which is not a major task. 
 
 
-I loved the idea of adding [gaussian process implementation](https://github.com/mlpack/mlpack/issues/851) to MLPack in one of the issues. I would love to contribute for this later.
+I loved the idea of adding [Gaussian process implementation](https://github.com/mlpack/mlpack/issues/851) to MLPack in one of the issues. I would love to contribute for this later.
 
 
 
 
 ## Conclusion
-I would like to thank MLPack for giving me a chance to contribute to this beautiful library. I have a very different perspective for open source now. A big thanks to my mentor Marcus Edel for tolerating me. There were multiple times i asked for his help and he always responded in no time and with a lot of patience. Also the detailed code review and improvements that he suggested were unmatched and clearly ensure that good quality code gets in the main codebase. Thanks to Ryan for the code review and final edits. Lastly Google for encouraging open source contribution. Looking forward to more contributions from my side and becoming a better engineer.
+I would like to thank MLPack for giving me a chance to contribute to this beautiful library. I have a very different perspective for open source now. Big thanks to my mentor Marcus Edel for tolerating me. There were multiple times I asked for his help and he always responded in no time and with a lot of patience. Also, the detailed code review and improvements that he suggested were unmatched and clearly ensure that good quality code gets in the main codebase. Thanks to Ryan for the code review and final edits. Lastly Google for encouraging open source contribution. Looking forward to more contributions from my side and becoming a better engineer.
