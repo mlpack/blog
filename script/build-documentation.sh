@@ -5,10 +5,10 @@
 # $1: version of mlpack (should be unpacked into /var/www/www.mlpack.org/mlpack-x.y.z/)
 # should be in the format "mlpack-2.2.3" or similar.  "mlpack-git" for git
 # master.
-srcdir=/Volumes/koch/src/blog/
-docdir=/Volumes/koch/src/blog/script/$1/
-postdir=/Volumes/koch/src/blog/script/doxygen-post/
-doxygensrcdir=/Volumes/koch/src/blog/script/doxygen-src
+srcdir=../
+docdir=../script/$1/
+postdir=../script/doxygen-post/
+doxygensrcdir=../script/doxygen-src
 
 cd $srcdir
 cd build
