@@ -23,7 +23,7 @@ The list of commits merged into the codebase is [here](https://github.com/mlpack
 
 In addition to the above library code, I wrote a number of benchmarks and examples to try out different ideas and gather more information about the performance of existing implementations in and outside of `mlpack`. Some important ones are listed [here](https://gist.github.com/shikharbhardwaj/a8fcb0eb6233459842cf91d4f88bb19e).
 
-A weekly update of the progress on the project was posted as blog posts on this blog, which can be cumulatively found [here](http://mlpack.org/gsocblog/author/shikhar-bhardwaj.html).
+A weekly update of the progress on the project was posted as blog posts on this blog, which can be cumulatively found [here](http://www.mlpack.org/gsocblog/ShikharBhardwajPage.html).
 
   - Parallel testing framework: This part of the project involved adding the tests under the Boost unit testing framework to the CTest test runner included with CMake, which would allow for spawning of multiple jobs and make testing faster. For automating this process, a CMake script for parsing the required test suite names was written. Overall, there is about 2x reduction in testing times with four jobs.
 

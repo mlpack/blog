@@ -103,7 +103,7 @@ For further information see my [blog posts] [blog-posts-link].
 [712]: https://github.com/mlpack/mlpack/issues/712
 [commits]: https://github.com/mlpack/mlpack/commits/master?author=lozhnikov
 [project-link]: https://summerofcode.withgoogle.com/projects/#6729015427596288
-[blog-posts-link]: http://mlpack.org/gsocblog/author/mikhail-lozhnikov.html
+[blog-posts-link]: http://www.mlpack.org/gsocblog/MikhailLozhnikovPage.html
 [hrect-vp-tree]: https://github.com/lozhnikov/mlpack/tree/hollowhrectbound
 [hilbert-r-tree-paper]: http://www.cs.uml.edu/~cchen/580-S06/reading/KF94.pdf
 [hilbert-curve-paper]: http://scitation.aip.org/content/aip/proceeding/aipcp/10.1063/1.1751381

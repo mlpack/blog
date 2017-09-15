@@ -204,7 +204,7 @@ For further information see my previous [[blog posts]][blog-posts].
 [issues/674]: http://github.com/mlpack/mlpack/issues/674
 [issues/761]: https://github.com/mlpack/mlpack/issues/761
 [spilltreepdf]: http://github.com/mlpack/mlpack/files/372825/spilltrees.pdf
-[blog-posts]: http://mlpack.org/gsocblog/author/marcos-pividori.html
+[blog-posts]: http://www.mlpack.org/gsocblog/MarcosPividoriPage.html
 [ANN]: https://www.cs.umd.edu/~mount/ANN/
 [FLANN]: http://www.cs.ubc.ca/research/flann/
 [commitlist]: https://github.com/mlpack/mlpack/commits/master?author=MarcosPividori

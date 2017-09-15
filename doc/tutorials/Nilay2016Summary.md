@@ -81,7 +81,7 @@ I want to thank the `mlpack` community for giving me this awesome opportunity to
 [fm]: https://github.com/nilayjain/mlpack/commits/fm/?author=nilayjain
 [master_commits]: https://github.com/mlpack/mlpack/commits/master?author=nilayjain
 [757]: https://github.com/mlpack/mlpack/pull/757
-[blog]: http://mlpack.org/gsocblog/author/nilay-jain.html
+[blog]: http://www.mlpack.org/gsocblog/NilayJainPage.html
 [edge_detection]: https://arxiv.org/pdf/1406.5549.pdf
 [sketch_tokens]: http://people.csail.mit.edu/lim/paper/SketchTokens_cvpr13.pdf
 [distance_transform]: http://www.cs.cornell.edu/~dph/papers/dt.pdf
