@@ -1,13 +1,13 @@
 @brief Implementation of tree types - Summary
 @author Mikhail Lozhnikov
-@page Lozhnikov2016Summary Implementation of tree types - Summary
+@page implementation-of-tree-types-summary Implementation of tree types - Summary
 @date 2016-08-23 02:00:00
 
-@section Lozhnikov2016Summary Implementation of tree types - Summary
+@section implementation-of-tree-types-summary Implementation of tree types - Summary
 
-In this blog post I'll try to describe consisely the work that I have done for the mlpack library as part of the GSoC project [R+ trees, Hilbert R trees, vantage point trees, random projection trees, UB trees implementation] [project-link] this summer.
+In this blog post I'll try to describe consisely the work that I have done for the `mlpack` library as part of the GSoC project [R+ trees, Hilbert R trees, vantage point trees, random projection trees, UB trees implementation] [project-link] this summer.
 
-### Summary
+# Summary
 
 Here's a list of my Pull Requests. All these PRs are merged except [Pull Request 746] [746] (Universal B tree implementation, the code is under review now. The tree works correctly, maybe it requires a number of small fixes, I believe the PR will be merged soon).
 
@@ -27,7 +27,7 @@ Here's a list of my Pull Requests. All these PRs are merged except [Pull Request
 
 (List of commits: [list] [commits])
 
-### Hilbert R tree
+# Hilbert R tree
 
 I began my work with the Hilbert R tree. The tree is implemented according to the [Hilbert R-tree: An Improved R-tree Using Fractals] [hilbert-r-tree-paper] paper on the basis of the `RectangleTree` class.
 
@@ -37,7 +37,7 @@ The Hilbert curve is a variant of space-filling Peano curves. The algorithm that
 
 The changes are contained in [Pull Request #664] [664] and [Pull Request #710] [710].
 
-### R+/R++ tree
+# R+/R++ tree
 
 I continued my project with the R+ tree which is based on the paper [The R+-tree: A dynamic index for multi-dimensional objects] [r-plus-tree-paper]. The main advantage of the tree is the property that children do not overlap each other.
 
@@ -45,7 +45,7 @@ When I had implemented the tree I found an error in the insertion algorithm. The
 
 The implementation of the R+ tree and the R++ tree can be found in [Pull Request 699] [699] and [Pull Request 724] [724].
 
-### Vantage point tree
+# Vantage point tree
 
 The vantage point tree is implemented on the basis of the paper [Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces] [vp-tree-paper]. The implementation appears to be much slower than the implementation of the k-d tree. The main disadvantage is that the bound of a node is too complex and attempts to calculate the distance between a point and a vp-tree node precisely require a lot of computations. The first version of the vantage point tree contains a point in each intermediate node. Then Ryan suggested to move vantage points to separate nodes in order to simplify tree traversal rules. Then I tried to implement a variant of the vantage point tree that contains points only in leaf nodes. That variant appears to be faster then the previous variants.
 
@@ -53,7 +53,7 @@ Moreover, I tried a number of different bounds. Right now, the tree uses the bou
 
 The changes can be found in [Pull Request 708] [708] and [Pull Request 760] [760]. Moreover, I implemented a variant of the vantage point tree that uses the hollow-rect bound which consists of the minimum bounding rectangle and a number of rectangular hollows. I didn't issue a PR since the implementation is slower than the implementation of the vantage point tree (I pushed the code [here] [hrect-vp-tree]).
 
-### Random projection tree
+# Random projection tree
 
 The implementation of random projection trees are based on the paper [Random projection trees and low dimensional manifolds] [random-projection-tree-paper].
 
@@ -61,7 +61,7 @@ I implemented two versions of the split method: the mean split and the max split
 
 The tree is implemented on the basis of the `BinarySpaceTree` class. The changes can be found in [Pull Request 726] [726].
 
-### Universal B tree
+# Universal B tree
 
 I think the universal B tree is the most complicated algorithm that I have implemented this summer. The implementation is based on the paper [The Universal B-Tree for Multidimensional indexing: General Concepts] [ub-tree-paper].
 
@@ -71,19 +71,19 @@ The bound of the UB tree is a stairway-shaped figure in multidimensional space. 
 
 The changes can be found in [Pull Request 746] [746]. The PR is not merged yet, but I believe it will be merged soon.
 
-### Other changes
+# Other changes
 
 I made a number of changes that are not connected directly with my project, I'll briefly describe them here. I've removed extensions of the TreeType API in the `RectangleTree` class. The changes can be found in [Pull Request 709] [709]. [Pull Request 711] [711] contains optimizations that allow to find descendant points by a logarithmic time. [Pull Request 721] [721] solves [Issue 712] [712]. [Pull Request 741] [741] solves a problem which has appeared after refactoring. And [Pull Request 767] [767] adds the copy-constructor and the move constructor to the `RectangleTree` class.
 
-### TODOs
+# TODOs
 
 Right now, some tree types like the vantage point tree and random projection trees use looser-bounds. That leads to a huge number of base cases in dual-tree algorithms. I think these bounds may be even more optimized but I don't know how.
 
 Another problem is concerned with [Rank-Approximate Nearest Neighbor Search] [rann-paper]. The algorithm often fails with some tree types (e.g. the Hilbert R tree). It is an interesting problem to understand why that happens.
 
-### Acknowledgement
+# Acknowledgement
 
-That was an amazing summer, thanks to the mlpack team and especially to Ryan Curtin who looked through the code and has suggested a lot of advices on the optimization of the algorithms and to Marcos Pividori who has proposed a series of ideas on the optimization of the `RectangleTree` class (such as [Pull Request 711] [711] and [Pull Request 767] [767]).
+That was an amazing summer, thanks to the `mlpack` team and especially to Ryan Curtin who looked through the code and has suggested a lot of advices on the optimization of the algorithms and to Marcos Pividori who has proposed a series of ideas on the optimization of the `RectangleTree` class (such as [Pull Request 711] [711] and [Pull Request 767] [767]).
 
 For further information see my [blog posts] [blog-posts-link].
 

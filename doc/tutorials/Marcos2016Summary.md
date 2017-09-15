@@ -1,12 +1,12 @@
 @brief Approximate Nearest Neighbor Search - Summary
 @author Marcos Pividori
-@page Marcos2016Summary Approximate Nearest Neighbor Search - Summary
+@page approximate-nearest-neighbor-search-conclusion Approximate Nearest Neighbor Search - Summary
 @date 2016-08-23 3:00:00
 
-@section Marcos2016Summary Approximate Nearest Neighbor Search - Summary
+@section approximate-nearest-neighbor-search-conclusion Approximate Nearest Neighbor Search - Summary
 
 I have been working this summer on the GSoC Project:
-"Approximate Nearest Neighbor Search" (Project site: [[1]][1]).
+`"Approximate Nearest Neighbor Search"` (Project site: [[1]][1]).
 
 The main contribution can be summarized in these pull requests:
 
@@ -33,16 +33,15 @@ The main contribution can be summarized in these pull requests:
 
 (List of commits: [[link]][commitlist])
 
-
 ## Approximate nearest neighbor search:
 
-I modified mlpack's code to include an *epsilon* value, which represents the
+I modified `mlpack's` code to include an `epsilon` value, which represents the
 maximum relative error. It is considered by the prune rules when deciding if a
 given node combination should be analyzed, (as suggested at the end of the paper
-[[2]][2]), with a general implementation that works for both *KFN* and *KNN*.
+[[2]][2]), with a general implementation that works for both `KFN` and `KNN`.
 
-The command line tools: *mlpack_knn* and *mlpack_kfn*, were updated to include
-an extra option *"-e"*, to specify the maximum relative error
+The command line tools: `mlpack_knn` and `mlpack_kfn`, were updated to include
+an extra option `"-e"`, to specify the maximum relative error
 (default value: 0).
 
 The main code developed was included in the [[pull/684]][pull/684].
@@ -52,7 +51,7 @@ So, the average relative error (effective error) will be much smaller than the
 epsilon value provided.
 
 As expected, higher values of the epsilon parameter implies that more nodes are
-pruned and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset *isolet*:
+pruned and, therefore, we have a faster algorithm, as can be seen in the next graphic for the dataset `*isolet`:
 
 <img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_EpsilonVsRuntime.png?raw=true" width="600">
 
@@ -60,21 +59,21 @@ pruned and, therefore, we have a faster algorithm, as can be seen in the next gr
 
 ## Spill Trees:
 
-I have implemented Spill Trees, as defined in: "An Investigation of Practial
-Approximate Nearest Neighbor Algorithms" [[3]][3] ([[pull/747]][pull/747]).
+I have implemented Spill Trees, as defined in: `"An Investigation of Practial
+Approximate Nearest Neighbor Algorithms"` [[3]][3] ([[pull/747]][pull/747]).
 It is a variant of binary space trees in which the children of a node
 can "spill over" each other, and contain shared datapoints.
 
 One problem with Spill Trees is that their depth varies considerably depending
-on the overlapping size *tau*.
+on the overlapping size `tau`.
 
 For that reason, I have implemented Hybrid Spill Trees [[3]][3],
 which provide better guarantee in the logarithmic depth of the tree.
 
-The extension was incorporated to existing *mlpack_knn*.
-You can specify *"-t spill"* to consider spill trees, and the command line
-paramenters *"--tau"* to set different values for the overlapping size (default
-value is tau=0), and *"--rho"* to set different values for the balance threshold
+The extension was incorporated to existing `mlpack_knn`.
+You can specify `"-t spill"` to consider spill trees, and the command line
+paramenters `"--tau"` to set different values for the overlapping size (default
+value is tau=0), and `"--rho"` to set different values for the balance threshold
 (default value is rho=0.7).
 
 
@@ -85,7 +84,6 @@ Trees, see discussions in:
 [[issues/728]][issues/728] and [[spilltrees]][spilltreepdf].
 Finally, we decided to implement a similar approach to the one mentioned in Ting
 Liu's paper.
-
 
 ### Splitting Hyperplanes
 
@@ -101,29 +99,28 @@ chosen).
 `MidpointSpaceSplit`, `MeanSpaceSplit`, which determines the splitting value
 to be considered.
 
-By default, *mlpack_knn* considers *Axis-Orthogonal Hyperplanes* and *Midpoint
-Splits*, because it is the most efficient option (we can project any vector in
+By default, `mlpack_knn` considers `Axis-Orthogonal Hyperplanes` and `Midpoint
+Splits`, because it is the most efficient option (we can project any vector in
 O(1) time).
-
 
 ### Defeatist Traversers
 
-I have implemented *Hybrid SP-Tree Search* as defined in [[3]][3].
-We can control the hybrid by varying *tau*. If *tau* is zero, we have a pure
+I have implemented `Hybrid SP-Tree Search` as defined in [[3]][3].
+We can control the hybrid by varying `tau`. If `tau` is zero, we have a pure
 spill tree with defeatist search, very efficient but not accurate enough.
-If *tau* is a very large number, then every node is a non-overlapping node and
+If `tau` is a very large number, then every node is a non-overlapping node and
 we get back to the traditional metric tree, with prunning rules, perfectly
 accurate but not very efficient.
-By setting different values for *tau*, we have a trade-off between efficiency
+By setting different values for `tau`, we have a trade-off between efficiency
 and accuracy.
 
-Also, I implemented a Defeatist Dual Tree Traverser, where the *query tree* is
+Also, I implemented a Defeatist Dual Tree Traverser, where the `query tree` is
 built without overlapping.
 
 The `DefeatistDualTreeTraverser` is faster than the
-`DefeatistSingleTreeTraverser`, specially when the value of *tau* increases.
+`DefeatistSingleTreeTraverser`, specially when the value of `tau` increases.
 
-Some results can be seen in the next graphic for the dataset *1000000-10-randu*.
+Some results can be seen in the next graphic for the dataset `1000000-10-randu`.
 
 <img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/1000000-10_Spill_EffectiveErrorVsRuntime.png?raw=true" width="600">
 
@@ -131,7 +128,7 @@ Some results can be seen in the next graphic for the dataset *1000000-10-randu*.
 
 ## General Greedy Search Traverser:
 
-Also, I implemented a *general greedy single tree traverser* to perform greedy
+Also, I implemented a `general greedy single tree traverser` to perform greedy
 search, that always chooses the child with the best score when traversing the
 tree, and doesn't consider backtracking: `GreedySingleTreeTraverser`.
 
@@ -141,7 +138,7 @@ approachs, at the cost of some relative error in the results.
 (PR: [[pull/762]][pull/762]). Further disccusion in: [[issues/761]][issues/761].
 
 We can simply reduce the relative error by increasing the leaf size of the tree,
-as is shown in the next graphic for the dataset *isolet*.
+as is shown in the next graphic for the dataset `isolet`.
 
 <img src="https://github.com/MarcosPividori/marcospividori.github.io/blob/master/mlpack-pictures/Isolet_Greedy_EffectiveErrorVsRuntime.png?raw=true" width="600">
 
@@ -178,7 +175,7 @@ this in [[pull/732]][pull/732].
 ### Benchmarking system:
 
 I have been updating the benchmarking system to include approximate neighbor
-search not only with mlpack, but also with other libraries like [[ANN]][ANN] and
+search not only with `mlpack`, but also with other libraries like [[ANN]][ANN] and
 [[FLANN]][FLANN] (PR: [[pull/14]][pull/14] and [[pull/19]][pull/19] ).
 
 Also, I created a new view to plot the progress of a specific metric for
@@ -190,7 +187,7 @@ approximation error (epsilon), with different libraries/configurations.
 
 ## Acknowledgement:
 
-I want to thank the mlpack community for giving me the opportunity to work with
+I want to thank the `mlpack` community for giving me the opportunity to work with
 them this summer, it has been a fascinating experience!
 They were very responsive, I always found someone to talk in the IRC channel,
 willing to offer their time to discuss ideas or help me with my project! :)

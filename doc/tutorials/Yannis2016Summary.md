@@ -1,13 +1,11 @@
 @brief LSH changes - Summary
 @author Yannis Mentekidis
-@page Yannis2016Summary LSH changes - Summary
+@page summary-of-lsh-changes-for-gsoc-2016 LSH changes - Summary
 @date 2016-08-20 20:20:20
 
-@section Yannis2016Summary LSH changes - Summary
+@section summary-of-lsh-changes-for-gsoc-2016 LSH changes - Summary
 
 As we are approaching the pencils down date, I think it is a good time to create a short summary of my contributions to mlpack this summer. Seeing all the students being very active, and so much code being committed, I believe summing up what I've done in the last months is going to help anyone wanting to come up-to-speed with the part of the changes I'm responsible for.
-
-
 
 # Executive Summary
 
@@ -50,23 +48,23 @@ The second optimization, summarized in [Pull Request 675][675] was made mainly b
 
 For the default parameters (`secondHashTable = 99901, bucketSize = 500`), this required almost 50 million objects of type `size_t` to be allocated. `size_t` is usually 8 bytes long, resulting in an allocation of about 400Mb when the program launched. This is bad, but it's even worse if a user sets `bucketSize` to some significantly larger size, like 3000 or 4000 (not unreasonable for larger datasets).
 
-The new version of the code refrains from such excessive allocations, using a `std::vec` of  arma::Col`s instead of a 2-dimensional matrix.
+The new version of the code refrains from such excessive allocations, using a `std::vec` of  arma::Col's instead of a 2-dimensional matrix.
 
 # Multiprobe LSH
 
-Now to the interesting part: Implementation of a state-of-the-art algorithm that (promises to) significantly improve the approximation results of naive LSH. The implementation was based on [this paper][mplsh], and it was introduced to mlpack through [Pull Request 691][691].
+Now to the interesting part: Implementation of a state-of-the-art algorithm that (promises to) significantly improve the approximation results of naive LSH. The implementation was based on [this paper][mplsh], and it was introduced to `mlpack` through [Pull Request 691][691].
 
 The implementation was mostly straight-forward, since the paper is quite clear and even provides pseudocode for the most tricky part.
 
 Of course, many mistakes that were made were much easier to test for, now that we could write (semi-)deterministic tests for LSH.
 
-The `LSHSearch` class of release 2.0.3 does not yet include Multiprobe LSH, so if you want to try it before release 2.0.4 which will (presumably) include all GSoC changes, you should download and install mlpack from the [source](https://github.com/mlpack/mlpack/).
+The `LSHSearch` class of release 2.0.3 does not yet include Multiprobe LSH, so if you want to try it before release 2.0.4 which will (presumably) include all GSoC changes, you should download and install `mlpack` from the [source](https://github.com/mlpack/mlpack/).
 
 # Parallelization with OpenMP
 
 This was another part I was looking forward to, and which I believe is an important improvement over the old implementation. Using OpenMP directives and minimal extra code, we were able to have the `LSHSearch` class process more than one query in different threads.
 
-[Pull Request 700][700] is merged, so if you're using a multi-core machine (you probably are) running mlpack, you can now process your LSH queries faster (or you will be, from mlpack 2.0.4, and if you're not using Visual Studio to compile).
+[Pull Request 700][700] is merged, so if you're using a multi-core machine (you probably are) running `mlpack`, you can now process your LSH queries faster (or you will be, from `mlpack` 2.0.4, and if you're not using Visual Studio to compile).
 
 # Implementation of LSH Tuning
 
@@ -78,14 +76,14 @@ Among other things, LSH Tuning models pairwise distances by fitting a Gamma Dist
 
 The Gamma Distribution implementation was incomplete, as I mention in [Issue 733][733]. I worked towards closing that issue later, and implemented most of the missing functionality in [Pull Request 751][751]. Some work remains to be done, and I will come back to it once everything else is ready.
 
-The rest of the code for the LSHTuning module, a new class and executable that will be added to mlpack, is still in progress. The paper describing the algorithm has been convoluted in a few parts, but I think most of my confusion has been solved (with immeasurable help from Ryan), so I'm confident the code will be ready to ship relatively soon.
+The rest of the code for the LSHTuning module, a new class and executable that will be added to `mlpack`, is still in progress. The paper describing the algorithm has been convoluted in a few parts, but I think most of my confusion has been solved (with immeasurable help from Ryan), so I'm confident the code will be ready to ship relatively soon.
 
-I am almost done implementing the core algorithm, but for it to be usable I need to write the code for the corresponding mlpack executable and write useful tests. My progress can be seen in [Pull Request 749][749]. 
+I am almost done implementing the core algorithm, but for it to be usable I need to write the code for the corresponding `mlpack` executable and write useful tests. My progress can be seen in [Pull Request 749][749].
 
 
 # Conclusions
 
-It has been an amazing summer, and although I didn't have the time to complete any of my blue-sky ideas that I discussed in my proposal, I think the experience has made me significantly more aware of the mlpack codebase. I am now much more capable to continue contributing to it, so hopefully I will be implementing many more interesting features soon!
+It has been an amazing summer, and although I didn't have the time to complete any of my blue-sky ideas that I discussed in my proposal, I think the experience has made me significantly more aware of the `mlpack` codebase. I am now much more capable to continue contributing to it, so hopefully I will be implementing many more interesting features soon!
 
 If you made it this far, congratulations! Have an ice cream on me.
 

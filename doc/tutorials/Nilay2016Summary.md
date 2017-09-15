@@ -1,17 +1,17 @@
 @brief We need to go deeper, Googlenet - Summary
 @author Nilay Jain
-@page Nilay2016Summary We need to go deeper, Googlenet - Summary
+@page we-need-to-go-deeper-googlenet-project-summary We need to go deeper, Googlenet - Summary
 @date 2016-08-23 11:30:20
 
-@section Nilay2016Summary We need to go deeper, Googlenet - Summary
+@section we-need-to-go-deeper-googlenet-project-summary We need to go deeper, Googlenet - Summary
 
 This blogpost discusses the project summary and my contributions over the summer, as GSoC 2016, approaches its conclusion. First we'll discuss how you can find most of the work that I did, this will be a list of commits from [mlpack][mlpack] or from various branches in my [fork][fork]. Then we'll discuss what were the goals of the project, and how much we accomplished them, and finally what I learnt over the summer and why working on this project with my mentors was great! :)
 
 # Project Summary
 
-The goal of this project was to develop googlenet such that it integrates in mlpack's existing ANN API and the modules developed are reusable to other related applications.
+The goal of this project was to develop googlenet such that it integrates in `mlpack's` existing ANN API and the modules developed are reusable to other related applications.
 
-We selected the [edge_boxes][edge_boxes] algorithm for object localization. We performed the feature extraction [703][703] for a sample BSDS500 Dataset. Marcus helped with reusing the Tree implementation to train the structured random forest which detects edges in the image. Next, we started implementing the Neural Net part. We added functionality to the [pooling layer][pooling_layer], [convolutional layer] [conv_layer] and implemented the [inception layer][inception_layer] (which is replicated throughout googlenet), [concatenation layer][concat_layer], [subnetwork layer][subnet_layer] and [connect layer][connect_layer] as additional layers and wrote the [tests][tests] for them. This will give mlpack users a significant flexibility in training more complicated and deep neural nets. We made the [GoogleNet][googlenet] using these layers. Tests of our implementation on standard datasets still need to be finished.
+We selected the [edge_boxes][edge_boxes] algorithm for object localization. We performed the feature extraction [703][703] for a sample BSDS500 Dataset. Marcus helped with reusing the Tree implementation to train the structured random forest which detects edges in the image. Next, we started implementing the Neural Net part. We added functionality to the [pooling layer][pooling_layer], [convolutional layer] [conv_layer] and implemented the [inception layer][inception_layer] (which is replicated throughout googlenet), [concatenation layer][concat_layer], [subnetwork layer][subnet_layer] and [connect layer][connect_layer] as additional layers and wrote the [tests][tests] for them. This will give `mlpack` users a significant flexibility in training more complicated and deep neural nets. We made the [GoogleNet][googlenet] using these layers. Tests of our implementation on standard datasets still need to be finished.
 Here is the list of commits and pull requests (from recent to old) in different branches, with their description, you can see to track the work done over summer:
 
  * [Googlenet, connect_layer implementation][googlenet_commits]
@@ -33,7 +33,7 @@ Then we calculated Regular and Self Similarity features on a 16x16 image patches
 
 # Inception Layer
 
-Next, we proceeded to implement the Inception Layer. Before doing this, I needed to read some papers [alexnet][alexnet], [visualizing CNNs][vcnn] to understand some CNN architectures and some ideas like [Network in Network][network_in_network], that Googlenet paper uses by replicating the inception network inside it 9 times. It took time to understand the mlpack CNN class implementation as it uses interesting techniques of generating code using compile time recursion on templates which I was previously oblivious of. Then we made an inception layer as a collection of layers as mentioned in [googlenet paper][googlenet_paper] and wrote the tests for it to verify correctness. The implementation of inception layer can be seen in [757][757].
+Next, we proceeded to implement the Inception Layer. Before doing this, I needed to read some papers [alexnet][alexnet], [visualizing CNNs][vcnn] to understand some CNN architectures and some ideas like [Network in Network][network_in_network], that Googlenet paper uses by replicating the inception network inside it 9 times. It took time to understand the `mlpack` CNN class implementation as it uses interesting techniques of generating code using compile time recursion on templates which I was previously oblivious of. Then we made an inception layer as a collection of layers as mentioned in [googlenet paper][googlenet_paper] and wrote the tests for it to verify correctness. The implementation of inception layer can be seen in [757][757].
 
 # Adding functionality to Pooling Layer and Convolution Layer
 
@@ -47,11 +47,11 @@ The goal of this project was to create the components of googlenet so they are a
 
 # Connect Layer
 
-With the googlenet network we faced one more interesting problem - auxillary classifiers. From one layer, there could be 2 layers diverging, and both of these layers would end up at separate output layers. Auxillary classifiers are added to googlenet to combat [vanishing gradient problem][vanishing_gradients] while providing regularization. In mlpack implementation, the layers are stacked sequentially in the form of a tuple. To support this architectural variant, where 2 layers emerge from one layer, we added a [connect layer][connect_layer], which contains the 2 separate nets that emerge from it, and has responsibility for passing input to and collect errors from these nets. Tests still need to be written to for the connect layer. 
+With the googlenet network we faced one more interesting problem - auxillary classifiers. From one layer, there could be 2 layers diverging, and both of these layers would end up at separate output layers. Auxillary classifiers are added to googlenet to combat [vanishing gradient problem][vanishing_gradients] while providing regularization. In `mlpack` implementation, the layers are stacked sequentially in the form of a tuple. To support this architectural variant, where 2 layers emerge from one layer, we added a [connect layer][connect_layer], which contains the 2 separate nets that emerge from it, and has responsibility for passing input to and collect errors from these nets. Tests still need to be written to for the connect layer.
 
 # Googlenet
 
-After all the basic components have completed, creating googlenet is as simple as stacking up all of the layers, put the desired values from the [paper][googlenet_paper] and calling the Train() and Predict() functions of CNN class to evaluate outputs. When we are able to complete all refinements we need to make to, all the components developed in this project, training deep neural nets with mlpack will become effortless. There is also one variant of googlenet which uses [batch normalization][batch_norm], that I plan to contribute to mlpack with the guidance of Marcus after GSoC 2016.
+After all the basic components have completed, creating googlenet is as simple as stacking up all of the layers, put the desired values from the [paper][googlenet_paper] and calling the Train() and Predict() functions of CNN class to evaluate outputs. When we are able to complete all refinements we need to make to, all the components developed in this project, training deep neural nets with `mlpack` will become effortless. There is also one variant of googlenet which uses [batch normalization][batch_norm], that I plan to contribute to `mlpack` with the guidance of Marcus after GSoC 2016.
 
 # ToDo
 
@@ -62,7 +62,7 @@ The following things still need to be completed in order to achieve all the goal
 
 # Acknowledgements
 
-I want to thank the mlpack community for giving me this awesome opportunity to work with them on this amazing project over the summer. I was welcomed right from the first day I joined the [irc channel][irc] in the beginning of the student application period, when I wasn't even sure what project I wanted to apply to for GSoC 2016. Special Thanks to my mentors Marcus Edel and Tham Ngap Wei, for clearing all my doubts (sometimes even unrelated to the project :) ) with so much patience and simple explainations, and helping me with design and debugging of the project. I feel I have learnt a lot from them, and I really enjoy being part of the mlpack community. This was a great experience, Thank you very much!
+I want to thank the `mlpack` community for giving me this awesome opportunity to work with them on this amazing project over the summer. I was welcomed right from the first day I joined the [irc channel][irc] in the beginning of the student application period, when I wasn't even sure what project I wanted to apply to for GSoC 2016. Special Thanks to my mentors Marcus Edel and Tham Ngap Wei, for clearing all my doubts (sometimes even unrelated to the project :) ) with so much patience and simple explainations, and helping me with design and debugging of the project. I feel I have learnt a lot from them, and I really enjoy being part of the `mlpack` community. This was a great experience, Thank you very much!
 
 [mlpack]: https://github.com/mlpack/mlpack
 [fork]: https://github.com/nilayjain/mlpack
