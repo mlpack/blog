@@ -26,13 +26,13 @@ make doc
 cd doc/html/
 #mogrify -negate *.png
 # Move the extra CSS.
-cp $doxygensrcdir/tabs.css .
-cp $doxygensrcdir/dynamic_tables.js .
+cp ../../$doxygensrcdir/tabs.css .
+cp ../../$doxygensrcdir/dynamic_tables.js .
 
 # Now postprocess all of the HTML.
 for i in *.html; do
   echo $i
-  $doxygensrcdir/label_html_templates.py $i > tmp.html;
+  ../../$doxygensrcdir/label_html_templates.py $i > tmp.html;
   mv tmp.html $i;
 done
 cd ../../
