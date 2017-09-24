@@ -21,6 +21,8 @@ My GSoC project can be summarized in the following PRs.
 
 * [#1101 Add a hyper-parameter tuning module](https://github.com/mlpack/mlpack/pull/1101)
 
+* [#1108 Add a tutorial for the cross-validation and hyper-parameter tuning modules](https://github.com/mlpack/mlpack/pull/1108)
+
 # Cross-validation module
 
 During the summer I have implemented two `cross-validation strategies`. The first
@@ -33,11 +35,12 @@ The cross-validation module has the following features.
 1. Data preparation happens only once when a cross-validation object is
 constructed.
 
-2. In many cases you don't need to be explicit about data of what types you
-are going to pass: the developed meta-programming tools are used to deduce
-types for storing data. It also allows you to pass objects that can be
-converted to the target types (e.g. objects of types that used by
-[armadillo](http://arma.sourceforge.net/) to store intermediate results).
+2. In many cases you don't need to be explicit about data of what types you are
+going to pass: the developed meta-programming tools are used to deduce types
+for storing data by inspecting machine learning algorithms you specify. It also
+allows you to pass objects that can be converted to the target types (e.g.
+objects of types that used by [armadillo](http://arma.sourceforge.net/) to
+store intermediate results).
 
 3. The interface is designed in the way that you first pass common (among
 machine learning algorithms implemented in `mlpack`) constructor parameters
