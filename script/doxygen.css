@@ -315,3 +315,13 @@ pre.fragment a {
 dl.author dt {
   font-size: 85%;
 }
+
+h4 {
+  color: #ffffff;
+  border-top: none;
+  text-align: left;
+  margin-left: 25px;
+  border-bottom: 5px solid #111111;
+  display: inline-block;
+  padding: 3px;
+}
