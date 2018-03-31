@@ -63,7 +63,7 @@ improved functionality:
 
  - Optimization infrastructure (<a
    href="http://www.mlpack.org/docs/mlpack-3.0.0/doxygen/optimizertutorial.html">more
-here</a> and <a href="https://arxiv.org/abs/1711.06581">here</a>
+here</a> and <a href="https://arxiv.org/abs/1711.06581">here</a>)
 
  - Deep learning infrastructure with support for FNNs, CNNs, and RNNs, as well
    as lots of existing layer types and support for custom layers.
