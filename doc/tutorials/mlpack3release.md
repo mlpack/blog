@@ -53,7 +53,7 @@ href="http://www.mlpack.org/docs/mlpack-3.0.0/doxygen/python_quickstart.html">py
 
 And you can download the new source package here:
 
-<center>http://www.mlpack.org/files/mlpack-3.0.0.tar.gz</center>
+<p><center>http://www.mlpack.org/files/mlpack-3.0.0.tar.gz</center></p>
 
 #### New And Improved Functionality
 
