@@ -12,7 +12,7 @@ contributor</a>.  This release includes, among other things, Python bindings, a
 generic optimization infrastructure, support for deep learning, and improved
 implementations of machine learning algorithms.
 
-## Community-Led Growth
+### Community-Led Growth
 
 I'm proud to say that over the years we have grown the project into a
 community-led effort for fast machine learning implementations in C++.
@@ -35,9 +35,9 @@ making this release happen.  <a href="http://www.mlpack.org/about.html">The
 About page</a> on the mlpack website has a list of all the contributors, and you
 could also look at <a
 href="https://github.com/mlpack/mlpack/graphs/contributors">Github's contributor
-list</a>.  <b>Thank you</b> to each and every contributor!
+list</a>.  <b><i>Thank you</i></b> to each and every contributor!
 
-## Interfaces to Python and Other Languages
+### Interfaces to Python and Other Languages
 
 For the mlpack 3 release, we have created a system to provide bindings to Python
 that have the same interface as our command-line bindings.  In addition, we are
@@ -46,16 +46,16 @@ and C#, as well as others.
 
 Here are some links to quickstart guides for those bindings:
 
-<p align="center"><a
+<p><center><a
 href="http://www.mlpack.org/docs/mlpack-3.0.0/doxygen/python_quickstart.html">python</a>
 | <a
-  href="http://www.mlpack.org/docs/mlpack-3.0.0/doxygen/cli_quickstart.html">command-line</a></p>
+  href="http://www.mlpack.org/docs/mlpack-3.0.0/doxygen/cli_quickstart.html">command-line</a></center></p>
 
 And you can download the new source package here:
 
   http://www.mlpack.org/files/mlpack-3.0.0.tar.gz
 
-## New And Improved Functionality
+### New And Improved Functionality
 
 Since the last release (mlpack 2.2.5), lots has been added and changed.  Much of
 this is due to projects from Google Summer of Code.  A shortlist of new and
@@ -83,7 +83,8 @@ tuning</a> and <a
 href="http://mlpack.org/docs/mlpack-git/doxygen/cv.html">cross-validation
 infrastructure</a>.
 
-## Modular By Design
+### Modular By Design
+
 Since mlpack is designed in a modular way, you can drop in custom functionality
 for a specific task.  For instance, if you want to use a custom metric for
 nearest neighbor search or if you want to use a custom criterion for splitting
@@ -97,7 +98,7 @@ with builtin parallelization.  You could even use <a
 href="http://docs.nvidia.com/cuda/nvblas/index.html">NVBLAS</a>, which will
 outsource heavy-duty matrix computations to the GPU, if you have GPUs available.
 
-## Read, Download, Explore
+### Read, Download, Explore
 
 So, head on over to http://www.mlpack.org/ and check out the new release!  And
 if you're interested in following the development or contributing, check out <a
