@@ -3,7 +3,7 @@
 @page mlpack-in-google-summer-of-code-2018 mlpack in Google Summer of Code 2017
 @date 2018-05-08 19:00:00
 
-@section mlpack-in-google-summer-of-code-2018 `mlpack` in Google Summer of Code 2018
+@section mlpack-in-google-summer-of-code-2018 mlpack in Google Summer of Code 2018
 
 This year is shaping up to be another productive and exciting year for mlpack;
 after being accepted into Google Summer of Code 2018, we received an astounding
@@ -25,7 +25,7 @@ Technology, Patna, India.
 \note
 "If you fancy foreign made films, I'd suggest some k-movies, Oldboy, Train to
 Busan and I Saw The Devil (watch the original with English subtitles). Though I
-must warn, they are not for the squeamish.""
+must warn, they are not for the squeamish."
 
 ### [Neural Collaborative Filtering](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
 
