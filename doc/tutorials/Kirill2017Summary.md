@@ -25,10 +25,10 @@ My GSoC project can be summarized in the following PRs.
 
 # Cross-validation module
 
-During the summer I have implemented two `cross-validation strategies`. The first
-one is simple: it splits data into two sets - training and validation sets -
-and then runs training on the training set and evaluates performance on the
-validation set. The second cross-validation strategy is `k-fold cross-validation`.
+I have implemented two `cross-validation strategies`. The first one is simple:
+it splits data into two sets - training and validation sets - and then runs
+training on the training set and evaluates performance on the validation set.
+The second cross-validation strategy is `k-fold cross-validation`.
 
 The cross-validation module has the following features.
 
