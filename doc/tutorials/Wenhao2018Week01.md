@@ -1,5 +1,5 @@
 @brief Alternatives to Neighborhood-Based CF - Week 1
-@author Wenhao
+@author Wenhao Huang
 @page Wenhao2018Week01 Alternatives to Neighborhood-Based CF - Week 1
 @date 2018-05-20 22:40:00
 
