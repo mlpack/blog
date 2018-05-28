@@ -1,7 +1,7 @@
 @brief Neural Collaborative Filtering - Week 2
 @author Haritha Nair
 @page Haritha2018Week02 Neural Collaborative Filtering - Week 2
-@date 2018-05-20 13:05:00
+@date 2018-05-28 16:20:00
 
 @section Haritha2018Week02 Neural Collaborative Filtering - Week 2
 
