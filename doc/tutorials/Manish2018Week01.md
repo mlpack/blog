@@ -1,9 +1,9 @@
 @brief LMNN (via LRSDP) & BoostMetric Implementation - Week 1
 @author Manish Kumar
-@page Manish2018Week1 LMNN (via LRSDP) & BoostMetric Implementation - Week 1
+@page Manish2018Week01 LMNN (via LRSDP) & BoostMetric Implementation - Week 1
 @date 2018-05-21 07:00:00
 
-@section Manish2018CommunityBondingPeriod LMNN (via LRSDP) & BoostMetric Implementation - Week 1
+@section Manish2018Week01 LMNN (via LRSDP) & BoostMetric Implementation - Week 1
 
 And the first week came to an end. It's been a week full of learning and overwhelming encounters. Over this period we had numerous reasoning sessions resulting in the conversion of whole SDP problem to a linear optimization problem.
 

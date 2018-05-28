@@ -1,9 +1,9 @@
 @brief LMNN (via LRSDP) & BoostMetric Implementation - Week 2
 @author Manish Kumar
-@page Manish2018Week2 LMNN (via LRSDP) & BoostMetric Implementation - Week 2
+@page Manish2018Week02 LMNN (via LRSDP) & BoostMetric Implementation - Week 2
 @date 2018-05-28 10:00:00
 
-@section Manish2018CommunityBondingPeriod LMNN (via LRSDP) & BoostMetric Implementation - Week 2
+@section Manish2018Week02 LMNN (via LRSDP) & BoostMetric Implementation - Week 2
 
 Last week LMNN initial implementation was completed to a great extent. The results were comparable to the other LMNN implementations. Currently, we are going over the different parts of the implementation to gain speedups and efficiency. Some unit tests for checking the correctness of LMNN and constraints were written as well. It may happen that some of these tests would not show up in the final implementation, or some others may be included as we progress.
 
