@@ -9,6 +9,6 @@ Another week of programming has passed and I feel so much comfortable with `GANs
 
 Though progress went a lot slower than I expected, now the core infrastructure is fully functional, and the only task that remains is to find the appropriate hyper-parameters for the `GAN` code, which would be my goal for the next couple of days. I'll also have to consult with Marcus and Mikhail regarding changing the current `GAN` optimizer API, though this would not be of much importance if we are able to obtain good results with the existing code.
 
-I have a lot to cover up to stay on track of getting the `DCGAN` implementation up and functional within the next two weeks. Hopefully, the current `GAN` code wouldn't take much longer get merged, and we could leverage the experience gained while implementing `DCGAN` which follows closely from the standard implementation.
+I have a lot to cover up to stay on track of getting the `DCGAN` implementation up and functional within the next two weeks. Hopefully, the current `GAN` code wouldn't take much longer to get merged, and we could leverage the experience gained while implementing `DCGAN` which follows closely from the standard implementation.
 
 Au Revoir!
