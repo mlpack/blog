@@ -3,7 +3,7 @@
 @page Shikhar2018Week02 Implementing Essential Deep Learning Modules - Week 2
 @date 2018-05-28 23:27:00
 
-@section Shikhar2018Week01 Implementing Essential Deep Learning Modules - Week 1
+@section Shikhar2018Week01 Implementing Essential Deep Learning Modules - Week 2
 
 Another week of programming has passed and I feel so much comfortable with `GANs` already. I spent the entire week debugging Kris' `GAN` code, and implementing the O'Reilly test on the `MNIST` dataset.
 
