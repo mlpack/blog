@@ -23,9 +23,9 @@ My GSoC project can be summarized in the following PRs.
 
 * [#1108 Add tutorials for the cross-validation and hyper-parameter tuning modules](https://github.com/mlpack/mlpack/pull/1108)
 
-Update: tutorials can be found with the following links.
-* [Cross-validation](http://mlpack.org/docs/mlpack-3.0.0/doxygen/cv.html) and
-* [Hyper-parameter tuning](http://mlpack.org/docs/mlpack-3.0.0/doxygen/hpt.html).
+Update: the tutorials can be found with the following links.
+* [Cross-validation](http://mlpack.org/docs/mlpack-3.0.0/doxygen/cv.html)
+* [Hyper-parameter tuning](http://mlpack.org/docs/mlpack-3.0.0/doxygen/hpt.html)
 
 # Cross-validation module
 
