@@ -13,12 +13,12 @@ This week we got some promising results with the `GAN` code on the 10,000 image 
 
 `10,000 Images`
 <p>
-<img src = "images/mnist_gan_10_epoch.png" width = "600" height = "600" hspace = "10"/>
+<img src = "images/mnist_gan_10_epoch.png" width = "640" height = "480" hspace = "10"/>
 </p>
 
 `70,000 Images`
 <p>
-<img src = "images/mnist_gan_full_dataset.png" width = "600" height = "600" hspace = "10"/>
+<img src = "images/mnist_gan_full_dataset.png" width = "640" height = "480" hspace = "10"/>
 </p>
 
 For the next week, we will be focussing on implementing the support for batch sizes and optimizer separation for `GANs`.
