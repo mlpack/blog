@@ -1,9 +1,9 @@
 @brief Variational Autoencoders - Week 5
 @author Atharva Khandait
-@page Atharva2018Week04 Variational Autoencoders - Week 5
+@page Atharva2018Week05 Variational Autoencoders - Week 5
 @date 2018-06-18 23:00:00
 
-@section Atharva2018Week04 Variational Autoencoders - Week 5
+@section Atharva2018Week05 Variational Autoencoders - Week 5
 
 We have decided against implementing a VAE class. Instead we will try to extend the functionality of the current ANN and DIST architecture to make it more generic.
 
