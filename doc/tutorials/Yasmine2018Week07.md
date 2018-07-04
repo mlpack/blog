@@ -1,7 +1,7 @@
 @brief Automatically-Generated Go Bindings - Week 07
 @author Yasmine Dumouchel
 @page Yasmine2018Week07 Automatically-Generated Go Bindings - Week 07
-@date 2018-07-01 12:08:00
+@date 2018-07-03 12:08:00
 
 @section Yasmine2018Week07 Automatically-Generated Go Bindings - Week 07
 
