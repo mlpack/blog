@@ -1,0 +1,8 @@
+@brief Automatically-Generated Go Bindings - Week 08
+@author Yasmine Dumouchel
+@page Yasmine2018Week08 Automatically-Generated Go Bindings - Week 08
+@date 2018-07-09 11:45:00
+
+@section Yasmine2018Week08 Automatically-Generated Go Bindings - Week 08
+
+Last week, I continued to focus on matrices, and was finally able to pass a gonum object from Go to C++ and wrap it into an armadiillo matrix. Further, I was also able to pass back a matrix and wrap a Golang matrix made of n-dimensional float 64 array. I ended my workweek at trying to pass back a gonum matrix. The underlying data member of a gonum matrix is a blas64.General matrix. A blas65.General data member has a row and column capacity bigger than its actually row and column length and thus, passing back the matrix just by wrapping around the armadillo pointer a float64 ndimensional array is not sufficient. I am therefore planning on dealing with this issue today and tomorrow if needed. After that, I will be dealing with mlpack's method who return multiple output. In Python, a dictionary is used to deal with the later, but in Go, multiple return values have built-in support, making me think it should be fairly easy to have working for the bindings. However, to pass matrices, we are using unsafe.Pointers and using these has proved to have some unexpected side effects at times. Therefore, I don't want to exclude the fact that some functions might be needed to make sure that the return of multiple values works properly in the bindings.  After making sure multiple values are being passed as expected, I will start dealing with passing models from mlpack to Go!
