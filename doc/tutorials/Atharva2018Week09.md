@@ -1,7 +1,7 @@
 @brief Variational Autoencoders - Week 9
 @author Atharva Khandait
 @page Atharva2018Week09 Variational Autoencoders - Week 9
-@date 2018-07-10 09:00:00
+@date 2018-07-17 23:00:00
 
 @section Atharva2018Week09 Variational Autoencoders - Week 9
 
