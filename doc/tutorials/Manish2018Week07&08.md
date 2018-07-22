@@ -1,9 +1,9 @@
-@brief LMNN (via LRSDP) & BoostMetric Implementation - Week 7 & 8
+@brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 7 & 8
 @author Manish Kumar
-@page Manish2018Week08 LMNN (via LRSDP) & BoostMetric Implementation - Week 7 & 8
+@page Manish2018Week08 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 7 & 8
 @date 2018-07-09 05:00:00
 
-@section Manish2018Week08 LMNN (via LRSDP) & BoostMetric Implementation - Week 7 & 8
+@section Manish2018Week08 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 7 & 8
 
 We started the week by taking the well-known policy of divide and conquer into account in order to safely handle massive optimization tasks. That being so Ryan opened several issues dealing with each individual task. 
 

@@ -1,9 +1,9 @@
-@brief LMNN (via LRSDP) & BoostMetric Implementation - Week 4
+@brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 4
 @author Manish Kumar
-@page Manish2018Week04 LMNN (via LRSDP) & BoostMetric Implementation - Week 4
+@page Manish2018Week04 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 4
 @date 2018-06-11 08:30:00
 
-@section Manish2018Week04 LMNN (via LRSDP) & BoostMetric Implementation - Week 4
+@section Manish2018Week04 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 4
 
 Last week a fair amount of debugging and optimization was performed. In regard to optimization, some of the repetitive calculation was avoided by caching the results in accordance with the decomposable function policy both in LMNN function and Constraints class.  We also performed quite a number of benchmarking tests on the full covertype dataset, which gave us some reasonable results, though running time was not good enough, it was clear that it can be improved a lot.
 

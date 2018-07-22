@@ -1,9 +1,9 @@
-@brief LMNN (via LRSDP) & BoostMetric Implementation - Week 5
+@brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 5
 @author Manish Kumar
-@page Manish2018Week05 LMNN (via LRSDP) & BoostMetric Implementation - Week 5
+@page Manish2018Week05 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 5
 @date 2018-06-18 16:30:00
 
-@section Manish2018Week05 LMNN (via LRSDP) & BoostMetric Implementation - Week 5
+@section Manish2018Week05 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 5
 
 Continuing the practice from previous weeks, last week too the main focus was on optimization. As a result, AMSGrad and BigBatchSGD came into the picture, performing even better than SGD on LMNN in combined terms of speed and final objective.
 

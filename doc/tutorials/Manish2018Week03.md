@@ -1,9 +1,9 @@
-@brief LMNN (via LRSDP) & BoostMetric Implementation - Week 3
+@brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 3
 @author Manish Kumar
-@page Manish2018Week03 LMNN (via LRSDP) & BoostMetric Implementation - Week 3
+@page Manish2018Week03 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 3
 @date 2018-06-04 10:00:00
 
-@section Manish2018Week03 LMNN (via LRSDP) & BoostMetric Implementation - Week 3
+@section Manish2018Week03 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 3
 
 Past week we have spent much time on debugging implementation. Now we have a fully functional LMNN method, together with quality output. We made quite a number of tests on some small-scale datasets, the likes of Iris and got considerable results w.r.t KNN accuracy on the same.
 

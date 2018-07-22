@@ -1,9 +1,9 @@
-@brief LMNN (via LRSDP) & BoostMetric Implementation - Community Bonding Period
+@brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Community Bonding Period
 @author Manish Kumar
-@page Manish2018CommunityBondingPeriod LMNN (via LRSDP) & BoostMetric Implementation - Community Bonding Period
+@page Manish2018CommunityBondingPeriod LMNN (via Low-Rank optimization) & BoostMetric Implementation - Community Bonding Period
 @date 2018-05-14 18:00:00
 
-@section Manish2018CommunityBondingPeriod LMNN (via LRSDP) & BoostMetric Implementation - Community Bonding Period
+@section Manish2018CommunityBondingPeriod LMNN (via Low-Rank optimization) & BoostMetric Implementation - Community Bonding Period
 
 This summer I will be working on implementing distance metric learning technique for Large Margin Nearest Neighbor (LMNN) Classification using LR-SDP optimizer along with an adaptation of LMNN using a Boosting algorithm.
 
