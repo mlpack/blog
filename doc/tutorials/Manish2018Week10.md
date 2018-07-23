@@ -1,7 +1,7 @@
 @brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 10
 @author Manish Kumar
 @page Manish2018Week10 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 10
-@date 2018-07-16 15:00:00
+@date 2018-07-23 13:30:00
 
 @section Manish2018Week10 LMNN (via Low-Rank optimization) & BoostMetric Implementation - Week 10
 
