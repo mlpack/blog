@@ -24,3 +24,13 @@ I also did some cherry-picking and split the huge ReconstructionLoss PR. The Nor
 For CVAEs(Conditional Variational Autoencoders), we will need to use `Forward()`, `Backward()` and `Update()` instead of `Train()` function as we need to append the labels to the output of the `Reparametrization` layer midway during the forward pass.
 
 I am now putting a convolutional VAE model to train on the CelebA dataset, I think it's on this dataset that experiments with beta-VAEs and CVAEs can be really interesting.
+
+I had trained a model on binary MNIST as well, here are the results.
+Sampling from the prior:
+<p>
+<img src = "images/priorBinary.jpg" width = "640" height = "35" hspace = "10"/>
+</p>
+Sampling from the posterior:
+<p>
+<img src = "images/posteriorBinary.jpg" width = "640" height = "35" hspace = "10"/>
+</p>
