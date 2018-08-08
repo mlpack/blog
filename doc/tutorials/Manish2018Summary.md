@@ -26,7 +26,7 @@ The process just didn't stop there, many more exciting optimizations were still 
 |      |               Runtimes  (secs)      | Runtimes (secs) | Runtimes (secs)  | 
 | iris |  0.028843  | 1.340270 | 1.816999 |
 | satellite | 6.099969  | 122.910678| 1161.872116 | 
-| ecoli | 0.020087  |5.918733 | 90.625 | 7.241073 |
+| ecoli | 0.020087  |5.918733 | 90.625 |
 | vehicle | 0.620096  |18.766937 | 55.068948 |
 | balance | 0.071944 | 10.840742 | 3.332948 | 
 | letter | 19.975593  | 6416.926464  | - | 
@@ -57,7 +57,7 @@ Out of those [#1447](https://github.com/mlpack/mlpack/issues/1447 "#1447"), [#14
 
 Here's an illustration of result of lmnn learning over a dummy dataset - 
 <p>
-<img src = "images/lmnn_distance.png" width = "540" height = "250" hspace = "10"/>
+<img src = "images/lmnn_distance.png" width = "600" height = "250" hspace = "10"/>
 </p>
 
 Finally, Here's a record of all PR's relevant to LMNN implementation - 
@@ -93,4 +93,4 @@ A major portion of the project time went into developing a novel implementation 
 
 ## Conclusion
 
-Ah, this was one the best experience I ever had. I didn't thought that these 3 months will pass this quickly. Each and every day was full of new encounters. I couldn't have expected more. I am thankful to Ryan, Marcus & whole of the awesome mlpack organization for this wonderful period of time. Thanks, Ryan for always being there and helping me out at each and every step. I appreciate all the help you provided and all the patience you kept with me. Without your thoughtful  & clever ideas, I don't think the project could have been in the state, it is now. Also, a big thanks to Marcus for helping out every time I asked. I really appreciate all you did for me when I was stuck with benchmarking scripts. Finally, I am grateful to Google for providing me a once in a lifetime experience, eventually making me more comfortable with open source. GSoC is definitely a novel program helping thousands of students worldwide.
+Ah, this was one of the best experience I ever had. I didn't thought that these 3 months will pass this quickly. Each and every day was full of new encounters. I couldn't have expected more. I am thankful to Ryan, Marcus & whole of the awesome mlpack organization for this wonderful period of time. Thanks, Ryan for always being there and helping me out at each and every step. I appreciate all the help you provided and all the patience you kept with me. Without your thoughtful  & clever ideas, I don't think the project could have been in the state, it is now. Also, a big thanks to Marcus for helping out every time I asked. I really appreciate all you did for me when I was stuck with benchmarking scripts. Finally, I am grateful to Google for providing me a once in a lifetime experience, eventually making me more comfortable with open source. GSoC is definitely a novel program helping thousands of students worldwide.
