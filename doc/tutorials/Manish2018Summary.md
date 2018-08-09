@@ -13,7 +13,7 @@ Through my proposal, I aimed for implementing LMNN (Large Margin Nearest Neighbo
 
 Initially, the goal was to have a LMNN implementation based upon Low-Rank SDP optimizer. Though, after some realizations, it eventually got converted into a low-rank linear optimization problem, completely removing the SDP projection step from the picture, meanwhile keeping the base idea of LMNN intact.
 
-This low-rank formulation leads to an initial implementation ([#1407  LMNN distance learning](https://github.com/mlpack/mlpack/pull/1407)) which is generic in term of the optimizer, means most of the optimizer can easily be plugged into the LMNN, allowing LMNN to easily exploit most of there characteristics. As for instance, the implementation allows the user to easily select one from AMSGrad, Big Batch SGD, SGD & L-BFGS by simply passing an optimizer flag.
+This low-rank formulation leads to an initial implementation ([#1407  LMNN distance learning](https://github.com/mlpack/mlpack/pull/1407)) which is generic in term of the optimizer, means most of the optimizer can easily be plugged into the LMNN, allowing LMNN to easily exploit most of there characteristics. For instance, the implementation allows the user to easily select one from AMSGrad, Big Batch SGD, SGD & L-BFGS by simply passing an optimizer flag.
 
 The process just didn't stop there, many more exciting optimizations were still to be employed. The few starting ones include -
  - Pruning inactive constraints.
@@ -22,14 +22,14 @@ The process just didn't stop there, many more exciting optimizations were still 
  Here are some simulations we got from [#1407](https://github.com/mlpack/mlpack/pull/1407) with a value of k as 3.
  
  |  Dataset | mlpack | shogun | matlab |
-| ------------- | ------------- | ------------- |  ------------- | 
-|      |               Runtimes  (secs)      | Runtimes (secs) | Runtimes (secs)  | 
+| ------------- | ------------- | ------------- |  ------------- |
+|      |               Runtimes  (secs)      | Runtimes (secs) | Runtimes (secs)  |
 | iris |  0.028843  | 1.340270 | 1.816999 |
-| satellite | 6.099969  | 122.910678| 1161.872116 | 
+| satellite | 6.099969  | 122.910678| 1161.872116 |
 | ecoli | 0.020087  |5.918733 | 90.625 |
 | vehicle | 0.620096  |18.766937 | 55.068948 |
-| balance | 0.071944 | 10.840742 | 3.332948 | 
-| letter | 19.975593  | 6416.926464  | - | 
+| balance | 0.071944 | 10.840742 | 3.332948 |
+| letter | 19.975593  | 6416.926464  | - |
 
 |  Dataset | mlpack | shogun | matlab |
 | ------------- | ------------- | ------------- |  ------------- | 
@@ -41,9 +41,9 @@ The process just didn't stop there, many more exciting optimizations were still 
 | balance | 90.72 | 81.28 | 77.60 | 
 | letter | 97.0  | 97.095  | - | 
 
-Illustration of learning curve over ecoli dataset : 
+Illustration of learning curve over seed dataset :
 <p>
-<img src = "images/lmnn_learning_curve.png" width = "540" height = "250" hspace = "10"/>
+<img src = "images/lmnn_learning_curve.png" width = "600" height = "300" hspace = "10"/>
 </p>
 
 After finishing up [#1407](https://github.com/mlpack/mlpack/pull/1407), the next step was to perform a number of other substantial optimizations and this lead to opening of several issues -
@@ -55,9 +55,21 @@ After finishing up [#1407](https://github.com/mlpack/mlpack/pull/1407), the next
 
 Out of those [#1447](https://github.com/mlpack/mlpack/issues/1447 "#1447"), [#1448](https://github.com/mlpack/mlpack/issues/1448 "#1448")  and [#1449](https://github.com/mlpack/mlpack/issues/1449 "#1449") were successfully handeled together with verifying correctness and speedups from each one of them. [#1445](https://github.com/mlpack/mlpack/issues/1445 "#1445") & [#1446](https://github.com/mlpack/mlpack/issues/1446 "#1446") are still in progress and hopefully will be completed in very near future.
 
+The simulation (performed with same parameters as of above benchmarks) below depicts the current LMNN (after performing optimizations) performance:
+
+ |  Dataset |  |  |
+| ------------- | ------------- | ------------- |
+|      |               Runtimes  (secs)      | Accuracy (%) |
+| iris |  0.014874  | 97.3333 |
+| satellite | 2.802369  | 94.0793|
+| ecoli | 0.016140  |93.75 |
+| vehicle | 0.600228  |78.8416 |
+| balance | 0.074875 | 93.44 |
+| letter | 31.89887  | 97.0  |
+
 Here's an illustration of result of lmnn learning over a dummy dataset - 
 <p>
-<img src = "images/lmnn_distance.png" width = "600" height = "250" hspace = "10"/>
+<img src = "images/lmnn_distance.png" width = "600" height = "300" hspace = "10"/>
 </p>
 
 Finally, Here's a record of all PR's relevant to LMNN implementation - 
