@@ -43,7 +43,7 @@ The process just didn't stop there, many more exciting optimizations were still 
 
 Illustration of learning curve over seed dataset :
 <p>
-<img src = "images/lmnn_learning_curve.png" width = "600" height = "300" hspace = "10"/>
+<img src = "images/lmnn_learning_curve.png" width = "620" height = "330" hspace = "10"/>
 </p>
 
 After finishing up [#1407](https://github.com/mlpack/mlpack/pull/1407), the next step was to perform a number of other substantial optimizations and this lead to opening of several issues -
@@ -69,7 +69,7 @@ The simulation (performed with same parameters as of above benchmarks) below dep
 
 Here's an illustration of result of lmnn learning over a dummy dataset - 
 <p>
-<img src = "images/lmnn_distance.png" width = "600" height = "300" hspace = "10"/>
+<img src = "images/lmnn_distance.png" width = "620" height = "260" hspace = "10"/>
 </p>
 
 Finally, Here's a record of all PR's relevant to LMNN implementation - 
@@ -77,7 +77,7 @@ Finally, Here's a record of all PR's relevant to LMNN implementation -
 1.  Merged :
 	- [#1407  LMNN distance learning ](https://github.com/mlpack/mlpack/pull/1407 "#1407  LMNN distance learning ")
 	- [#1461 LMNN: Bounds for slack term ](https://github.com/mlpack/mlpack/pull/1461 "#1461 LMNN: Bounds for slack term ")
-	- [#1462 Fix math::RandomSeed() BINDING_TYPE macro condition ](https://github.com/mlpack/mlpack/pull/1462 "#1462 Fix math::RandomSeed() BINDING_TYPE macro condition ")
+	- [#1462 Fix math::RandomSeed() BINDING_TYPE macro condition](https://github.com/mlpack/mlpack/pull/1462)
 	- [#1466 LMNN: Bounds for avoiding Impostors recalculation ](https://github.com/mlpack/mlpack/pull/1466 "#1466 LMNN: Bounds for avoiding Impostors recalculation ")
 	- [#1469 Resolve random failing of LMNN Test ](https://github.com/mlpack/mlpack/pull/1469 "#1469 Resolve random failing of LMNN Test ")
 	- [#1482 Enable mean-centering ](https://github.com/mlpack/mlpack/pull/1482 "#1482 Enable mean-centering ")
@@ -103,6 +103,8 @@ A major portion of the project time went into developing a novel implementation 
 
 - Truly speaking, performing simulations was one of the most tedious but can't deny, it was one of the most valuable as well. Sometimes it even used to take days to see the results. But I was fortunate enough to have a caring mentor and organization, who aided me at every point and even provided me the access to a good build system, which made this work a lot easier.
 
+- [ Visit ](http://mlpack.org/gsocblog/ManishKumarPage.html) all previous GSoC blogs.
+
 ## Conclusion
 
-Ah, this was one of the best experience I ever had. I didn't thought that these 3 months will pass this quickly. Each and every day was full of new encounters. I couldn't have expected more. I am thankful to Ryan, Marcus & whole of the awesome mlpack organization for this wonderful period of time. Thanks, Ryan for always being there and helping me out at each and every step. I appreciate all the help you provided and all the patience you kept with me. Without your thoughtful  & clever ideas, I don't think the project could have been in the state, it is now. Also, a big thanks to Marcus for helping out every time I asked. I really appreciate all you did for me when I was stuck with benchmarking scripts. Finally, I am grateful to Google for providing me a once in a lifetime experience, eventually making me more comfortable with open source. GSoC is definitely a novel program helping thousands of students worldwide.
+Ah, this was one of the best experience I ever had. I didn't thought that these 3 months will pass this quickly. Each and every day was full of new encounters. I couldn't have expected more. I am thankful to Ryan, Marcus & whole of the awesome mlpack organization for this wonderful period of time. Thanks, Ryan for always being there and helping me out at each and every step. I appreciate all the help you provided and all the patience you kept with me. Without your thoughtful  & clever ideas, I don't think the project could have been in the state, it is now. Also, a big thanks to Marcus for helping out every time I asked. I really appreciate all you did for me when I was stuck with benchmarking scripts. Finally, I am grateful to Google for providing me a once in a lifetime experience, eventually making me more comfortable with open source. GSoC is definitely a novel program helping thousands of students worldwide. (◕‿◕)
