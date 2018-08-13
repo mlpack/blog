@@ -42,6 +42,7 @@ The command line interface provides many options to use the NCF class.
 * --training (-t) defines the training dataset given as a csv file.  
 * --algorithm (-a) parameter defines the algorithm to be used which could be 'GMF', 'MLP' or 'NeuMF'.  
 * --all_user_recommendations (-A) can be set for generating recommendations for all users and --query (-q) for a specific set of users.  
+* --implicit (-i) flag sets whether the dataset's rating is to be treated as implicit or explicit feedback. If dataset contains explicit rating and the flag is set, the rating will be converted to implicit.  
 * --recommendations (-c) can be used to set the number of recommendations to be generated.  
 * --optimizer (-z) can be used to choose an optimizer from among 'adagrad', 'rmsprop', 'adam', 'SGD'.
 
