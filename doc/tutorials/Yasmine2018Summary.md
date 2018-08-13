@@ -32,21 +32,21 @@ This PR hasn't been merged as of yet, as I am not yet finish implementing the bi
 
 First, to generate the bindings get mlpack in your go workspace:
 
-	  **$  go get https://github.com/yaswagner/mlpack/**
+	  $  go get https://github.com/yaswagner/mlpack/
 
 Then in your terminal go to the mlpack folder create your build directory and build cmake as desired.
 For example:
 
-	  **$ cd ${GOPATH}/src/mlpack**
-	  **$ mkdir build**
-	  **$ cd build**
-	  **$ cmake -D BUILD_GO_BINDINGS=ON -D BUILD_PYTHON_BINDINGS=OFF ../**
-	  **$ make **
+	  $ cd ${GOPATH}/src/mlpack
+	  $ mkdir build
+	  $ cd build
+	  $ cmake -D BUILD_GO_BINDINGS=ON -D BUILD_PYTHON_BINDINGS=OFF ../
+	  $ make 
 
 You can generate a specific binding to generate by using the mlpack_go_{method} target.
 For instance, for the pca method:
 
-	  **$ make mlpack_go_pca**
+	  $ make mlpack_go_pca
 
 * USING THE BINDINGS
 
@@ -54,40 +54,40 @@ To use the bindings in Go, you must import the mlpack package and gonum package.
 
 For example:
 
-	  **import (**
-		  **"mlpack/build/src/mlpack/bindings/go/mlpack"**
-	  	  **"gonum.org/v1/gonum/mat"**
-	  **)**
+	  import (
+		  "mlpack/build/src/mlpack/bindings/go/mlpack"
+	  	  "gonum.org/v1/gonum/mat"
+	  )
 
 Optional parameters need to be set in the methods config struct and then we can set our desired parameters.
 For instance, when using the pca method, we initialize the config struct called param and set verbosity to true by doing:
 
-	  **param := mlpack.InitializePca()**
-	  **param.Verbose = true**
+	  param := mlpack.InitializePca()
+	  param.Verbose = true
 
 We can then pass our optional parameters and call the Pca method as such:
 
-	  **output := mlpack.Pca(input, param)**
+	  output := mlpack.Pca(input, param)
 
 For output parameters we do not wish to use, we can use an underscore. 
 For example, for the perceptron, if we wish to only use the 'output_model' and not 'output'"
 
-	  **_, output_model := mlpack.Perceptron(param)**
+	  _, output_model := mlpack.Perceptron(param)
 
 In order to get documentation about a method, we use 'godoc'.
 For example, for the pca method we would type on the command line:
 
-	  **$ godoc mlpack/build/src/mlpack/bindings/go/mlpack Pca**
+	  $ godoc mlpack/build/src/mlpack/bindings/go/mlpack Pca
 
 * TESTING THE BINDINGS
 
 Finally, to test the binding, Go's 'testing' is used. Simply go to the go test file following directory as such:
 
-	  **$ cd ${GOPATH}/src/mlpack/src/bindings/go/tests/gofile**
+	  $ cd ${GOPATH}/src/mlpack/src/bindings/go/tests/gofile
 
 Then test by using the 'go test' command tool, as such:
 
-	  **$ go test -v**
+	  $ go test -v
 
 # Acknowledgements
 
