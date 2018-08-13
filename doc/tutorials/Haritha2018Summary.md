@@ -63,13 +63,12 @@ Currently, GMF is giving an RMSE of 3.3 on single epoch on movielens 100k datase
 
 # Summary
 
-[Pull Request #1355][1355] - CF refactoring  
-[Pull Request #1392][1392] - Multiply merge layer  
-[Pull Request #1401][1401] - Embedding layer  
-[Pull Request #1428][1428] - Subview layer  
-[Pull Request #1435][1435] - Subview matrix and batch support  
-[Pull Request #1422][1422] - NCFNetwork wrapper  
-[Pull Request #1454][1454] - NCf Class
+* [Pull Request #1355][1355] - CF refactoring  
+* [Pull Request #1392][1392] - Multiply merge layer  
+* [Pull Request #1428][1428] - Subview layer  
+* [Pull Request #1435][1435] - Subview matrix and batch support  
+* [Pull Request #1422][1422] - NCFNetwork wrapper  
+* [Pull Request #1454][1454] - NCf Class
 
 # Future Work
 
