@@ -1,7 +1,7 @@
 @brief LMNN (via Low-Rank optimization) & BoostMetric Implementation - Summary
 @author Manish Kumar
 @page Manish2018Summary LMNN (via Low-Rank optimization) & BoostMetric Implementation - Summary
-@date 2018-08-06 11:00:00
+@date 2018-08-10 11:00:00
 
 @section Manish2018Summary LMNN (via Low-Rank optimization) & BoostMetric Implementation - Summary
 
