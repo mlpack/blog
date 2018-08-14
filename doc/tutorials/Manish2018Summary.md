@@ -85,6 +85,7 @@ Finally, Here's a record of all PR's relevant to LMNN implementation -
 2. Open:
 	- [#123 Benchmarking Scripts for Mlpack's LMNN, Shogun's LMNN & Matlab's LMNN ](https://github.com/mlpack/benchmarks/pull/123 "#123 Benchmarking Scripts for Mlpack's LMNN, Shogun's LMNN & Matlab's LMNN ")
 	- [#1472 LMNN: Tree optimization ](https://github.com/mlpack/mlpack/pull/1472 "#1472 LMNN: Tree optimization ")
+    - [#1494 Recompute impostors only during Shuffle() call](https://github.com/mlpack/mlpack/pull/1494)
 
 3. Closed:
 	- [#1395 Adaptation of SDP to incorporate inequality constraints. ](https://github.com/mlpack/mlpack/pull/1395 "#1395 Adaptation of SDP to incorporate inequality constraints. ")
