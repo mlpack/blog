@@ -1,6 +1,6 @@
 @brief mlpack in Google Summer of Code 2018
 @author Marcus Edel
-@page mlpack-in-google-summer-of-code-2018 mlpack in Google Summer of Code 2017
+@page mlpack-in-google-summer-of-code-2018 mlpack in Google Summer of Code 2018
 @date 2018-05-08 19:00:00
 
 @section mlpack-in-google-summer-of-code-2018 mlpack in Google Summer of Code 2018
