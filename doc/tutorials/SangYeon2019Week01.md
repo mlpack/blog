@@ -13,14 +13,15 @@ To draw the 3D probability space, I implemented the GMM and QGMM Python codes.
 
 Below are the 3D probability spaces of GMM and QGMM.
 
-[Classical GMM]
+<b>[Classical GMM]</b>
 <p>
-<img src = "images/classical_gmm.png" width = "300" height = "225" hspace = "10"/>
+<img src = "images/classical_gmm.png" width = "300" height = "234" hspace = "10"/>
 </p>
 
-[Quantum GMM]
+
+<b>[Quantum GMM]</b>
 <p>
-<img src = "images/qgmm_phis.png" width = "600" height = "218" hspace = "10"/>
+<img src = "images/qgmm_phis.png" width = "600" height = "197" hspace = "10"/>
 </p>
 
 At the above Quanmtum GMM images, we can see how much phis will impact on the distribution shape. Especially, when the phi is equal to 90 degree, the GMM and QGMM's probability space looks similar.
