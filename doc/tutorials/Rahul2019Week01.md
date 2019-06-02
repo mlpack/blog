@@ -3,7 +3,7 @@
 @page Rahul2019Week01 NEAT & Multiobjective Optimization - Week 1
 @date 2019-06-01 23:30:00
 
-@section NEAT & Multiobjective Optimization - Week 1
+@section Rahul2019Week01 NEAT & Multiobjective Optimization - Week 1
 
 Having been selected for GSoC 2019, this is my first major contribution to the open source community. This summer, I will be implementing NeuroEvolution of Augmenting Topologies (NEAT) as well as the framework for multi-objective optimization in ensmallen. My mentors for this project will be **Marcus Edel** and **Manish Kumar**.
 
