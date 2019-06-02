@@ -10,6 +10,6 @@ The Quantum Gaussian Mixture Models is a extension of Gaussian Mixture Models(GM
 
 \note You can refer to the original paper https://arxiv.org/pdf/1612.09199.pdf
 
-During the Community Bonding Period, there are some discussions to double-check the objective of this research is and how we research QGMM. First of all, we will check the 3D probability space to check the interference phenomena of QGMM using matplotlib in Python. From the research, I think we can figure out the features of QGMM by comparing the classical GMM.
+During the Community Bonding Period, there were some discussions with the mentor to double-check the objective of this research is and how the research is carried out. First of all, I will check the 3D probability space to check the interference phenomena of QGMM using matplotlib in Python. From the research, I think the features of QGMM can be figured out by comparing the classical GMM.
 
 Thanks for reading :)
