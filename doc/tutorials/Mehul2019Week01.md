@@ -1,7 +1,7 @@
 @brief Application of ANN Algorithms Implemented in mlpack - Week 1
 @author Mehul Kumar Nirala
 @page Mehul2019WeekOne Application of ANN Algorithms Implemented in mlpack - Week 1
-@date 209-05-25 18:25:00
+@date 2019-06-03 18:25:00
 
 @section Mehul2019WeekOne Application of ANN Algorithms Implemented in mlpack - Week 1
 
