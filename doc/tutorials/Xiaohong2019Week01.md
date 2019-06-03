@@ -22,7 +22,7 @@ For the original schedule:
 
 1: Reading related research papers to get a more robust view of the problem.
     Finished some paper reading, such as the original [PPO paper](https://arxiv.org/pdf/1707.06347.pdf).
-    Finished some article reading, such as [PPP](https://spinningup.openai.com/en/latest/algorithms/ppo.html#references).
+    Finished some article reading, such as [Spinning Up PPO](https://spinningup.openai.com/en/latest/algorithms/ppo.html#references).
 
 2: Discussing with mentors and get a final idea on how to approach the problem.
     Having an original idea and will build up the project step by step.
