@@ -1,7 +1,7 @@
 @brief Implementing Improved Training Techniques for GANs - Week 2
 @author Saksham Bansal
 @page Saksham2019Week2 Implementing Improved Training Techniques for GANs - Week 2
-@date 2019-06-02 22:05:00
+@date 2019-06-10 03:05:00
 
 @section Saksham2019Week2 Implementing Improved Training Techniques for GANs - Week 2
 
