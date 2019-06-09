@@ -17,5 +17,5 @@ I will try to be more punctual in updating you all next time. Thank you :)
 Since the world is full of memes, [here](https://twitter.com/mcclure111/status/1002648636516282368?s=19) is a particular one which I would like to share with you all.
 
 <p>
-<img src = "images/cpp.jpg" width = "150" height = "100"/>
+<img src = "images/cpp.jpg" width = "300" height = "200"/>
 </p>
