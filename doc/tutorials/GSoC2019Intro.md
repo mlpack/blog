@@ -76,7 +76,7 @@ current implementation suffers because of kernel bandwidth scale.
 Likes everything related to space.
 
 ### [mlpack-Tensorflow Translator](https://github.com/mlpack/mlpack/wiki/SummerOfCodeIdeas)
-**by `Sreenik Seal`, mentored by `Ryan Curtin`**
+**by `Sreenik Seal`, mentored by `Atharva Khandait`**
 
 Sreenik will work on a converter that can translate models built in Tensorflow,
 Keras, Pytorch, Mxnet, ONNX to mlpack's model format and vice-versa. He will
