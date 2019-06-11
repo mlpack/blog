@@ -14,7 +14,7 @@
 
 ### Next Week Goals
 
-* Recification of Sequential layer to save model with tests.
+* Rectification of Sequential layer to save model with tests.
 * Enumerating the VGG19 model i.e. code for VGG19.
 * Completing the PR on Image Loading.
 
