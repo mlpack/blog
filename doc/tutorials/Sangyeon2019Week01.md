@@ -1,9 +1,9 @@
 @brief Quantum Gaussian Mixture Models - Week 1
-@author SangYeon Kim
-@page SangYeon2019WeekOne Quantum Gaussian Mixture Models - Week 1
+@author Sangyeon Kim
+@page Sangyeon2019WeekOne Quantum Gaussian Mixture Models - Week 1
 @date 2018-06-01 23:00:00
 
-@section SangYeon2019WeekOne Quantum Gaussian Mixture Models - Week 1
+@section Sangyeon2019WeekOne Quantum Gaussian Mixture Models - Week 1
 
 As I said in the Community Bonding Period report, the work of week 1 is to plot the 3D probability space to visualize and check the interference phenomena of QGMM more clearly.
 
@@ -17,6 +17,7 @@ Below are the 3D probability spaces of GMM and QGMM.
 <p>
 <img src = "images/classical_gmm.png" width = "300" height = "234" hspace = "10"/>
 </p>
+
 
 
 <b>[Quantum GMM]</b>
