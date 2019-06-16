@@ -24,10 +24,12 @@ Finally, after several attemps, I could get proper results.
 
 I tested the results using the two quantum Gaussian distributions, G1 and G2.
 
-G1 = [ mean: -5, covariance: 5, weight: 0.7 ]
-G2 = [ mean:  5, covariance: 5, weight: 0.3 ]
+  - G1 = [ mean: -5, covariance: 5, weight: 0.7 ]
+  - G2 = [ mean:  5, covariance: 5, weight: 0.3 ]
 
 From the mixture of the two distributions, I got the results about the integral of the probabilities.
+
+<center>
 
 |  From  |   To   | Probs  |
 | :----: | :----: | :----: |
@@ -36,6 +38,8 @@ From the mixture of the two distributions, I got the results about the integral 
 | -10    | 10     | 0.974  |
 | -20    | 20     | 0.99   |
 | -INF   | INF    | 1      |
+
+</center>
 
 \note Source codes: https://github.com/KimSangYeon-DGU/GSoC-2019/blob/master/Research/Code/qgmm_2d_integral.py
 
