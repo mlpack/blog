@@ -1,11 +1,11 @@
-@brief Quantum Gaussian Mixture Models - Week 1
+@brief Quantum Gaussian Mixture Models - Week 2
 @author Sangyeon Kim
 @page Sangyeon2019WeekTwo Quantum Gaussian Mixture Models - Week 2
 @date 2018-06-08 23:00:00
 
 @section Sangyeon2019WeekTwo Quantum Gaussian Mixture Models - Week 2
 
-In the previous week, I made 3D probability space plottings. When I saw the plots, I could see the interference phenomena with phi.
+In the week 1, I made 3D probability space plottings. When I saw the plots, I could see the interference phenomena with phi.
 
 This week, I did work on integral of probability of QGMM. Although the paper presents probability equation, I should check if the integral of the probability of QGMM becomes one.
 At first, instead of the integral, I calculated the sum of the probability of the QGMM for approximation.
