@@ -3,7 +3,7 @@
 @page Toshal2019Week01 Implementing Essential Deep Learning Modules - Week 1
 @date 2019-06-02 19:20:00
 
-@section Toshal2018Week01 Implementing Essential Deep Learning Modules - Week 1
+@section Toshal2019Week01 Implementing Essential Deep Learning Modules - Week 1
 
 In this week I have completed my serialization Pull Request. Finally, it is ready to merge. While working on it I faced a `Integer divide by zero` error. Tracking the source of error was quite a tedious and patience testing job. But finally, I was able to find that the Mean Pooling layer is not serializing properly. After that I also figured out that some other layers are also not serilaizing correctly, so fixed them and made Pull Request for same.
 
