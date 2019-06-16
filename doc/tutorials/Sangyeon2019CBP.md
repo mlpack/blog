@@ -1,9 +1,9 @@
 @brief Quantum Gaussian Mixture Models - Community Bonding Period
-@author SangYeon Kim
-@page SangYeon2019CommunityBondingPeriod Quantum Gaussian Mixture Models - Community Bonding Period
+@author Sangyeon Kim
+@page Sangyeon2019CommunityBondingPeriod Quantum Gaussian Mixture Models - Community Bonding Period
 @date 2018-05-26 12:00:00
 
-@section SangYeon2019CBP Quantum Gaussian Mixture Models - Community Bonding Period
+@section Sangyeon2019CBP Quantum Gaussian Mixture Models - Community Bonding Period
 
 In this summer, I will research and develop 'Quantum Gaussian Mixture Models(QGMM)' with my mentor Sumedh Ghaisas.
 The Quantum Gaussian Mixture Models is a extension of Gaussian Mixture Models(GMM). To be more specific, the wave function in quantum physics is applied to QGMM for more precise estimations.
