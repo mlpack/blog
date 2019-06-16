@@ -18,7 +18,9 @@ Below are the 3D probability spaces of GMM and QGMM.
 <img src = "images/classical_gmm.png" width = "300" height = "234" hspace = "10"/>
 </p>
 
+I checked the 3 cases when phis are 0, 90, and 180.
 
+Belows are the results
 
 <b>[Quantum GMM]</b>
 <p>
