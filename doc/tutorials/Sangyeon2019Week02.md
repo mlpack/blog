@@ -20,7 +20,22 @@ This time, I tried to use the integration function of SciPy.
 
 \note SciPy's integration function: https://docs.scipy.org/doc/scipy/reference/tutorial/integrate.html
 
-Finally, after several attemps, I could get a proper result.
+Finally, after several attemps, I could get proper results.
+
+I tested the results using the two quantum Gaussian distributions, G1 and G2.
+
+G1 = [ mean: -5, covariance: 5, weight: 0.7 ]
+G2 = [ mean:  5, covariance: 5, weight: 0.3 ]
+
+From the mixture of the two distributions, I got the results about the integral of the probabilities.
+
+|  From  |   To   | Probs  |
+| :----: | :----: | :----: |
+| -1     | 1      | 0.04544|
+| -5     | 5      | 0.4988 |
+| -10    | 10     | 0.974  |
+| -20    | 20     | 0.99   |
+| -INF   | INF    | 1      |
 
 \note Source codes: https://github.com/KimSangYeon-DGU/GSoC-2019/blob/master/Research/Code/qgmm_2d_integral.py
 
