@@ -1,7 +1,7 @@
 @brief Quantum Gaussian Mixture Models - Community Bonding Period
 @author Sangyeon Kim
 @page Sangyeon2019CommunityBondingPeriod Quantum Gaussian Mixture Models - Community Bonding Period
-@date 2018-05-26 12:00:00
+@date 2019-05-26 12:00:00
 
 @section Sangyeon2019CBP Quantum Gaussian Mixture Models - Community Bonding Period
 
