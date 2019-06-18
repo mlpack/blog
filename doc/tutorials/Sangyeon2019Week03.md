@@ -45,23 +45,23 @@ mean: 0, covariance: 1, probability: 0.04544
 <p>
 <img src = "images/QGMM_1.png" width = "300" height = "234" hspace = "10"/>
 </p>
-
+<br>
 mean: 0, covariance: 5, probability: 0.4988
 <p>
 <img src = "images/QGMM_5.png" width = "300" height = "234" hspace = "10"/>
 </p>
-
+<br>
 mean: 0, covariance: 10, probability: 0.974
 <p>
 <img src = "images/QGMM_10.png" width = "300" height = "234" hspace = "10"/>
 </p>
-
+<br>
 mean: 0, covariance: 20, probability: 0.99
 <p>
 <img src = "images/QGMM_20.png" width = "300" height = "234" hspace = "10"/>
 </p>
 </center>
-
+<br>
 Through the meeting with the mentor, I decided the next step of our research is to check the validation of quantum EM algorithm using python code.
 
 Next week, I'll check the validation of quantum EM algorithm.
