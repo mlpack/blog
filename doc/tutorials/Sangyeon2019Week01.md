@@ -21,7 +21,7 @@ Below are the 3D probability spaces of GMM and QGMM.
 </center>
 
 </br>
-I checked the 3 cases when phis are 0, 90, and 180 degree. Belows are the results
+I checked the 3 cases when phis are 0, 90, and 180 degree. Below are the results
 
 <center>
 <b>[Quantum GMM]</b>
