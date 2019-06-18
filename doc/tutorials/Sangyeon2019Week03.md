@@ -21,6 +21,7 @@ Below are the shape of each quantum Gaussian distribution.
 <img src = "images/QG1.png" width = "300" height = "234" hspace = "10"/>
 </p>
 
+<br>
 <b>[G2]</b>
 <p>
 <img src = "images/QG2.png" width = "300" height = "234" hspace = "10"/>
