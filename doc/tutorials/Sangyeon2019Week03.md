@@ -26,7 +26,7 @@ Below are the shape of each quantum Gaussian distribution.
 <img src = "images/QG2.png" width = "300" height = "234" hspace = "10"/>
 </p>
 </center>
-
+<br>
 And below is the mixture of the two quantum Gaussian distributions when the weights of G1 and G2 are 0.7 and 0.3 respectively.
 <center>
 <b>[QGMM]</b>
@@ -37,7 +37,7 @@ And below is the mixture of the two quantum Gaussian distributions when the weig
 
 \note Source codes: https://github.com/KimSangYeon-DGU/GSoC-2019/blob/master/Research/Code/qgmm_2d_plot.py
 
-
+<br>
 I also visualized the 2D integral area.
 
 <center>
