@@ -1,7 +1,7 @@
 @brief Quantum Gaussian Mixture Models - Week 3
 @author Sangyeon Kim
 @page Sangyeon2019WeekThree Quantum Gaussian Mixture Models - Week 3
-@date 2018-06-15 22:00:00
+@date 2019-06-15 22:00:00
 
 @section Sangyeon2019WeekThree Quantum Gaussian Mixture Models - Week 3
 
