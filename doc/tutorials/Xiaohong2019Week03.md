@@ -1,6 +1,6 @@
 @brief PPO - Week 3
 @author Xiaohong
-@page Xiaohong2019Week1 Proximal Policy Optimization - Week 3
+@page Xiaohong2019Week3 Proximal Policy Optimization - Week 3
 @date 2019-06-16 20:19:23
 
 @section Xiaohong2019Week 3 Proximal Policy Optimization - Week 3
