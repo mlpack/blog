@@ -1,18 +1,18 @@
 @brief Application of ANN Algorithms Implemented in mlpack - Week 4
 @author Mehul Kumar Nirala
 @page Mehul2019WeekFour Application of ANN Algorithms Implemented in mlpack - Week 4
-@date 2019-06-25 10:14:00
+@date 2019-06-25 10:15:00
 
 @section Mehul2019WeekFour Application of ANN Algorithms Implemented in mlpack - Week 4
 
 ### Tasks
 * Completed the PR on image saving feature.
 * Written tutorials on how to use image utilities for loading and saving images.
-* Added global max & mean poolint to VGG19 model.
+* Added global max & mean pooling to VGG19 model.
 
 ## Results
 
-Initially VGG19on minist dataset showed divergence ,
+Initially VGG19on minist dataset showed divergence,
 ```
 Epoch 0
 Loss after cycle 0 -> 310.261
