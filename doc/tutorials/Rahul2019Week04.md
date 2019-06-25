@@ -3,7 +3,7 @@
 @page Rahul2019Week04 NEAT & Multiobjective Optimization - Week 4
 @date 2019-06-22 23:30:00
 
-@section Rahul2019Week01 NEAT & Multiobjective Optimization - Week 4
+@section Rahul2019Week04 NEAT & Multiobjective Optimization - Week 4
 
 This week, I mostly debugged the code and tested the code in the XOR test. At first, the results were disappointing, but they have since improved. However, there is still a lot of work to be done, since the performance is still far from up to par. Hopefully by the end of next week or maybe the one after that, I'll have a finished product.
 
