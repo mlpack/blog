@@ -22,11 +22,12 @@ So, this time, I editied the codes again with left the probabilities unnormalize
 <img src = "images/qgmm_with_old_faithful.gif" width = "640" height = "480" hspace = "10"/>
 </p>
 <br>
-<br>
 <b>[Short distnace case]</b>
 <p>
 <img src = "images/qgmm_with_old_faithful2.gif" width = "640" height = "480" hspace = "10"/>
 </p>
 </center>
+<br>
+With the help of the mentor and readings, I think some better methods can be applied like variational approximation or other technologies.
 
 Thanks for reading :)
