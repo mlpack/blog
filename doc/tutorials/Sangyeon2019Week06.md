@@ -14,12 +14,12 @@ There are 3 python files and 1 dataset file. In the `qgmm_utils.py` has some uti
 The objective equation to minimize is `NLL + lambda * sum of probabilities - 1`.
 
 <center>
-<b>[Good case1]</b>
+<b>[Case1]</b>
 <p>
 <img src = "images/qgmm_with_old_faithful.gif" width = "640" height = "480" hspace = "10"/>
 </p>
 <br>
-<b>[Good case2]</b>
+<b>[Case2]</b>
 <p>
 <img src = "images/qgmm_with_old_faithful2.gif" width = "640" height = "480" hspace = "10"/>
 </p>
