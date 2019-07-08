@@ -11,23 +11,21 @@ This week, I implemented QGMM. In this implementation, the goal is to minimize t
 
 There are 3 python files and 1 dataset file. In the `qgmm_utils.py` has some utils for running QGMM and in the `draw_utils.py` is a utils function to draw the results of training. Lastly, the `main.py` is to test the performance of training. 
 
-When I check the first implementation, I tried to minimize the NLL + lambda * sum of probabilities - 1, however, it didn't work.
-\note The probabiltiies of QGMM is originally unnormalized, so I normalized the probabilities with the sum of probabilities with the help of the mentor
-
-So, this time, I edited the codes again with left the probabilities unnormalized and changed the objective equation to NLL + lambda * sum of probabilities - S, where S is the actual sum of probabilities as it is unnormalized, not 1. As a result, it seems to work, but the performance was a bit unsatisfied on the side of covariance estimation.
+The objective equation to minimize is `NLL + lambda * sum of probabilities - 1`.
 
 <center>
-<b>[Case1]</b>
+<b>[Good case1]</b>
 <p>
 <img src = "images/qgmm_with_old_faithful.gif" width = "640" height = "480" hspace = "10"/>
 </p>
 <br>
-<b>[Case2]</b>
+<b>[Good case2]</b>
 <p>
 <img src = "images/qgmm_with_old_faithful2.gif" width = "640" height = "480" hspace = "10"/>
 </p>
 </center>
 <br>
-With the help of the mentor and readings, I think some better methods can be applied like variational approximation or other technologies.
+
+To make QGMM more robust, some methods are necessary to initialize parameters properly and solve positive definite covariance problems in Cholesky decomposition.
 
 Thanks for reading :)
