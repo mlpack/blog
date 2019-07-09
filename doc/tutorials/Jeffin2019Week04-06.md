@@ -3,7 +3,7 @@
 @page Jeffin2019Week04-06 String Processing Utilities - Week 04-06
 @date 2019-07-09 22:21:28
 
-@section Jeffin2019Week04-06 String Processing Utilities - Week 03-06
+@section Jeffin2019Week04-06 String Processing Utilities - Week 04 - 06
 
 Sorry for not updating for so long, So possibly this post will have updates from week4 to week6.So let's start :)
 
