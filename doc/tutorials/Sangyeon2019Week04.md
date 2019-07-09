@@ -7,8 +7,13 @@
 
 In the week 3, I did visualize the QGMM and the integral areas to check if them are correct.
 
-This week, I worked on quantum EM algorithm implementation in Python code for simple check.
+This week, I worked on implementing quantum EM algorithm in Python to check if it is vaild.
+<br>
+Before implementing the em algorithm of QGMM, I implemented GMM classes according to mlpack codebases.
+* GaussianDistribution
+* GMM
+* EMFit
 
-Next week, I'll code the quantum GMM in mlpack code base and write some test sutes.
+Then, I checked if the codes were wrriten correctly by training the GMM model with random observations.
 
 Thanks for reading :)
