@@ -1,9 +1,9 @@
 @brief PPO - Week 6
 @author Xiaohong
-@page Xiaohong2019Week4 Proximal Policy Optimization - Week 6
+@page Xiaohong2019Week6 Proximal Policy Optimization - Week 6
 @date 2019-07-07 19:40:08
 
-@section Xiaohong2019Week 5 Proximal Policy Optimization - Week 6
+@section Xiaohong2019Week 6 Proximal Policy Optimization - Week 6
 
 
 This week, I am implementing the `Update()` function in ppo_implement.hpp. This 
