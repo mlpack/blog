@@ -11,7 +11,7 @@ I also noticed that the API for the RL environments in mlpack were inconsistent,
 
 Over the next week or two, I plan to:
 
-- Finish testing and decided on a group of tests to include in the   final testing framework.
+- Finish testing and decided on a group of tests to include in the final testing framework.
 
 - Address the review comments on #1941 and the NEAT PR. In the process of doing this, I'll revise my code and clean it up.
 
