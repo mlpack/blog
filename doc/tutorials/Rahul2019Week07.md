@@ -35,6 +35,6 @@ Now that all this is done, I think I will be done with NEAT in time for the seco
 
 Something I learned in these last two weeks is how useful it is to maintain a board with your plans, priorities, etc. Inspired by Ryan and Marcus' boards on GitHub, I made one myself on Trello, where I've detailed all the new stuff I want to learn, watch, read and implement. It's amazing how much clearer my mind is now, I've thought of so many cool things I want to do. I strongly suggest others to try out the same, it's pretty great.  
 
-I don't have a music recommendation for the last two week, but I did recently buy an alto saxophone. I still sound like I'm strangling a cat or moving furniture though. Practice will make perfect though :)
+I don't have a music recommendation for the last two week, but I did recently buy an alto saxophone. I still sound like I'm strangling a cat or moving furniture. Practice will make perfect though :)
 
 Thanks for reading!
