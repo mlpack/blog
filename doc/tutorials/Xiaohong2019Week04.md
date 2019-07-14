@@ -1,9 +1,9 @@
 @brief PPO - Week 4
-@author Xiaohong
+@author Xiaohong J
 @page Xiaohong2019Week4 Proximal Policy Optimization - Week 4
 @date 2019-06-23 20:19:23
 
-@section Xiaohong2019Week 4 Proximal Policy Optimization - Week 4
+@section Xiaohong2019WeekFour Proximal Policy Optimization - Week 4
 
 
 This week, I mainly focus on Proximal Policy Optimization pull request.
@@ -17,4 +17,4 @@ I choose the continuous task, pendulum, to test the PPO algorithm, it seems
 that some code in the original code base did not support the continuous task.
 Next week, I will change that one.
 
-Thanks for reading :). 
+Thanks for reading :).

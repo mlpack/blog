@@ -1,9 +1,9 @@
 @brief PPO - Week 3
-@author Xiaohong
+@author Xiaohong J
 @page Xiaohong2019Week3 Proximal Policy Optimization - Week 3
 @date 2019-06-16 20:19:23
 
-@section Xiaohong2019Week 3 Proximal Policy Optimization - Week 3
+@section Xiaohong2019WeekThree Proximal Policy Optimization - Week 3
 
 
 This week, the Prioritized Experience Replay pull request is merged.

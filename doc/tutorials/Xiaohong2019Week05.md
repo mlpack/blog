@@ -3,7 +3,7 @@
 @page Xiaohong2019Week5 Proximal Policy Optimization - Week 5
 @date 2019-06-29 18:17:11
 
-@section Xiaohong2019Week 5 Proximal Policy Optimization - Week 5
+@section Xiaohong2019WeekFive Proximal Policy Optimization - Week 5
 
 
 This week, I focus on how to store the transition into experience replay

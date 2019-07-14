@@ -1,9 +1,9 @@
 @brief PPO - Week 2
-@author Xiaohong
+@author Xiaohong J
 @page Xiaohong2019Week2 Proximal Policy Optimization - Week 2
 @date 2019-06-09 21:14:11
 
-@section Xiaohong2019Week 2 Proximal Policy Optimization - Week 2
+@section Xiaohong2019WeekTwo Proximal Policy Optimization - Week 2
 
 
 This week I fixed the review comment of Prioritized Experience Replay.
