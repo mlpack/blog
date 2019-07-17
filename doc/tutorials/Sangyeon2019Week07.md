@@ -1,6 +1,6 @@
 @brief Quantum Gaussian Mixture Models - Week 7
 @author Sangyeon Kim
-@page Sangyeon2019WeekSix Quantum Gaussian Mixture Models - Week 7
+@page Sangyeon2019WeekSeven Quantum Gaussian Mixture Models - Week 7
 @date 2019-07-11 19:11:00
 
 @section Sangyeon2019WeekSeven Quantum Gaussian Mixture Models - Week 7
