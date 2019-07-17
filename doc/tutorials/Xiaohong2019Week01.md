@@ -3,7 +3,7 @@
 @page Xiaohong2019Week1 Proximal Policy Optimization - Week 1
 @date 2019-06-02 18:39:10
 
-@section Xiaohong2019Week 1 Proximal Policy Optimization - Week 1
+@section Xiaohong2019WeekOne Proximal Policy Optimization - Week 1
 
 The goal of my summer project is to implementing the proximal policy
 optimization algorithm (PPO). PPO is a new family of policy gradient
