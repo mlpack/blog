@@ -9,7 +9,8 @@ This week, I tested the training performance of QGMM using Adam optimizer with l
 
 Below are the findings.
 
-1. Covariance become negative.
+<b>1. Covariance become negative.</b>
+</br>
 : When optimizing the full covariance, I found some elements of covariance became negative and it
 was the cause of errors in calculating Cholesky’s decomposition and drawing it.
 Therefore, I changed the full covariance form into lower triangular form and it is composed later
@@ -18,14 +19,16 @@ T
 ) when calculating the unnormalized gaussian to make all
 the element positive and the covariance symmetric. As a result, a learning process become more
 stable.
-
-2. According to the initial values, the training results vary.
+</br>
+<b>2. According to the initial values, the training results vary.</b>
+</br>
 : From the results, the initial center position and the shape of covariance had effects on the
 performance of training.
 From the video t5 in NLL and NLL with constraint, it was a case that one cluster’s initial
 normalized gaussian value is almost zero while another isn’t.
-
-3. NLL vs NLL with constraint
+</br>
+<b>3. NLL vs NLL with constraint</b>
+</br>
 : From the video t3 in the NLL and NLL with constraint directory, NLL showed a better result.
 
 Thanks for reading :)
