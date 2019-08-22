@@ -1,9 +1,9 @@
-@brief ​ Application of ANN Algorithms Implemented in mlpack - Summary
+@brief  Application of ANN Algorithms Implemented in mlpack - Summary
 @author Mehul Kumar Nirala
-@page ​ application-of-ANN-algorithms-implemented-in-mlpack-summary ​ Application of ANN Algorithms Implemented in mlpack - Summary
+@page  Mehul2019Summary Application of ANN Algorithms Implemented in mlpack - Summary
 @date 2019-08-21 23:00:00
 
-@section application-of-ANN-algorithms-implemented-in-mlpack Application of ANN Algorithms Implemented in mlpack
+@section Mehul2019Summary Application of ANN Algorithms Implemented in mlpack
 
 # Works
 
@@ -13,16 +13,16 @@ All GSoC contributions can be summarized by the following.
 
 **Pull Requests**
 * [VGG19 on Imagenet dataset. #32](https://github.com/mlpack/models/pull/32)
-* [Added LSTM Sentiment Analysis. #31](https://github.com/mlpack/models/pull/31)
-* [Added LSTM Univariate Time series analysis #30](https://github.com/mlpack/models/pull/30)
-* [Added LSTM for multivariate time series. #29](https://github.com/mlpack/models/pull/29)
+* [Added LSTM Sentiment Analysis. #31](https://github.com/mlpack/models/pull/31) 
+* [Added LSTM Univariate Time series analysis #30](https://github.com/mlpack/models/pull/30) Merged
+* [Added LSTM for multivariate time series. #29](https://github.com/mlpack/models/pull/29) Merged
 * [Added VGG19 Model for MNIST Dataset. #28](https://github.com/mlpack/models/pull/28)
 
 **Contributions to mlpack/mlpack**
 
-**Pull Requests**
-* [Added support for Loading image #1903](https://github.com/mlpack/mlpack/pull/1903)
-* [Rectified imports in Python documentation #1820.](https://github.com/mlpack/mlpack/pull/1820)
+**Merged Pull Requests**
+* [Added support for Loading image #1903](https://github.com/mlpack/mlpack/pull/1903) 
+* [Rectified imports in Python documentation #1820.](https://github.com/mlpack/mlpack/pull/1820) 
 * [Added cellState as output params in LSTM. #1800.](https://github.com/mlpack/mlpack/pull/1800)
 * [Added quoted_strings to regex in LoadCSV #1756.](https://github.com/mlpack/mlpack/pull/1756)
 * [Added additional check to LoadARFF #1793.](https://github.com/mlpack/mlpack/pull/1793)
@@ -37,7 +37,7 @@ All GSoC contributions can be summarized by the following.
 
 **Contributions to zoq/gym_tcp_api**
 
-**Pull Requests**
+**Merged Pull Requests**
 * [Maintenance work for compatibility with the OpenAI gym #13.](https://github.com/mlpack/mlpack/pull/1791)
 
 ## Loading Images
@@ -109,7 +109,7 @@ The VGG19 model used for classification. It creates a sequential layer that enco
     model.Add(vgg19);
     model.Add<LogSoftMax<> >();
 
-@encode
+@endcode
 
 ## Sentiment Analysis
 
