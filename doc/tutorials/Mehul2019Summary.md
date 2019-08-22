@@ -1,9 +1,9 @@
-@brief ​ Application of ANN Algorithms Implemented in mlpack - Summary
+@brief  Application of ANN Algorithms Implemented in mlpack - Summary
 @author Mehul Kumar Nirala
-@page ​ application-of-ANN-algorithms-implemented-in-mlpack-summary ​ Application of ANN Algorithms Implemented in mlpack - Summary
+@page  Mehul2019Summary Application of ANN Algorithms Implemented in mlpack - Summary
 @date 2019-08-21 23:00:00
 
-@section application-of-ANN-algorithms-implemented-in-mlpack Application of ANN Algorithms Implemented in mlpack
+@section Mehul2019Summary Application of ANN Algorithms Implemented in mlpack
 
 # Works
 
