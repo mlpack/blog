@@ -27,10 +27,12 @@ The proposal for String Processing Utilities involved implementing basic functio
 ### String Encoding [PR1960](https://github.com/mlpack/mlpack/pull/1960)
 
 * The initial plan was to implement a different class for different encoding methods such as BOW encoding, Dictionary encoding or Tf-Idf encoding, but we found that the class had lot of codes which we redundant, and hence we decided to implement a policy-based method and the implement different policy for each of the encoding type.
+
 * We implemented `StringEncoding` class which has the function for encoding the corpus (accepts a vector as input) and outputs you the encoded data based on the policy and output type, vector or arma::mat, Also provided an option with padding and to avoid padding depending on the encoding policy
+
 * We also designed a helper class `StringEncodingDictionary`, which maintains a dictionary mapping of the token to its labels, The class is a templated class based on the type of tokens, which involves string_view or int type. We arrived at the conclusion of implementing this helper class based on the speed profiling done by lozhnikov. He concluded some [results](https://github.com/mlpack/mlpack/pull/1814#issuecomment-514687037), and thus we decided to implement a helper class. 
 
-#### Policies for String Encoding [PR1969](https://github.com/mlpack/mlpack/pull/1969)
+### Policies for String Encoding [PR1969](https://github.com/mlpack/mlpack/pull/1969)
 
 * We decided to implement three policy for encoding, namely as follows :
   1. `Dictionary Encoding`: This encoding policy allows you to encode the corpus by assigning a positive integer number to each unique token and treats the dataset as categorical, it supports both padding and non-padding output.
@@ -48,9 +50,13 @@ After implementing all the encoding policies and tokenizer, I decided to impleme
 My proposal also included Implementation of Word2Vec, but we decided to opt-out since we found that google patented it.
 
 # Post GSoC
-A lot of the codes I implemented are sketchy since I have used boost::string_view and other boost algorithms and hence we need to do a speed check and find out the bottlenecks if any. Also, my plan is to implement any substitute for word2vec, such as GLOVE or any other word embedding algorithms. I had implemented a function for One hot Encoding, which I thought could be useful for word2vec, but we found out that it was buggy to a small extent and hence I have to find a way out and also have to implement some overloaded functionality. Lastly, the most important part, I have to write tutorials for all the functionality provided to allow someone to understand how to drop these functions in their codebase, Also excited to do some machine learning stuff on text dataset using mlpack.
+
+A lot of the codes I implemented are sketchy since I have used boost::string_view and other boost algorithms and hence we need to do a speed check and find out the bottlenecks if any. Also, my plan is to implement any substitute for word2vec, such as GLOVE or any other word embedding algorithms. I had implemented a function for One hot Encoding, which I thought could be useful for word2vec, but we found out that it was buggy to a small extent and hence I have to find a way out and also have to implement some overloaded functionality.
+
+Lastly, the most important part, I have to write tutorials for all the functionality provided to allow someone to understand how to drop these functions in their codebase, Also excited to do some machine learning stuff on text dataset using mlpack.
 
 # Acknowledgement
+
 A big thanks to lozhnikov, Rcurtin, Zoq, and the whole `mlpack` community. This was my first attempt at GSoC, and I am happy that I was successful in it. I fell in love with the open-source world and it was a wonderful experience. I gathered a lot of knowledge in these past 3 months. I will continue to be in touch with the `mlpack` community and seek to do more contributions to the project in the future. 
 
 Also, I think its time to order some mlpack stickers :)
