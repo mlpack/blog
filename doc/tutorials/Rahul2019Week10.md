@@ -1,9 +1,9 @@
 @brief NEAT & Multiobjective Optimization
 @author Rahul Ganesh Prabhu
-@page Rahul2019Week07 NEAT & Multiobjective Optimization - Week 10
+@page Rahul2019Week10 NEAT & Multiobjective Optimization - Week 10
 @date 2019-08-05 18:30:00
 
-@section Rahul2019Week07 NEAT & Multiobjective Optimization - Week 10
+@section Rahul2019Week10 NEAT & Multiobjective Optimization - Week 10
 
 I'm sorry for not posting an update in a while. My college restarted recently, and it's been very hectic, and difficult to find time to do work. Moreover, the college has released new IT rules that are very restrictive. Luckily, I'm far enough ahead to complete the project in time, despite these constraints.
 
