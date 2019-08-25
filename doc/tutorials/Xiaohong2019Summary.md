@@ -1,6 +1,6 @@
 @brief PPO - Summary
 @author Xiaohong
-@page Summary for Proximal Policy Optimization method - Summary
+@page Xiaohong@Summary Summary for Proximal Policy Optimization method - Summary
 @date 2019-08-23 10:30:09
 
 @section Summary for Proximal Policy Optimization method - Summary
