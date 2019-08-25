@@ -1,9 +1,9 @@
 @brief PPO - Week 10
 @author Xiaohong
-@page Xiaohong2019Week9 Proximal Policy Optimization - Week 10
+@page Xiaohong2019WeekTen Proximal Policy Optimization - Week 10
 @date 2019-08-4 10:30:09
 
-@section Xiaohong2019Week 10 Proximal Policy Optimization - Week 10
+@section Xiaohong2019WeekTen Proximal Policy Optimization - Week 10
 
 
 This week, I rewrite the normal distribution by my own, so I can predict 

@@ -1,9 +1,9 @@
 @brief PPO - Week 11
 @author Xiaohong
-@page Xiaohong2019Week9 Proximal Policy Optimization - Week 11
+@page Xiaohong2019WeekEleven Proximal Policy Optimization - Week 11
 @date 2019-08-11 14:30:09
 
-@section Xiaohong2019Week 11 Proximal Policy Optimization - Week 11
+@section Xiaohong2019WeekEleven Proximal Policy Optimization - Week 11
 
 
 This week, I finally completed the backward process of the network. The problem 

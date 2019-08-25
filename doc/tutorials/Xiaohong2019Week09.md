@@ -1,9 +1,9 @@
 @brief PPO - Week 9
 @author Xiaohong
-@page Xiaohong2019Week9 Proximal Policy Optimization - Week 9
+@page Xiaohong2019WeekNine Proximal Policy Optimization - Week 9
 @date 2019-07-28 20:30:09
 
-@section Xiaohong2019Week 9 Proximal Policy Optimization - Week 9
+@section Xiaohong2019WeekNine Proximal Policy Optimization - Week 9
 
 
 This week, I fixed the bug `memory access violation` and some bugs that troubled me 

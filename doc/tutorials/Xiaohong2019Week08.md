@@ -1,9 +1,9 @@
 @brief PPO - Week 8
 @author Xiaohong
-@page Xiaohong2019Week8 Proximal Policy Optimization - Week 8
+@page Xiaohong2019WeekEight Proximal Policy Optimization - Week 8
 @date 2019-07-21 21:32:09
 
-@section Xiaohong2019Week 8 Proximal Policy Optimization - Week 8
+@section Xiaohong2019WeekEight Proximal Policy Optimization - Week 8
 
 
 This week, I finished all functionality of PPO, such as update the actor and critic model. 
