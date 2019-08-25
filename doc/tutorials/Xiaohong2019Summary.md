@@ -3,7 +3,7 @@
 @page Xiaohong2019Summary Proximal Policy Optimization method - Summary
 @date 2019-08-23 10:30:09
 
-@section Xiaohong2019Summary for Proximal Policy Optimization method - Summary
+@section Xiaohong2019Summary Proximal Policy Optimization method - Summary
 
 
 Time flies, the summer is coming to end, we come to the final week of GSoC.
