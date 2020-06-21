@@ -74,7 +74,7 @@ finished computation at Sun Jun 21 20:42:49 2020
 elapsed time: 4.10645s
 ```
 
-It took around 4 sec to log 50 Images, and IMO that is really good. 
+It took around 4 sec to log 50 Images, and IMO that is really good. Also, To log 42000 images it took 67.6837s.
 
 The ouput would be similar to
 
