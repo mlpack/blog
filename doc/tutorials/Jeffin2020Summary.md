@@ -9,7 +9,7 @@ This post summarize my work for GSoC 2020
 
 # Overview
 
-The proposal for Visualization tool include implementation class which would be able to log metrics and a callback function that can be passed to ensmalled optimizer to log metrics.
+The proposal for Visualization tool included the implementation of class which would be able to log metrics and a callback function that can be passed to ensmallen optimizer to log metrics.
 
 # Implementation
 
@@ -66,9 +66,4 @@ Thanks :)
 You can find my weekly reports here
 
 * [week1](Jeffin2020Week01.md)
-* [week2](Jeffin2020Week02.md)
-* [week3](Jeffin2020Week03.md)
-* [week4](Jeffin2020Week04.md)
-* [week5](Jeffin2020Week05.md)
-* [week6-7](Jeffin2020Week06-07.md)
-* [week8-11](Jeffin2020Week08-11.md)
+
