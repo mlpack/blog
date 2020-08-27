@@ -65,5 +65,13 @@ Thanks :)
 
 You can find my weekly reports here
 
-* [week1](Jeffin2020Week01.md)
+* [week1](https://www.mlpack.org/gsocblog/Jeffin2020Week01.html)
+* [week2](https://www.mlpack.org/gsocblog/Jeffin2020Week02.html)
+* [week3](https://www.mlpack.org/gsocblog/Jeffin2020Week03.html)
+* [week4](https://www.mlpack.org/gsocblog/Jeffin2020Week04.html)
+* [week5](https://www.mlpack.org/gsocblog/Jeffin2020Week05.html)
+* [week6-7](https://www.mlpack.org/gsocblog/Jeffin2020Week06-07.html)
+* [week8-11](https://www.mlpack.org/gsocblog/Jeffin2020Week08-11.html)
+
+Thanks, Signing off :)
 
